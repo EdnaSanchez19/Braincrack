@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  Braincrack
+
+  Created by Edna Sanchez  on 09/11/25.
+  
+*/
+
+"COMENZAR" = "START";
+"INICIAR SESIÓN" = "LOGIN";
+"REGISTRARSE" = "REGISTER";
+"Nombre" = "Name";
+"Escriba su primer nombre" = "Enter your first name";
+"Apellido" = "LastName";
+"Escriba su primer apellido" = "Enter your first lastname";
+"Edad" = "Age";
+"Escriba su Edad" = "Enter your age";
+"change_language" = "Change Language";
+"Selecciona un idioma" = "Select a language";
+"Inglés" = "English";
+"Español" = "Spanish";
+"Alemán" = "German";
+"Usuario" = "Username";
+"Escriba tu nombre de usuario" = "Enter your username";
+"Contraseña" = "Password";
+"Escribe tu contraseña" = "Enter your password";
+"ENTRAR" = "ENTER";
