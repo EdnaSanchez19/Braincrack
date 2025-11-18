@@ -10,13 +10,14 @@ import SDWebImageSwiftUI
 
 struct INICIO: View {
     @State private var navegarARegistro = false
+    @State private var navegarAGameMode = false
     @State private var showLanguagePicker = false
-    @AppStorage("selectedLanguage") private var selectedLanguage = "es" // Idioma predeterminado en español
+    @AppStorage("selectedLanguage") var selectedLanguage = "es"
+    @AppStorage("isLoggedIn") var isLoggedIn = false // Verificar si el usuario está logueado
 
     var body: some View {
         NavigationStack {
             ZStack {
-                // Imagen animada de fondo
                 AnimatedImage(url: GIFS.GIFINICIO())
                     .resizable()
                     .customLoopCount(0)
@@ -24,9 +25,13 @@ struct INICIO: View {
                     .ignoresSafeArea()
 
                 VStack {
-                    // Botón de "COMENZAR"
                     Button(action: {
-                        navegarARegistro = true
+                        // Verificamos el estado de login
+                        if isLoggedIn {
+                            navegarAGameMode = true // Si está logueado, ir a GAMEMODEVIEW
+                        } else {
+                            navegarARegistro = true // Si no está logueado, ir a MENUVIEW
+                        }
                     }) {
                         Rectangle()
                             .frame(width: 300, height: 80)
@@ -39,26 +44,28 @@ struct INICIO: View {
                             )
                             .padding(.top, 200)
                     }
+                    .navigationDestination(isPresented: $navegarAGameMode) {
+                        GAMEMODEVIEW() // Si está logueado, ir a GAMEMODEVIEW
+                    }
                     .navigationDestination(isPresented: $navegarARegistro) {
-                        MENUVIEW() // Se navega a la vista MENUVIEW
+                        MENUVIEW() // Si no está logueado, ir a MENUVIEW para registro/inicio de sesión
                     }
 
-                    // Botón circular para seleccionar el idioma (Globo)
                     Button(action: {
-                        showLanguagePicker.toggle() // Abre el popup para elegir el idioma
+                        showLanguagePicker.toggle()
                     }) {
                         Rectangle()
                             .frame(width: 50, height: 50)
                             .foregroundColor(Color(red: 0.187, green: 0.003, blue: 0.381))
                             .cornerRadius(50)
                             .overlay(
-                                Image(systemName: "globe") // Icono de globo
+                                Image(systemName: "globe")
                                     .frame(width: 40, height: 40)
                                     .foregroundColor(Color(red: 0.757, green: 0.708, blue: 0.93))
                             )
                     }
                     .padding(.top, 20)
-                    .padding(.bottom, 50) // Ajusta la posición según sea necesario
+                    .padding(.bottom, 50)
                 }
             }
             .sheet(isPresented: $showLanguagePicker) {
@@ -68,7 +75,7 @@ struct INICIO: View {
                         .padding()
 
                     Button(action: {
-                        setLanguage("en") // Cambia a inglés
+                        setLanguage("en")
                         showLanguagePicker = false
                     }) {
                         Text(LocalizedStringKey("Inglés"))
@@ -77,7 +84,7 @@ struct INICIO: View {
                     }
 
                     Button(action: {
-                        setLanguage("es") // Cambia a español
+                        setLanguage("es")
                         showLanguagePicker = false
                     }) {
                         Text(LocalizedStringKey("Español"))
@@ -86,7 +93,7 @@ struct INICIO: View {
                     }
 
                     Button(action: {
-                        setLanguage("de") // Cambia a alemán
+                        setLanguage("de")
                         showLanguagePicker = false
                     }) {
                         Text(LocalizedStringKey("Alemán"))
@@ -99,12 +106,11 @@ struct INICIO: View {
                 .cornerRadius(20)
             }
         }
-        .environment(\.locale, Locale(identifier: selectedLanguage)) // Aplica el idioma seleccionado globalmente
+        .environment(\.locale, Locale(identifier: selectedLanguage))
     }
 
     func setLanguage(_ languageCode: String) {
-        selectedLanguage = languageCode // Guarda el idioma seleccionado
-        // No es necesario hacer más, ya que @AppStorage sincroniza automáticamente el valor
+        selectedLanguage = languageCode
     }
 }
 

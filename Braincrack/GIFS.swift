@@ -49,23 +49,26 @@ struct GIFS: View {
     }
     
     static func GIFLETRINAS() -> URL? {
-        return obtenerGif(nombre: "LETRINAS")
+        return obtenerGif(nombre: "LOMBRILETRAS")
     }
     
     static func GIFMENTEEXACTA() -> URL? {
-        return obtenerGif(nombre: "MENTEEXACTA")
+        return obtenerGif(nombre: "EXACTAMANIACAA")
     }
     
     static func GIFGEOEXPLORA() -> URL? {
-        return obtenerGif(nombre: "GEOEXPLORA")
+        return obtenerGif(nombre: "GEOGEBRA")
     }
     
     static func GIFDATINAUTA() -> URL? {
-        return obtenerGif(nombre: "DATINAUTA")
+        return obtenerGif(nombre: "DATONAUTA")
     }
     
     static func GIFCHISME() -> URL? {
-        return obtenerGif(nombre: "CHISME")
+        return obtenerGif(nombre: "CHISMESITOHISTORICO")
+    }
+    static func GIFTEMAS() -> URL? {
+        return obtenerGif(nombre: "TEMAS")
     }
 
     

@@ -1,0 +1,5850 @@
+[{
+  "_id": 1,
+  "pregunta": "¿Cuánto es 7 + 8?",
+  "resp": [
+    "14",
+    "15",
+    "16",
+    "17"
+  ],
+  "respc": "15",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 2,
+  "pregunta": "¿Cuál es el resultado de multiplicar 5 × 3?",
+  "resp": [
+    "8",
+    "10",
+    "15",
+    "20"
+  ],
+  "respc": "15",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 3,
+  "pregunta": "¿Qué es un triángulo?",
+  "resp": [
+    "Una figura con 4 lados",
+    "Una figura con 3 lados",
+    "Una línea",
+    "Un círculo"
+  ],
+  "respc": "Una figura con 3 lados",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 4,
+  "pregunta": "¿Qué planeta es conocido como “el planeta rojo”?",
+  "resp": [
+    "Júpiter",
+    "Marte",
+    "Saturno",
+    "Mercurio"
+  ],
+  "respc": "Marte",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 5,
+  "pregunta": "¿Qué instrumento se usa para medir la temperatura?",
+  "resp": [
+    "Regla",
+    "Termómetro",
+    "Cronómetro",
+    "Balanza"
+  ],
+  "respc": "Termómetro",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 6,
+  "pregunta": "¿Qué tipo de animal pone huevos?",
+  "resp": [
+    "Perro",
+    "Gato",
+    "Gallina",
+    "León"
+  ],
+  "respc": "Gallina",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 7,
+  "pregunta": "¿Qué pasa cuando el agua hierve?",
+  "resp": [
+    "Se congela",
+    "Se evapora",
+    "Se ensucia",
+    "Cambia de color"
+  ],
+  "respc": "Se evapora",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 8,
+  "pregunta": "¿Cuál de estos números es impar?",
+  "resp": [
+    "8",
+    "10",
+    "11",
+    "12"
+  ],
+  "respc": "11",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 9,
+  "pregunta": "¿Qué planeta tiene anillos?",
+  "resp": [
+    "Venus",
+    "Marte",
+    "Saturno",
+    "Neptuno"
+  ],
+  "respc": "Saturno",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 10,
+  "pregunta": "¿Cuál es la unidad básica de la materia?",
+  "resp": [
+    "Célula",
+    "Molécula",
+    "Átomo",
+    "Elemento"
+  ],
+  "respc": "Átomo",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 11,
+  "pregunta": "¿Qué fuerza nos mantiene en el suelo?",
+  "resp": [
+    "La electricidad",
+    "La gravedad",
+    "El magnetismo",
+    "La presión"
+  ],
+  "respc": "La gravedad",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 12,
+  "pregunta": "¿Qué número es el doble de 12?",
+  "resp": [
+    "20",
+    "22",
+    "24",
+    "26"
+  ],
+  "respc": "24",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 13,
+  "pregunta": "¿Qué planeta es el más grande del sistema solar?",
+  "resp": [
+    "Marte",
+    "Júpiter",
+    "Saturno",
+    "Urano"
+  ],
+  "respc": "Júpiter",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 14,
+  "pregunta": "¿Qué instrumento usamos para ver cosas pequeñas?",
+  "resp": [
+    "Telescopio",
+    "Microscopio",
+    "Binoculares",
+    "Regla"
+  ],
+  "respc": "Microscopio",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 15,
+  "pregunta": "¿Qué estado del agua vemos en el hielo?",
+  "resp": [
+    "Líquido",
+    "Sólido",
+    "Gaseoso",
+    "Ninguno"
+  ],
+  "respc": "Sólido",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 16,
+  "pregunta": "¿Qué es un sustantivo?",
+  "resp": [
+    "Una acción",
+    "Un nombre de persona, lugar o cosa",
+    "Una emoción",
+    "Una descripción"
+  ],
+  "respc": "Un nombre de persona, lugar o cosa",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 17,
+  "pregunta": "¿Qué es un verbo?",
+  "resp": [
+    "Una palabra que expresa acción",
+    "Una cosa",
+    "Un color",
+    "Una comida"
+  ],
+  "respc": "Una palabra que expresa acción",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 18,
+  "pregunta": "¿Qué es la fotosíntesis?",
+  "resp": [
+    "Proceso de dormir",
+    "Proceso por el cual las plantas hacen su alimento",
+    "Cuando llueve",
+    "Cuando crece un árbol"
+  ],
+  "respc": "Proceso por el cual las plantas hacen su alimento",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 19,
+  "pregunta": "¿Qué es un ecosistema?",
+  "resp": [
+    "Una sola planta",
+    "Un grupo de seres vivos y su ambiente",
+    "Un volcán",
+    "Un desierto"
+  ],
+  "respc": "Un grupo de seres vivos y su ambiente",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 20,
+  "pregunta": "¿Qué es una oración?",
+  "resp": [
+    "Un grupo de palabras con sentido",
+    "Una letra",
+    "Una sílaba",
+    "Una palabra"
+  ],
+  "respc": "Un grupo de palabras con sentido",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 21,
+  "pregunta": "¿Qué es la energía?",
+  "resp": [
+    "Algo que nos da movimiento y fuerza",
+    "Una comida",
+    "Una roca",
+    "Una planta"
+  ],
+  "respc": "Algo que nos da movimiento y fuerza",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 22,
+  "pregunta": "¿Qué es una computadora?",
+  "resp": [
+    "Un aparato para escribir",
+    "Una máquina que procesa información",
+    "Un juguete",
+    "Una televisión"
+  ],
+  "respc": "Una máquina que procesa información",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 23,
+  "pregunta": "¿Qué es el reciclaje?",
+  "resp": [
+    "Tirar basura",
+    "Reutilizar materiales",
+    "Comprar más cosas",
+    "Pintar"
+  ],
+  "respc": "Reutilizar materiales",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 24,
+  "pregunta": "¿Qué es un planeta?",
+  "resp": [
+    "Una estrella",
+    "Un cuerpo que gira alrededor del Sol",
+    "Un cometa",
+    "Un satélite"
+  ],
+  "respc": "Un cuerpo que gira alrededor del Sol",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 25,
+  "pregunta": "¿Qué es un científico?",
+  "resp": [
+    "Una persona que estudia y experimenta",
+    "Un cantante",
+    "Un carpintero",
+    "Un granjero"
+  ],
+  "respc": "Una persona que estudia y experimenta",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 26,
+  "pregunta": "¿Qué es una célula?",
+  "resp": [
+    "La unidad básica de los seres vivos",
+    "Una parte del átomo",
+    "Un mineral",
+    "Un insecto"
+  ],
+  "respc": "La unidad básica de los seres vivos",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 27,
+  "pregunta": "¿Qué es un adjetivo?",
+  "resp": [
+    "Una palabra que describe algo",
+    "Una palabra que manda",
+    "Un número",
+    "Un pronombre"
+  ],
+  "respc": "Una palabra que describe algo",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 28,
+  "pregunta": "¿Qué es el cuerpo humano?",
+  "resp": [
+    "Un conjunto de huesos, músculos y órganos",
+    "Una máquina",
+    "Una planta",
+    "Un dibujo"
+  ],
+  "respc": "Un conjunto de huesos, músculos y órganos",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 29,
+  "pregunta": "¿Qué es el agua potable?",
+  "resp": [
+    "Agua limpia para beber",
+    "Agua sucia",
+    "Agua del mar",
+    "Agua de lluvia"
+  ],
+  "respc": "Agua limpia para beber",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 30,
+  "pregunta": "¿Qué es la Luna?",
+  "resp": [
+    "Un planeta",
+    "Un satélite natural de la Tierra",
+    "Una estrella",
+    "Un cometa"
+  ],
+  "respc": "Un satélite natural de la Tierra",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 31,
+  "pregunta": "¿Quién fue el primer presidente de México?",
+  "resp": [
+    "Porfirio Díaz",
+    "Benito Juárez",
+    "Guadalupe Victoria",
+    "Miguel Hidalgo"
+  ],
+  "respc": "Guadalupe Victoria",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 32,
+  "pregunta": "¿Qué país construyó las pirámides de Giza?",
+  "resp": [
+    "Grecia",
+    "Egipto",
+    "Roma",
+    "China"
+  ],
+  "respc": "Egipto",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 33,
+  "pregunta": "¿Quién pintó “La noche estrellada”?",
+  "resp": [
+    "Leonardo da Vinci",
+    "Vincent van Gogh",
+    "Miguel Ángel",
+    "Picasso"
+  ],
+  "respc": "Vincent van Gogh",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 34,
+  "pregunta": "¿Qué descubrió Cristóbal Colón?",
+  "resp": [
+    "América",
+    "Asia",
+    "África",
+    "Oceanía"
+  ],
+  "respc": "América",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 35,
+  "pregunta": "¿En qué año fue la Independencia de México?",
+  "resp": [
+    "1810",
+    "1910",
+    "1821",
+    "1808"
+  ],
+  "respc": "1810",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 36,
+  "pregunta": "¿Quién inventó el teléfono?",
+  "resp": [
+    "Thomas Edison",
+    "Alexander Graham Bell",
+    "Nikola Tesla",
+    "Einstein"
+  ],
+  "respc": "Alexander Graham Bell",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 37,
+  "pregunta": "¿Qué imperio construyó el Coliseo?",
+  "resp": [
+    "Egipcio",
+    "Romano",
+    "Chino",
+    "Azteca"
+  ],
+  "respc": "Romano",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 38,
+  "pregunta": "¿Qué guerra terminó en 1945?",
+  "resp": [
+    "Revolución Francesa",
+    "Primera Guerra Mundial",
+    "Segunda Guerra Mundial",
+    "Guerra Fría"
+  ],
+  "respc": "Segunda Guerra Mundial",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 39,
+  "pregunta": "¿Quién fue Frida Kahlo?",
+  "resp": [
+    "Pintora mexicana",
+    "Escritora",
+    "Cantante",
+    "Científica"
+  ],
+  "respc": "Pintora mexicana",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 40,
+  "pregunta": "¿Qué país usó samuráis en su historia?",
+  "resp": [
+    "China",
+    "Japón",
+    "India",
+    "Corea"
+  ],
+  "respc": "Japón",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 41,
+  "pregunta": "¿Qué civilización construyó Machu Picchu?",
+  "resp": [
+    "Azteca",
+    "Maya",
+    "Inca",
+    "Egipcia"
+  ],
+  "respc": "Inca",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 42,
+  "pregunta": "¿Quién fue Simón Bolívar?",
+  "resp": [
+    "Libertador de América del Sur",
+    "Emperador",
+    "Pintor",
+    "Escritor"
+  ],
+  "respc": "Libertador de América del Sur",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 43,
+  "pregunta": "¿Qué inventó Gutenberg?",
+  "resp": [
+    "La imprenta",
+    "El microscopio",
+    "El telescopio",
+    "El teléfono"
+  ],
+  "respc": "La imprenta",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 44,
+  "pregunta": "¿Quién fue Marie Curie?",
+  "resp": [
+    "Científica que estudió la radiactividad",
+    "Escritora",
+    "Médica",
+    "Inventora del teléfono"
+  ],
+  "respc": "Científica que estudió la radiactividad",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 45,
+  "pregunta": "¿Qué país usaba faraones?",
+  "resp": [
+    "Egipto",
+    "Grecia",
+    "México",
+    "Roma"
+  ],
+  "respc": "Egipto",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 46,
+  "pregunta": "¿Cuál es el océano más grande del mundo?",
+  "resp": [
+    "Atlántico",
+    "Pacífico",
+    "Índico",
+    "Ártico"
+  ],
+  "respc": "Pacífico",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 47,
+  "pregunta": "¿Qué continente tiene más países?",
+  "resp": [
+    "América",
+    "Asia",
+    "África",
+    "Europa"
+  ],
+  "respc": "África",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 48,
+  "pregunta": "¿Dónde se encuentra la selva amazónica?",
+  "resp": [
+    "México",
+    "Brasil",
+    "Egipto",
+    "Estados Unidos"
+  ],
+  "respc": "Brasil",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 49,
+  "pregunta": "¿Cuál es el país más grande del mundo?",
+  "resp": [
+    "China",
+    "Rusia",
+    "Canadá",
+    "Brasil"
+  ],
+  "respc": "Rusia",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 50,
+  "pregunta": "¿Qué país tiene forma de bota?",
+  "resp": [
+    "Italia",
+    "Francia",
+    "España",
+    "Grecia"
+  ],
+  "respc": "Italia",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 51,
+  "pregunta": "¿Dónde está el desierto del Sahara?",
+  "resp": [
+    "América",
+    "África",
+    "Asia",
+    "Oceanía"
+  ],
+  "respc": "África",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 52,
+  "pregunta": "¿Cuál es el volcán más famoso de México?",
+  "resp": [
+    "Popocatépetl",
+    "Etna",
+    "Vesubio",
+    "Kilimanjaro"
+  ],
+  "respc": "Popocatépetl",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 53,
+  "pregunta": "¿Qué país tiene el Monte Everest?",
+  "resp": [
+    "India y Nepal",
+    "China y Japón",
+    "México y Guatemala",
+    "Chile y Perú"
+  ],
+  "respc": "India y Nepal",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 54,
+  "pregunta": "¿Cuál es el río más largo del mundo?",
+  "resp": [
+    "Amazonas",
+    "Nilo",
+    "Misisipi",
+    "Yangtsé"
+  ],
+  "respc": "Amazonas",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 55,
+  "pregunta": "¿Qué país tiene la Torre Eiffel?",
+  "resp": [
+    "Francia",
+    "Italia",
+    "España",
+    "Inglaterra"
+  ],
+  "respc": "Francia",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 56,
+  "pregunta": "¿Qué estados mexicanos tienen playa?",
+  "resp": [
+    "Oaxaca y Veracruz",
+    "Hidalgo y Tlaxcala",
+    "Puebla y Querétaro",
+    "Aguascalientes y Zacatecas"
+  ],
+  "respc": "Oaxaca y Veracruz",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 57,
+  "pregunta": "¿Qué país tiene forma de largo y delgado?",
+  "resp": [
+    "Chile",
+    "Perú",
+    "Argentina",
+    "Uruguay"
+  ],
+  "respc": "Chile",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 58,
+  "pregunta": "¿Dónde está la Península de Yucatán?",
+  "resp": [
+    "En el sureste de México",
+    "En el norte",
+    "En el centro",
+    "En el occidente"
+  ],
+  "respc": "En el sureste de México",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 59,
+  "pregunta": "¿Qué continente está más al sur del planeta?",
+  "resp": [
+    "África",
+    "Antártida",
+    "Oceanía",
+    "América del Sur"
+  ],
+  "respc": "Antártida",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 60,
+  "pregunta": "¿Qué país tiene forma de triángulo invertido?",
+  "resp": [
+    "México",
+    "Canadá",
+    "Cuba",
+    "Estados Unidos"
+  ],
+  "respc": "México",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 61,
+  "pregunta": "¿Qué día se celebra la Independencia de México?",
+  "resp": [
+    "5 de mayo",
+    "16 de septiembre",
+    "20 de noviembre",
+    "2 de noviembre"
+  ],
+  "respc": "16 de septiembre",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 62,
+  "pregunta": "¿Qué flor se usa en Día de Muertos?",
+  "resp": [
+    "Cempasúchil",
+    "Rosa",
+    "Girasol",
+    "Lirio"
+  ],
+  "respc": "Cempasúchil",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 63,
+  "pregunta": "¿Qué instrumento usa un mariachi?",
+  "resp": [
+    "Guitarra",
+    "Violonchelo",
+    "Flauta",
+    "Batería"
+  ],
+  "respc": "Guitarra",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 64,
+  "pregunta": "¿Qué comida mexicana se prepara con maíz y se envuelve en hoja?",
+  "resp": [
+    "Tamal",
+    "Taco",
+    "Enchilada",
+    "Quesadilla"
+  ],
+  "respc": "Tamal",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 65,
+  "pregunta": "¿Qué deporte es el más popular en México?",
+  "resp": [
+    "Fútbol",
+    "Béisbol",
+    "Basquetbol",
+    "Atletismo"
+  ],
+  "respc": "Fútbol",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 66,
+  "pregunta": "¿Qué colores tiene la bandera de México?",
+  "resp": [
+    "Verde, blanco y rojo",
+    "Azul, blanco y rojo",
+    "Amarillo y negro",
+    "Blanco y azul"
+  ],
+  "respc": "Verde, blanco y rojo",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 67,
+  "pregunta": "¿Qué bebida mexicana se hace con maíz y cacao?",
+  "resp": [
+    "Atole",
+    "Café",
+    "Agua de jamaica",
+    "Horchata"
+  ],
+  "respc": "Atole",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 68,
+  "pregunta": "¿Qué día se celebra el Día del Niño en México?",
+  "resp": [
+    "30 de abril",
+    "12 de octubre",
+    "10 de mayo",
+    "6 de enero"
+  ],
+  "respc": "30 de abril",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 69,
+  "pregunta": "¿Qué dulce mexicano tiene chile y tamarindo?",
+  "resp": [
+    "Pulparindo",
+    "Chocolate",
+    "Paleta payaso",
+    "Mazapán"
+  ],
+  "respc": "Pulparindo",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 70,
+  "pregunta": "¿Qué personaje histórico gritó “¡Viva México!”?",
+  "resp": [
+    "Miguel Hidalgo",
+    "Emiliano Zapata",
+    "Porfirio Díaz",
+    "Francisco I. Madero"
+  ],
+  "respc": "Miguel Hidalgo",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 71,
+  "pregunta": "¿Qué celebramos el 12 de diciembre?",
+  "resp": [
+    "Día de la Virgen de Guadalupe",
+    "Día de Muertos",
+    "Día de la Independencia",
+    "Día del Trabajo"
+  ],
+  "respc": "Día de la Virgen de Guadalupe",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 72,
+  "pregunta": "¿Qué animal está en el escudo nacional?",
+  "resp": [
+    "Águila",
+    "Jaguar",
+    "Lobo",
+    "Serpiente sola"
+  ],
+  "respc": "Águila",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 73,
+  "pregunta": "¿Qué plato mexicano se come en septiembre?",
+  "resp": [
+    "Chiles en nogada",
+    "Pozole",
+    "Tacos dorados",
+    "Enchiladas"
+  ],
+  "respc": "Chiles en nogada",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 74,
+  "pregunta": "¿Qué baile tradicional es famoso en Jalisco?",
+  "resp": [
+    "Jarabe tapatío",
+    "Salsa",
+    "Tango",
+    "Reguetón"
+  ],
+  "respc": "Jarabe tapatío",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 75,
+  "pregunta": "¿Qué celebramos el 6 de enero?",
+  "resp": [
+    "Día de Reyes",
+    "Día del Niño",
+    "Día del Trabajo",
+    "Día de la Independencia"
+  ],
+  "respc": "Día de Reyes",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 226,
+  "pregunta": "¿Qué es la fotosíntesis?",
+  "resp": [
+    "Un proceso de digestión",
+    "Un proceso por el que las plantas producen su alimento",
+    "Un tipo de respiración animal",
+    "Una reacción química del fuego"
+  ],
+  "respc": "Un proceso por el que las plantas producen su alimento",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 227,
+  "pregunta": "¿Cuál es la fórmula química del agua?",
+  "resp": [
+    "CO₂",
+    "H₂O",
+    "O₂",
+    "HO₂"
+  ],
+  "respc": "H₂O",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 228,
+  "pregunta": "¿Qué rama de la ciencia estudia los seres vivos?",
+  "resp": [
+    "Química",
+    "Física",
+    "Biología",
+    "Matemáticas"
+  ],
+  "respc": "Biología",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 229,
+  "pregunta": "¿Cuál de los siguientes es un gas?",
+  "resp": [
+    "Hielo",
+    "Vapor de agua",
+    "Hierro",
+    "Arena"
+  ],
+  "respc": "Vapor de agua",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 230,
+  "pregunta": "¿Qué fuerza hace que los objetos caigan al suelo?",
+  "resp": [
+    "Fricción",
+    "Energía",
+    "Gravedad",
+    "Electricidad"
+  ],
+  "respc": "Gravedad",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 231,
+  "pregunta": "¿Cuánto es 3²?",
+  "resp": [
+    "3",
+    "6",
+    "9",
+    "12"
+  ],
+  "respc": "9",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 232,
+  "pregunta": "¿Cuál es el número primo más pequeño?",
+  "resp": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "respc": "2",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 233,
+  "pregunta": "¿Qué mide un termómetro?",
+  "resp": [
+    "Peso",
+    "Temperatura",
+    "Velocidad",
+    "Longitud"
+  ],
+  "respc": "Temperatura",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 234,
+  "pregunta": "¿Qué parte del átomo tiene carga negativa?",
+  "resp": [
+    "Protón",
+    "Neutrón",
+    "Electrón",
+    "Núcleo"
+  ],
+  "respc": "Electrón",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 235,
+  "pregunta": "¿Cuál es la unidad de medida de la energía?",
+  "resp": [
+    "Metro",
+    "Joule",
+    "Gramo",
+    "Voltio"
+  ],
+  "respc": "Joule",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 236,
+  "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+  "resp": [
+    "Saturno",
+    "Júpiter",
+    "Neptuno",
+    "Marte"
+  ],
+  "respc": "Júpiter",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 237,
+  "pregunta": "¿Qué instrumento se usa para medir la masa?",
+  "resp": [
+    "Regla",
+    "Balanza",
+    "Cronómetro",
+    "Microscopio"
+  ],
+  "respc": "Balanza",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 238,
+  "pregunta": "¿Cuál es el estado del agua a menos de 0°C?",
+  "resp": [
+    "Líquido",
+    "Sólido",
+    "Gaseoso",
+    "Plasma"
+  ],
+  "respc": "Sólido",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 239,
+  "pregunta": "¿Qué tipo de energía produce una pila?",
+  "resp": [
+    "Eólica",
+    "Solar",
+    "Química",
+    "Mecánica"
+  ],
+  "respc": "Química",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 240,
+  "pregunta": "¿Qué científico formuló la ley de la gravitación universal?",
+  "resp": [
+    "Einstein",
+    "Newton",
+    "Galileo",
+    "Copérnico"
+  ],
+  "respc": "Newton",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 241,
+  "pregunta": "¿Qué es un ecosistema?",
+  "resp": [
+    "Un grupo de animales iguales",
+    "El conjunto de seres vivos y su entorno",
+    "Un tipo de planta",
+    "Una zona del océano"
+  ],
+  "respc": "El conjunto de seres vivos y su entorno",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 242,
+  "pregunta": "¿Qué significa “democracia”?",
+  "resp": [
+    "Gobierno de pocos",
+    "Gobierno del pueblo",
+    "Gobierno militar",
+    "Gobierno divino"
+  ],
+  "respc": "Gobierno del pueblo",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 243,
+  "pregunta": "¿Qué es un verbo?",
+  "resp": [
+    "Una acción",
+    "Un objeto",
+    "Un adjetivo",
+    "Una emoción"
+  ],
+  "respc": "Una acción",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 244,
+  "pregunta": "¿Qué es un átomo?",
+  "resp": [
+    "Un ser vivo muy pequeño",
+    "La partícula más pequeña de la materia",
+    "Un tipo de molécula",
+    "Un electrón"
+  ],
+  "respc": "La partícula más pequeña de la materia",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 245,
+  "pregunta": "¿Qué es un mapa?",
+  "resp": [
+    "Un dibujo decorativo",
+    "Una representación de un lugar",
+    "Una lista de países",
+    "Un gráfico de números"
+  ],
+  "respc": "Una representación de un lugar",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 246,
+  "pregunta": "¿Qué significa la palabra “historia”?",
+  "resp": [
+    "Un cuento inventado",
+    "El estudio del pasado",
+    "Una narración de fantasía",
+    "Una pintura antigua"
+  ],
+  "respc": "El estudio del pasado",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 247,
+  "pregunta": "¿Qué es la materia?",
+  "resp": [
+    "Todo lo que ocupa espacio y tiene masa",
+    "Solo los líquidos",
+    "Los números",
+    "Los sueños"
+  ],
+  "respc": "Todo lo que ocupa espacio y tiene masa",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 248,
+  "pregunta": "¿Qué es un adjetivo?",
+  "resp": [
+    "Una palabra que describe a un sustantivo",
+    "Una palabra que reemplaza nombres",
+    "Una palabra que indica acción",
+    "Una palabra para unir frases"
+  ],
+  "respc": "Una palabra que describe a un sustantivo",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 249,
+  "pregunta": "¿Qué significa reciclar?",
+  "resp": [
+    "Usar una sola vez",
+    "Reutilizar materiales",
+    "Tirar la basura",
+    "Quemar desechos"
+  ],
+  "respc": "Reutilizar materiales",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 250,
+  "pregunta": "¿Qué es el sistema solar?",
+  "resp": [
+    "Un grupo de planetas que giran alrededor del Sol",
+    "Un conjunto de estrellas",
+    "Un tipo de galaxia",
+    "Un grupo de satélites"
+  ],
+  "respc": "Un grupo de planetas que giran alrededor del Sol",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 251,
+  "pregunta": "¿Qué es la geografía?",
+  "resp": [
+    "El estudio del clima",
+    "El estudio de la Tierra",
+    "El estudio del arte",
+    "El estudio del cuerpo humano"
+  ],
+  "respc": "El estudio de la Tierra",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 252,
+  "pregunta": "¿Qué significa biodiversidad?",
+  "resp": [
+    "Poca variedad de animales",
+    "Gran variedad de seres vivos",
+    "Solo animales domésticos",
+    "Plantas acuáticas"
+  ],
+  "respc": "Gran variedad de seres vivos",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 253,
+  "pregunta": "¿Qué es un ser autótrofo?",
+  "resp": [
+    "Que come otros seres vivos",
+    "Que produce su propio alimento",
+    "Que no se mueve",
+    "Que vive bajo el agua"
+  ],
+  "respc": "Que produce su propio alimento",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 254,
+  "pregunta": "¿Qué es una célula?",
+  "resp": [
+    "Un tipo de bacteria",
+    "La unidad básica de la vida",
+    "Un tejido vegetal",
+    "Un virus"
+  ],
+  "respc": "La unidad básica de la vida",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 255,
+  "pregunta": "¿Qué es una hipótesis?",
+  "resp": [
+    "Una suposición que se puede comprobar",
+    "Una ley científica",
+    "Un experimento terminado",
+    "Una observación exacta"
+  ],
+  "respc": "Una suposición que se puede comprobar",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 256,
+  "pregunta": "¿En qué continente surgió la civilización egipcia?",
+  "resp": [
+    "Asia",
+    "Europa",
+    "África",
+    "América"
+  ],
+  "respc": "África",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 257,
+  "pregunta": "¿Quién fue Cristóbal Colón?",
+  "resp": [
+    "Un conquistador romano",
+    "El descubridor de América",
+    "Un emperador azteca",
+    "Un pintor europeo"
+  ],
+  "respc": "El descubridor de América",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 258,
+  "pregunta": "¿Qué invento revolucionó la lectura en el siglo XV?",
+  "resp": [
+    "La brújula",
+    "La imprenta",
+    "El telescopio",
+    "El microscopio"
+  ],
+  "respc": "La imprenta",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 259,
+  "pregunta": "¿En qué país nació la democracia?",
+  "resp": [
+    "Roma",
+    "Egipto",
+    "Grecia",
+    "China"
+  ],
+  "respc": "Grecia",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 260,
+  "pregunta": "¿Qué civilización construyó las pirámides?",
+  "resp": [
+    "Griega",
+    "Egipcia",
+    "Romana",
+    "China"
+  ],
+  "respc": "Egipcia",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 261,
+  "pregunta": "¿En qué año inició la Segunda Guerra Mundial?",
+  "resp": [
+    "1914",
+    "1939",
+    "1945",
+    "1960"
+  ],
+  "respc": "1939",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 262,
+  "pregunta": "¿Qué país usó por primera vez la bomba atómica?",
+  "resp": [
+    "Alemania",
+    "Estados Unidos",
+    "Rusia",
+    "Japón"
+  ],
+  "respc": "Estados Unidos",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 263,
+  "pregunta": "¿Quién pintó “La Mona Lisa”?",
+  "resp": [
+    "Miguel Ángel",
+    "Leonardo da Vinci",
+    "Rafael",
+    "Botticelli"
+  ],
+  "respc": "Leonardo da Vinci",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 264,
+  "pregunta": "¿Qué imperio construyó el Coliseo?",
+  "resp": [
+    "Romano",
+    "Griego",
+    "Persa",
+    "Egipcio"
+  ],
+  "respc": "Romano",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 265,
+  "pregunta": "¿Quién fue Napoleón Bonaparte?",
+  "resp": [
+    "Un científico inglés",
+    "Un emperador francés",
+    "Un explorador español",
+    "Un filósofo griego"
+  ],
+  "respc": "Un emperador francés",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 266,
+  "pregunta": "¿Qué acontecimiento inició la Edad Moderna?",
+  "resp": [
+    "La caída de Roma",
+    "El descubrimiento de América",
+    "La Revolución Industrial",
+    "La Primera Guerra Mundial"
+  ],
+  "respc": "El descubrimiento de América",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 267,
+  "pregunta": "¿Qué país fue cuna de la Revolución Industrial?",
+  "resp": [
+    "Francia",
+    "Inglaterra",
+    "Alemania",
+    "Estados Unidos"
+  ],
+  "respc": "Inglaterra",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 268,
+  "pregunta": "¿Qué civilización inventó la escritura cuneiforme?",
+  "resp": [
+    "Egipcia",
+    "Sumeria",
+    "Romana",
+    "China"
+  ],
+  "respc": "Sumeria",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 269,
+  "pregunta": "¿Quién fue el primer ser humano en llegar al espacio?",
+  "resp": [
+    "Neil Armstrong",
+    "Yuri Gagarin",
+    "Buzz Aldrin",
+    "Alan Shepard"
+  ],
+  "respc": "Yuri Gagarin",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 270,
+  "pregunta": "¿Qué país comenzó la Revolución Francesa?",
+  "resp": [
+    "España",
+    "Francia",
+    "Italia",
+    "Rusia"
+  ],
+  "respc": "Francia",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 271,
+  "pregunta": "¿Cuál es el país más grande del mundo?",
+  "resp": [
+    "Canadá",
+    "Rusia",
+    "China",
+    "Estados Unidos"
+  ],
+  "respc": "Rusia",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 272,
+  "pregunta": "¿Cuál es el océano más extenso del planeta?",
+  "resp": [
+    "Atlántico",
+    "Índico",
+    "Pacífico",
+    "Ártico"
+  ],
+  "respc": "Pacífico",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 273,
+  "pregunta": "¿En qué continente se encuentra México?",
+  "resp": [
+    "América",
+    "Europa",
+    "Asia",
+    "África"
+  ],
+  "respc": "América",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 274,
+  "pregunta": "¿Cuál es el río más largo del mundo?",
+  "resp": [
+    "Amazonas",
+    "Nilo",
+    "Misisipi",
+    "Yangtsé"
+  ],
+  "respc": "Nilo",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 275,
+  "pregunta": "¿Qué nombre recibe el punto más alto de la Tierra?",
+  "resp": [
+    "Montaña Blanca",
+    "Monte Everest",
+    "Pico del Águila",
+    "Monte Fuji"
+  ],
+  "respc": "Monte Everest",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 276,
+  "pregunta": "¿En qué continente se encuentra el desierto del Sahara?",
+  "resp": [
+    "Asia",
+    "América",
+    "África",
+    "Oceanía"
+  ],
+  "respc": "África",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 277,
+  "pregunta": "¿Cuál es la capital de Francia?",
+  "resp": [
+    "Berlín",
+    "París",
+    "Roma",
+    "Lisboa"
+  ],
+  "respc": "París",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 278,
+  "pregunta": "¿Qué océano baña las costas de México por el este?",
+  "resp": [
+    "Atlántico",
+    "Pacífico",
+    "Índico",
+    "Ártico"
+  ],
+  "respc": "Atlántico",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 279,
+  "pregunta": "¿Cuál es el continente más frío?",
+  "resp": [
+    "Asia",
+    "Oceanía",
+    "Antártida",
+    "Europa"
+  ],
+  "respc": "Antártida",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 280,
+  "pregunta": "¿Qué línea imaginaria divide la Tierra en hemisferio norte y sur?",
+  "resp": [
+    "Trópico de Capricornio",
+    "Ecuador",
+    "Meridiano de Greenwich",
+    "Círculo Polar"
+  ],
+  "respc": "Ecuador",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 281,
+  "pregunta": "¿Cuál es el país con más población del mundo?",
+  "resp": [
+    "India",
+    "China",
+    "Estados Unidos",
+    "Indonesia"
+  ],
+  "respc": "China",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 282,
+  "pregunta": "¿Qué tipo de mapa muestra los países y sus fronteras?",
+  "resp": [
+    "Físico",
+    "Político",
+    "Climático",
+    "Económico"
+  ],
+  "respc": "Político",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 283,
+  "pregunta": "¿Cuál de los siguientes es un país de América del Sur?",
+  "resp": [
+    "Portugal",
+    "Argentina",
+    "Egipto",
+    "Japón"
+  ],
+  "respc": "Argentina",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 284,
+  "pregunta": "¿Qué océano separa América de Europa?",
+  "resp": [
+    "Índico",
+    "Pacífico",
+    "Atlántico",
+    "Ártico"
+  ],
+  "respc": "Atlántico",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 285,
+  "pregunta": "¿Qué país tiene forma de bota en el mapa?",
+  "resp": [
+    "Grecia",
+    "Italia",
+    "España",
+    "Francia"
+  ],
+  "respc": "Italia",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 286,
+  "pregunta": "¿Cuál es el idioma más hablado en el mundo?",
+  "resp": [
+    "Inglés",
+    "Español",
+    "Chino mandarín",
+    "Árabe"
+  ],
+  "respc": "Chino mandarín",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 287,
+  "pregunta": "¿Qué instrumento tiene teclas blancas y negras?",
+  "resp": [
+    "Guitarra",
+    "Piano",
+    "Violín",
+    "Flauta"
+  ],
+  "respc": "Piano",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 288,
+  "pregunta": "¿Qué país es famoso por el sushi?",
+  "resp": [
+    "China",
+    "Corea",
+    "Japón",
+    "Vietnam"
+  ],
+  "respc": "Japón",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 289,
+  "pregunta": "¿Qué celebración mexicana honra a los difuntos?",
+  "resp": [
+    "Navidad",
+    "Día de Muertos",
+    "Grito de Independencia",
+    "Semana Santa"
+  ],
+  "respc": "Día de Muertos",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 290,
+  "pregunta": "¿Qué deporte se juega con una pelota y una red alta?",
+  "resp": [
+    "Fútbol",
+    "Básquetbol",
+    "Voleibol",
+    "Tenis"
+  ],
+  "respc": "Voleibol",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 291,
+  "pregunta": "¿Qué escritor creó a “Harry Potter”?",
+  "resp": [
+    "Suzanne Collins",
+    "J. K. Rowling",
+    "Rick Riordan",
+    "Stephen King"
+  ],
+  "respc": "J. K. Rowling",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 292,
+  "pregunta": "¿Qué país es famoso por la Torre Eiffel?",
+  "resp": [
+    "Inglaterra",
+    "Francia",
+    "Italia",
+    "Alemania"
+  ],
+  "respc": "Francia",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 293,
+  "pregunta": "¿Qué pintura famosa hizo Leonardo da Vinci?",
+  "resp": [
+    "La noche estrellada",
+    "La Mona Lisa",
+    "El grito",
+    "Las Meninas"
+  ],
+  "respc": "La Mona Lisa",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 294,
+  "pregunta": "¿Qué color se forma al mezclar rojo y amarillo?",
+  "resp": [
+    "Naranja",
+    "Verde",
+    "Morado",
+    "Rosa"
+  ],
+  "respc": "Naranja",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 295,
+  "pregunta": "¿Qué baile es típico de Argentina?",
+  "resp": [
+    "Flamenco",
+    "Tango",
+    "Salsa",
+    "Cumbia"
+  ],
+  "respc": "Tango",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 296,
+  "pregunta": "¿Qué país celebra el Carnaval de Río de Janeiro?",
+  "resp": [
+    "Colombia",
+    "Brasil",
+    "Chile",
+    "Perú"
+  ],
+  "respc": "Brasil",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 297,
+  "pregunta": "¿Qué instrumento usa cuerdas y se toca con arco?",
+  "resp": [
+    "Piano",
+    "Violín",
+    "Batería",
+    "Clarinete"
+  ],
+  "respc": "Violín",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 298,
+  "pregunta": "¿Qué película de Disney tiene a un león llamado Simba?",
+  "resp": [
+    "Aladdín",
+    "El Rey León",
+    "Mulan",
+    "Tarzán"
+  ],
+  "respc": "El Rey León",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 299,
+  "pregunta": "¿Qué es un mural?",
+  "resp": [
+    "Una escultura",
+    "Una pintura sobre una pared",
+    "Un poema",
+    "Una canción"
+  ],
+  "respc": "Una pintura sobre una pared",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 300,
+  "pregunta": "¿Qué cultura antigua construyó Chichén Itzá?",
+  "resp": [
+    "Azteca",
+    "Maya",
+    "Inca",
+    "Tolteca"
+  ],
+  "respc": "Maya",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 451,
+  "pregunta": "¿Qué científico propuso la teoría de la relatividad?",
+  "resp": [
+    "Isaac Newton",
+    "Albert Einstein",
+    "Galileo Galilei",
+    "Stephen Hawking"
+  ],
+  "respc": "Albert Einstein",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 452,
+  "pregunta": "¿Qué mide la ley de Ohm?",
+  "resp": [
+    "La fuerza",
+    "La corriente eléctrica",
+    "La resistencia eléctrica",
+    "La temperatura"
+  ],
+  "respc": "La resistencia eléctrica",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 453,
+  "pregunta": "¿Cuál es la fórmula del área de un triángulo?",
+  "resp": [
+    "base × altura",
+    "(base × altura) / 2",
+    "lado × lado",
+    "(lado × lado) / 2"
+  ],
+  "respc": "(base × altura) / 2",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 454,
+  "pregunta": "¿Qué tipo de enlace se forma cuando los átomos comparten electrones?",
+  "resp": [
+    "Iónico",
+    "Covalente",
+    "Metálico",
+    "Magnético"
+  ],
+  "respc": "Covalente",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 455,
+  "pregunta": "¿Qué tipo de energía produce un panel solar?",
+  "resp": [
+    "Química",
+    "Mecánica",
+    "Eléctrica",
+    "Térmica"
+  ],
+  "respc": "Eléctrica",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 456,
+  "pregunta": "¿Cuál es la velocidad de la luz en el vacío?",
+  "resp": [
+    "3,000 km/s",
+    "300,000 km/s",
+    "30,000 km/s",
+    "3 km/s"
+  ],
+  "respc": "300,000 km/s",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 457,
+  "pregunta": "¿Qué rama de la biología estudia los genes y la herencia?",
+  "resp": [
+    "Anatomía",
+    "Genética",
+    "Ecología",
+    "Zoología"
+  ],
+  "respc": "Genética",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 458,
+  "pregunta": "¿Qué elemento químico tiene el símbolo “Fe”?",
+  "resp": [
+    "Flúor",
+    "Fósforo",
+    "Hierro",
+    "Francio"
+  ],
+  "respc": "Hierro",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 459,
+  "pregunta": "¿Qué significa que una sustancia sea ácida?",
+  "resp": [
+    "Tiene pH mayor a 7",
+    "Tiene pH igual a 7",
+    "Tiene pH menor a 7",
+    "No tiene pH"
+  ],
+  "respc": "Tiene pH menor a 7",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 460,
+  "pregunta": "¿Cuál es la fórmula del agua oxigenada?",
+  "resp": [
+    "H₂O",
+    "H₂O₂",
+    "CO₂",
+    "HO₂"
+  ],
+  "respc": "H₂O₂",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 461,
+  "pregunta": "¿Qué tipo de movimiento describe una trayectoria circular?",
+  "resp": [
+    "Rectilíneo",
+    "Parabólico",
+    "Circular",
+    "Armónico"
+  ],
+  "respc": "Circular",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 462,
+  "pregunta": "¿Cuál es la unidad de medida de la presión?",
+  "resp": [
+    "Pascal",
+    "Newton",
+    "Joule",
+    "Watt"
+  ],
+  "respc": "Pascal",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 463,
+  "pregunta": "¿Qué partícula subatómica tiene carga positiva?",
+  "resp": [
+    "Electrón",
+    "Protón",
+    "Neutrón",
+    "Fotón"
+  ],
+  "respc": "Protón",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 464,
+  "pregunta": "¿Qué estudia la trigonometría?",
+  "resp": [
+    "Las figuras tridimensionales",
+    "Las relaciones entre los lados y ángulos de un triángulo",
+    "La velocidad de los objetos",
+    "Los números primos"
+  ],
+  "respc": "Las relaciones entre los lados y ángulos de un triángulo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 465,
+  "pregunta": "¿Qué nombre recibe el cambio de estado de líquido a gas?",
+  "resp": [
+    "Sublimación",
+    "Condensación",
+    "Evaporación",
+    "Solidificación"
+  ],
+  "respc": "Evaporación",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 466,
+  "pregunta": "¿Qué es una célula eucariota?",
+  "resp": [
+    "Una célula sin núcleo definido",
+    "Una célula con núcleo definido",
+    "Una bacteria",
+    "Un virus"
+  ],
+  "respc": "Una célula con núcleo definido",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 467,
+  "pregunta": "¿Qué es la globalización?",
+  "resp": [
+    "Un proceso económico y cultural que conecta al mundo",
+    "La independencia de los países",
+    "El aislamiento político",
+    "Un sistema ecológico"
+  ],
+  "respc": "Un proceso económico y cultural que conecta al mundo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 468,
+  "pregunta": "¿Qué es la ética?",
+  "resp": [
+    "El estudio del lenguaje",
+    "El estudio del bien y del mal",
+    "El arte de la escritura",
+    "La ciencia del cuerpo humano"
+  ],
+  "respc": "El estudio del bien y del mal",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 469,
+  "pregunta": "¿Qué significa “ADN”?",
+  "resp": [
+    "Ácido desoxirribonucleico",
+    "Ácido ribonucleico",
+    "Aminoácido nuclear",
+    "Antígeno del núcleo"
+  ],
+  "respc": "Ácido desoxirribonucleico",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 470,
+  "pregunta": "¿Qué es un paradigma?",
+  "resp": [
+    "Una teoría que nunca cambia",
+    "Un modelo o ejemplo que sirve de referencia",
+    "Un error científico",
+    "Un experimento fallido"
+  ],
+  "respc": "Un modelo o ejemplo que sirve de referencia",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 471,
+  "pregunta": "¿Qué es una metáfora?",
+  "resp": [
+    "Una comparación directa",
+    "Una comparación sin usar “como” o “parece”",
+    "Un sinónimo",
+    "Una exageración"
+  ],
+  "respc": "Una comparación sin usar “como” o “parece”",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 472,
+  "pregunta": "¿Qué es un ecosistema?",
+  "resp": [
+    "Un conjunto de montañas",
+    "La interacción entre seres vivos y su entorno",
+    "Una cadena alimenticia",
+    "Un tipo de clima"
+  ],
+  "respc": "La interacción entre seres vivos y su entorno",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 473,
+  "pregunta": "¿Qué es la energía cinética?",
+  "resp": [
+    "Energía almacenada",
+    "Energía del movimiento",
+    "Energía química",
+    "Energía térmica"
+  ],
+  "respc": "Energía del movimiento",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 474,
+  "pregunta": "¿Qué es el Renacimiento?",
+  "resp": [
+    "Una guerra religiosa",
+    "Un movimiento cultural y artístico de Europa",
+    "Una revolución política",
+    "Un estilo arquitectónico romano"
+  ],
+  "respc": "Un movimiento cultural y artístico de Europa",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 475,
+  "pregunta": "¿Qué es una democracia?",
+  "resp": [
+    "Gobierno de uno solo",
+    "Gobierno del pueblo",
+    "Gobierno militar",
+    "Gobierno hereditario"
+  ],
+  "respc": "Gobierno del pueblo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 476,
+  "pregunta": "¿Qué es una hipótesis?",
+  "resp": [
+    "Una suposición que se puede comprobar",
+    "Un resultado científico",
+    "Un hecho comprobado",
+    "Una ley universal"
+  ],
+  "respc": "Una suposición que se puede comprobar",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 477,
+  "pregunta": "¿Qué es una nación?",
+  "resp": [
+    "Un grupo de personas con costumbres comunes y territorio",
+    "Una empresa internacional",
+    "Un grupo étnico aislado",
+    "Una provincia pequeña"
+  ],
+  "respc": "Un grupo de personas con costumbres comunes y territorio",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 478,
+  "pregunta": "¿Qué es el calentamiento global?",
+  "resp": [
+    "El enfriamiento del planeta",
+    "El aumento de la temperatura por gases contaminantes",
+    "El cambio de estaciones",
+    "Un fenómeno natural del Sol"
+  ],
+  "respc": "El aumento de la temperatura por gases contaminantes",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 479,
+  "pregunta": "¿Qué es un ensayo?",
+  "resp": [
+    "Un texto argumentativo sobre un tema",
+    "Un cuento corto",
+    "Una carta formal",
+    "Una noticia"
+  ],
+  "respc": "Un texto argumentativo sobre un tema",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 480,
+  "pregunta": "¿Qué es la filosofía?",
+  "resp": [
+    "El estudio de los animales",
+    "El estudio de la verdad y la sabiduría",
+    "La ciencia del clima",
+    "El arte de la escritura"
+  ],
+  "respc": "El estudio de la verdad y la sabiduría",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 481,
+  "pregunta": "¿En qué año cayó el Imperio Romano de Occidente?",
+  "resp": [
+    "395 d.C.",
+    "410 d.C.",
+    "476 d.C.",
+    "500 d.C."
+  ],
+  "respc": "476 d.C.",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 482,
+  "pregunta": "¿Quién fue el primer emperador romano?",
+  "resp": [
+    "Julio César",
+    "Augusto",
+    "Nerón",
+    "Constantino"
+  ],
+  "respc": "Augusto",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 483,
+  "pregunta": "¿Qué civilización construyó Machu Picchu?",
+  "resp": [
+    "Azteca",
+    "Inca",
+    "Maya",
+    "Tolteca"
+  ],
+  "respc": "Inca",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 484,
+  "pregunta": "¿Qué acontecimiento marcó el inicio de la Edad Moderna?",
+  "resp": [
+    "La caída de Roma",
+    "El descubrimiento de América",
+    "La Revolución Francesa",
+    "La Revolución Industrial"
+  ],
+  "respc": "El descubrimiento de América",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 485,
+  "pregunta": "¿Qué documento firmó el rey Juan de Inglaterra en 1215?",
+  "resp": [
+    "La Constitución Inglesa",
+    "La Carta Magna",
+    "El Tratado de Versalles",
+    "La Declaración de los Derechos del Hombre"
+  ],
+  "respc": "La Carta Magna",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 486,
+  "pregunta": "¿En qué siglo ocurrió la Revolución Francesa?",
+  "resp": [
+    "XVII",
+    "XVIII",
+    "XIX",
+    "XX"
+  ],
+  "respc": "XVIII",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 487,
+  "pregunta": "¿Qué país inició la Revolución Industrial?",
+  "resp": [
+    "Francia",
+    "Inglaterra",
+    "Alemania",
+    "Estados Unidos"
+  ],
+  "respc": "Inglaterra",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 488,
+  "pregunta": "¿Qué tratado puso fin a la Primera Guerra Mundial?",
+  "resp": [
+    "Tratado de París",
+    "Tratado de Versalles",
+    "Tratado de Roma",
+    "Tratado de Ginebra"
+  ],
+  "respc": "Tratado de Versalles",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 489,
+  "pregunta": "¿Quién fue Karl Marx?",
+  "resp": [
+    "Un filósofo y economista alemán",
+    "Un inventor británico",
+    "Un político francés",
+    "Un militar ruso"
+  ],
+  "respc": "Un filósofo y economista alemán",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 490,
+  "pregunta": "¿Qué país fue dividido por el Muro de Berlín?",
+  "resp": [
+    "Polonia",
+    "Alemania",
+    "Checoslovaquia",
+    "Hungría"
+  ],
+  "respc": "Alemania",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 491,
+  "pregunta": "¿Quién dirigió la independencia de las colonias sudamericanas?",
+  "resp": [
+    "Simón Bolívar",
+    "José Martí",
+    "San Martín",
+    "Porfirio Díaz"
+  ],
+  "respc": "Simón Bolívar",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 492,
+  "pregunta": "¿En qué año llegó el hombre a la Luna?",
+  "resp": [
+    "1959",
+    "1969",
+    "1979",
+    "1989"
+  ],
+  "respc": "1969",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 493,
+  "pregunta": "¿Qué civilización inventó la escritura?",
+  "resp": [
+    "Egipcia",
+    "Sumeria",
+    "China",
+    "Romana"
+  ],
+  "respc": "Sumeria",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 494,
+  "pregunta": "¿Qué país fue el primero en industrializarse en América?",
+  "resp": [
+    "Estados Unidos",
+    "México",
+    "Canadá",
+    "Brasil"
+  ],
+  "respc": "Estados Unidos",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 495,
+  "pregunta": "¿Qué movimiento buscó la igualdad racial en Estados Unidos durante los años 60?",
+  "resp": [
+    "Feminismo",
+    "Movimiento por los Derechos Civiles",
+    "Anarquismo",
+    "Ecologismo"
+  ],
+  "respc": "Movimiento por los Derechos Civiles",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 496,
+  "pregunta": "¿Qué línea divide la Tierra en hemisferios oriental y occidental?",
+  "resp": [
+    "Ecuador",
+    "Meridiano de Greenwich",
+    "Trópico de Cáncer",
+    "Círculo Polar Ártico"
+  ],
+  "respc": "Meridiano de Greenwich",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 497,
+  "pregunta": "¿Qué país tiene la mayor población del mundo?",
+  "resp": [
+    "China",
+    "India",
+    "Estados Unidos",
+    "Rusia"
+  ],
+  "respc": "India",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 498,
+  "pregunta": "¿Cuál es el país más extenso de América?",
+  "resp": [
+    "Canadá",
+    "Estados Unidos",
+    "Brasil",
+    "México"
+  ],
+  "respc": "Canadá",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 499,
+  "pregunta": "¿Cuál es el río más largo de América del Sur?",
+  "resp": [
+    "Orinoco",
+    "Paraná",
+    "Amazonas",
+    "Magdalena"
+  ],
+  "respc": "Amazonas",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 500,
+  "pregunta": "¿Qué continente tiene la mayor cantidad de desiertos?",
+  "resp": [
+    "África",
+    "Oceanía",
+    "Asia",
+    "América"
+  ],
+  "respc": "Asia",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 501,
+  "pregunta": "¿Qué es un archipiélago?",
+  "resp": [
+    "Un grupo de islas",
+    "Una cadena montañosa",
+    "Un conjunto de ríos",
+    "Una zona desértica"
+  ],
+  "respc": "Un grupo de islas",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 502,
+  "pregunta": "¿Cuál es la capital de Canadá?",
+  "resp": [
+    "Toronto",
+    "Montreal",
+    "Ottawa",
+    "Vancouver"
+  ],
+  "respc": "Ottawa",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 503,
+  "pregunta": "¿Qué país limita al norte con México?",
+  "resp": [
+    "Guatemala",
+    "Belice",
+    "Estados Unidos",
+    "Canadá"
+  ],
+  "respc": "Estados Unidos",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 504,
+  "pregunta": "¿Qué tipo de mapa muestra el relieve del terreno?",
+  "resp": [
+    "Político",
+    "Físico",
+    "Económico",
+    "Urbano"
+  ],
+  "respc": "Físico",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 505,
+  "pregunta": "¿Cuál es el mar que separa Europa de África?",
+  "resp": [
+    "Mar Rojo",
+    "Mar Caribe",
+    "Mar Mediterráneo",
+    "Mar Negro"
+  ],
+  "respc": "Mar Mediterráneo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 506,
+  "pregunta": "¿En qué continente se encuentra el monte Kilimanjaro?",
+  "resp": [
+    "Asia",
+    "África",
+    "Europa",
+    "Oceanía"
+  ],
+  "respc": "África",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 507,
+  "pregunta": "¿Qué país se encuentra más al sur del continente americano?",
+  "resp": [
+    "Chile",
+    "Argentina",
+    "Perú",
+    "Uruguay"
+  ],
+  "respc": "Chile",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 508,
+  "pregunta": "¿Qué fenómeno natural se mide con la escala de Richter?",
+  "resp": [
+    "Huracanes",
+    "Tsunamis",
+    "Terremotos",
+    "Tornados"
+  ],
+  "respc": "Terremotos",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 509,
+  "pregunta": "¿Qué país tiene la forma de una “bota”?",
+  "resp": [
+    "España",
+    "Italia",
+    "Francia",
+    "Grecia"
+  ],
+  "respc": "Italia",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 510,
+  "pregunta": "¿Qué océano rodea a la Antártida?",
+  "resp": [
+    "Atlántico",
+    "Índico",
+    "Pacífico",
+    "Glacial Antártico"
+  ],
+  "respc": "Glacial Antártico",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 511,
+  "pregunta": "¿Quién escribió Cien años de soledad?",
+  "resp": [
+    "Pablo Neruda",
+    "Mario Vargas Llosa",
+    "Gabriel García Márquez",
+    "Julio Cortázar"
+  ],
+  "respc": "Gabriel García Márquez",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 512,
+  "pregunta": "¿Cuál es la capital cultural de Francia?",
+  "resp": [
+    "Lyon",
+    "París",
+    "Marsella",
+    "Toulouse"
+  ],
+  "respc": "París",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 513,
+  "pregunta": "¿Qué artista pintó el techo de la Capilla Sixtina?",
+  "resp": [
+    "Rafael",
+    "Miguel Ángel",
+    "Leonardo da Vinci",
+    "Donatello"
+  ],
+  "respc": "Miguel Ángel",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 514,
+  "pregunta": "¿Qué corriente artística representa sueños o imágenes del subconsciente?",
+  "resp": [
+    "Impresionismo",
+    "Cubismo",
+    "Surrealismo",
+    "Romanticismo"
+  ],
+  "respc": "Surrealismo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 515,
+  "pregunta": "¿Qué país es la cuna del reggae?",
+  "resp": [
+    "Cuba",
+    "Jamaica",
+    "Brasil",
+    "Estados Unidos"
+  ],
+  "respc": "Jamaica",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 516,
+  "pregunta": "¿Qué instrumento es característico del mariachi?",
+  "resp": [
+    "Flauta",
+    "Violín",
+    "Guitarra",
+    "Trompeta"
+  ],
+  "respc": "Trompeta",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 517,
+  "pregunta": "¿Qué autor escribió Don Quijote de la Mancha?",
+  "resp": [
+    "Lope de Vega",
+    "Calderón de la Barca",
+    "Miguel de Cervantes",
+    "Gustavo Adolfo Bécquer"
+  ],
+  "respc": "Miguel de Cervantes",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 518,
+  "pregunta": "¿Qué película mexicana ganó el Óscar a Mejor Película Extranjera en 2019?",
+  "resp": [
+    "Amores Perros",
+    "Roma",
+    "Biutiful",
+    "Babel"
+  ],
+  "respc": "Roma",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 519,
+  "pregunta": "¿Qué significa la palabra “folclor”?",
+  "resp": [
+    "Ciencia del arte",
+    "Conjunto de tradiciones y costumbres de un pueblo",
+    "Poesía musical",
+    "Danza clásica"
+  ],
+  "respc": "Conjunto de tradiciones y costumbres de un pueblo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 520,
+  "pregunta": "¿Qué país es conocido por la pizza y la pasta?",
+  "resp": [
+    "España",
+    "Francia",
+    "Italia",
+    "Grecia"
+  ],
+  "respc": "Italia",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 521,
+  "pregunta": "¿Qué danza mexicana se baila con machetes?",
+  "resp": [
+    "Danza del Venado",
+    "Jarabe Tapatío",
+    "Danza de los Viejitos",
+    "Danza de los Parachicos"
+  ],
+  "respc": "Danza de los Parachicos",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 522,
+  "pregunta": "¿Quién compuso la Novena Sinfonía?",
+  "resp": [
+    "Mozart",
+    "Beethoven",
+    "Bach",
+    "Tchaikovsky"
+  ],
+  "respc": "Beethoven",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 523,
+  "pregunta": "¿Qué cultura antigua construyó el Partenón?",
+  "resp": [
+    "Egipcia",
+    "Griega",
+    "Romana",
+    "Persa"
+  ],
+  "respc": "Griega",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 524,
+  "pregunta": "¿Qué escritor mexicano es autor de El laberinto de la soledad?",
+  "resp": [
+    "Juan Rulfo",
+    "Octavio Paz",
+    "Carlos Fuentes",
+    "José Emilio Pacheco"
+  ],
+  "respc": "Octavio Paz",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 525,
+  "pregunta": "¿Qué pintora mexicana es reconocida por su estilo surrealista y autorretratos?",
+  "resp": [
+    "Remedios Varo",
+    "Frida Kahlo",
+    "Leonora Carrington",
+    "Tina Modotti"
+  ],
+  "respc": "Frida Kahlo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "Español",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 676,
+  "pregunta": "¿Cuál es la constante de gravitación universal?",
+  "resp": [
+    "6.67 × 10⁻¹¹ N·m²/kg²",
+    "3.00 × 10⁸ m/s",
+    "9.8 m/s²",
+    "1.6 × 10⁻¹⁹ C"
+  ],
+  "respc": "6.67 × 10⁻¹¹ N·m²/kg²",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 677,
+  "pregunta": "¿Qué estudia la termodinámica?",
+  "resp": [
+    "El movimiento de los cuerpos",
+    "El calor y sus transformaciones en energía",
+    "La luz y sus propiedades",
+    "La estructura del átomo"
+  ],
+  "respc": "El calor y sus transformaciones en energía",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 678,
+  "pregunta": "¿Qué unidad mide la intensidad de corriente eléctrica?",
+  "resp": [
+    "Voltio",
+    "Ohm",
+    "Watt",
+    "Amperio"
+  ],
+  "respc": "Amperio",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 679,
+  "pregunta": "¿Qué significa que una reacción sea exotérmica?",
+  "resp": [
+    "Absorbe calor",
+    "Libera calor",
+    "Ocurre sin oxígeno",
+    "Produce luz"
+  ],
+  "respc": "Libera calor",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 680,
+  "pregunta": "¿Cuál es el número de Avogadro?",
+  "resp": [
+    "3.14",
+    "6.022 × 10²³",
+    "9.81",
+    "1.67 × 10⁻²⁷"
+  ],
+  "respc": "6.022 × 10²³",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 681,
+  "pregunta": "¿Cuál de los siguientes elementos es un gas noble?",
+  "resp": [
+    "Nitrógeno",
+    "Neón",
+    "Oxígeno",
+    "Hidrógeno"
+  ],
+  "respc": "Neón",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 682,
+  "pregunta": "¿Qué tipo de enlace se forma entre un metal y un no metal?",
+  "resp": [
+    "Iónico",
+    "Covalente",
+    "Metálico",
+    "Nuclear"
+  ],
+  "respc": "Iónico",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 683,
+  "pregunta": "¿Qué fórmula representa la ley de Ohm?",
+  "resp": [
+    "F = m·a",
+    "V = I·R",
+    "E = m·c²",
+    "P = F/A"
+  ],
+  "respc": "V = I·R",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 684,
+  "pregunta": "¿Cuál es la partícula con carga negativa del átomo?",
+  "resp": [
+    "Protón",
+    "Neutrón",
+    "Electrón",
+    "Positrón"
+  ],
+  "respc": "Electrón",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 685,
+  "pregunta": "¿Qué es una derivada en cálculo?",
+  "resp": [
+    "El área bajo una curva",
+    "El cambio instantáneo de una función",
+    "El promedio de valores",
+    "La raíz cuadrada de una variable"
+  ],
+  "respc": "El cambio instantáneo de una función",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 686,
+  "pregunta": "¿Qué representa la letra “pH”?",
+  "resp": [
+    "Potencial de hidrógeno",
+    "Peso hidráulico",
+    "Punto de hidróxido",
+    "Presión hidrostática"
+  ],
+  "respc": "Potencial de hidrógeno",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 687,
+  "pregunta": "¿Qué tipo de onda es la luz?",
+  "resp": [
+    "Mecánica",
+    "Longitudinal",
+    "Electromagnética",
+    "Sónica"
+  ],
+  "respc": "Electromagnética",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 688,
+  "pregunta": "¿Qué magnitud se mide en julios?",
+  "resp": [
+    "Energía",
+    "Potencia",
+    "Intensidad",
+    "Masa"
+  ],
+  "respc": "Energía",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 689,
+  "pregunta": "¿Qué proceso químico usan las plantas para obtener energía?",
+  "resp": [
+    "Respiración",
+    "Fotosíntesis",
+    "Fermentación",
+    "Combustión"
+  ],
+  "respc": "Fotosíntesis",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 690,
+  "pregunta": "¿Qué rama de las matemáticas estudia las probabilidades?",
+  "resp": [
+    "Álgebra",
+    "Geometría",
+    "Estadística",
+    "Trigonometría"
+  ],
+  "respc": "Estadística",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Mente Exacta"
+},
+{
+  "_id": 691,
+  "pregunta": "¿Qué es epistemología?",
+  "resp": [
+    "Estudio del conocimiento",
+    "Estudio de los organismos",
+    "Estudio de la sociedad",
+    "Estudio de los números"
+  ],
+  "respc": "Estudio del conocimiento",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 692,
+  "pregunta": "¿Qué es una hipótesis?",
+  "resp": [
+    "Un hecho comprobado",
+    "Una suposición que puede comprobarse",
+    "Una ley científica",
+    "Un principio matemático"
+  ],
+  "respc": "Una suposición que puede comprobarse",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 693,
+  "pregunta": "¿Qué significa “ética”?",
+  "resp": [
+    "Ciencia del comportamiento humano",
+    "Estudio del lenguaje",
+    "Análisis de textos",
+    "Códigos religiosos"
+  ],
+  "respc": "Ciencia del comportamiento humano",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 694,
+  "pregunta": "¿Qué es una variable dependiente?",
+  "resp": [
+    "La que se manipula",
+    "La que se mantiene constante",
+    "La que depende de otra",
+    "La que no cambia"
+  ],
+  "respc": "La que depende de otra",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 695,
+  "pregunta": "¿Qué es un paradigma?",
+  "resp": [
+    "Un modelo o ejemplo de referencia",
+    "Un error metodológico",
+    "Un proceso físico",
+    "Una unidad de medida"
+  ],
+  "respc": "Un modelo o ejemplo de referencia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 696,
+  "pregunta": "¿Qué significa “interdisciplinario”?",
+  "resp": [
+    "Que combina varias disciplinas o áreas de conocimiento",
+    "Que se limita a una sola ciencia",
+    "Que estudia la historia",
+    "Que se relaciona con la medicina"
+  ],
+  "respc": "Que combina varias disciplinas o áreas de conocimiento",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 697,
+  "pregunta": "¿Qué es el método científico?",
+  "resp": [
+    "Conjunto de pasos para generar conocimiento verificable",
+    "Teoría sobre la biología",
+    "Serie de opiniones personales",
+    "Método de enseñanza"
+  ],
+  "respc": "Conjunto de pasos para generar conocimiento verificable",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 698,
+  "pregunta": "¿Qué es un axioma?",
+  "resp": [
+    "Una hipótesis sin pruebas",
+    "Una verdad aceptada sin necesidad de demostración",
+    "Una teoría científica",
+    "Un postulado refutado"
+  ],
+  "respc": "Una verdad aceptada sin necesidad de demostración",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 699,
+  "pregunta": "¿Qué es un algoritmo?",
+  "resp": [
+    "Conjunto de pasos lógicos para resolver un problema",
+    "Un tipo de variable",
+    "Una ecuación sin solución",
+    "Un error de cálculo"
+  ],
+  "respc": "Conjunto de pasos lógicos para resolver un problema",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 700,
+  "pregunta": "¿Qué significa “globalización”?",
+  "resp": [
+    "Interconexión económica y cultural del mundo",
+    "Aislamiento político",
+    "Competencia regional",
+    "Expansión militar"
+  ],
+  "respc": "Interconexión económica y cultural del mundo",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 701,
+  "pregunta": "¿Qué es una metáfora?",
+  "resp": [
+    "Comparación implícita entre dos cosas",
+    "Expresión literal",
+    "Contradicción de ideas",
+    "Enumeración de hechos"
+  ],
+  "respc": "Comparación implícita entre dos cosas",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 702,
+  "pregunta": "¿Qué es la semántica?",
+  "resp": [
+    "Estudio del significado de las palabras",
+    "Estudio de la escritura",
+    "Estudio de la fonética",
+    "Estudio de la sintaxis"
+  ],
+  "respc": "Estudio del significado de las palabras",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 703,
+  "pregunta": "¿Qué significa “empírico”?",
+  "resp": [
+    "Basado en la experiencia",
+    "Basado en la teoría",
+    "Basado en la religión",
+    "Basado en el azar"
+  ],
+  "respc": "Basado en la experiencia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 704,
+  "pregunta": "¿Qué es una tesis?",
+  "resp": [
+    "Conclusión sin fundamento",
+    "Propuesta argumentada basada en investigación",
+    "Texto narrativo",
+    "Opinión sin evidencia"
+  ],
+  "respc": "Propuesta argumentada basada en investigación",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 705,
+  "pregunta": "¿Qué es una inferencia?",
+  "resp": [
+    "Conclusión derivada de una observación o dato",
+    "Hecho comprobado",
+    "Suposición falsa",
+    "Repetición de ideas"
+  ],
+  "respc": "Conclusión derivada de una observación o dato",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Letrinas"
+},
+{
+  "_id": 706,
+  "pregunta": "¿Qué acontecimiento marcó el inicio de la Edad Contemporánea?",
+  "resp": [
+    "La Revolución Francesa",
+    "El Renacimiento",
+    "El descubrimiento de América",
+    "La caída del Imperio Romano"
+  ],
+  "respc": "La Revolución Francesa",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 707,
+  "pregunta": "¿Qué país lideró la expansión colonial en el siglo XIX junto con Francia?",
+  "resp": [
+    "Alemania",
+    "Reino Unido",
+    "España",
+    "Portugal"
+  ],
+  "respc": "Reino Unido",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 708,
+  "pregunta": "¿Qué tratado puso fin a la Primera Guerra Mundial?",
+  "resp": [
+    "Tratado de Versalles",
+    "Tratado de París",
+    "Tratado de Roma",
+    "Tratado de Viena"
+  ],
+  "respc": "Tratado de Versalles",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 709,
+  "pregunta": "¿Qué ideología promovía la abolición de la propiedad privada y la igualdad social?",
+  "resp": [
+    "Capitalismo",
+    "Comunismo",
+    "Feudalismo",
+    "Liberalismo"
+  ],
+  "respc": "Comunismo",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 710,
+  "pregunta": "¿Quién fue el principal líder de la Revolución Rusa de 1917?",
+  "resp": [
+    "Lenin",
+    "Stalin",
+    "Trotsky",
+    "Gorbachev"
+  ],
+  "respc": "Lenin",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 711,
+  "pregunta": "¿Qué conflicto enfrentó a Estados Unidos y la Unión Soviética sin combate directo?",
+  "resp": [
+    "Guerra del Golfo",
+    "Guerra Fría",
+    "Segunda Guerra Mundial",
+    "Guerra de Vietnam"
+  ],
+  "respc": "Guerra Fría",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 712,
+  "pregunta": "¿Qué suceso ocurrió el 11 de septiembre de 2001?",
+  "resp": [
+    "Caída del Muro de Berlín",
+    "Atentados contra las Torres Gemelas",
+    "Guerra de Irak",
+    "Crisis del petróleo"
+  ],
+  "respc": "Atentados contra las Torres Gemelas",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 713,
+  "pregunta": "¿Qué país fue gobernado por Napoleón Bonaparte?",
+  "resp": [
+    "España",
+    "Francia",
+    "Italia",
+    "Alemania"
+  ],
+  "respc": "Francia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 714,
+  "pregunta": "¿Qué fue el Renacimiento?",
+  "resp": [
+    "Movimiento artístico y cultural que revivió el interés por la antigüedad clásica",
+    "Revolución científica del siglo XX",
+    "Reforma política europea",
+    "Periodo de guerras religiosas"
+  ],
+  "respc": "Movimiento artístico y cultural que revivió el interés por la antigüedad clásica",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 715,
+  "pregunta": "¿Qué país fue el primero en reconocer la independencia de México?",
+  "resp": [
+    "España",
+    "Francia",
+    "Estados Unidos",
+    "Inglaterra"
+  ],
+  "respc": "Estados Unidos",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 716,
+  "pregunta": "¿Qué fue la Ilustración?",
+  "resp": [
+    "Movimiento intelectual que promovió la razón y la ciencia",
+    "Periodo de guerras en Europa",
+    "Corriente religiosa",
+    "Reforma agrícola"
+  ],
+  "respc": "Movimiento intelectual que promovió la razón y la ciencia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 717,
+  "pregunta": "¿Qué civilización inventó la pólvora?",
+  "resp": [
+    "Egipcia",
+    "China",
+    "Griega",
+    "Persa"
+  ],
+  "respc": "China",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 718,
+  "pregunta": "¿Quién fue Mahatma Gandhi?",
+  "resp": [
+    "Líder pacifista de la independencia de India",
+    "Presidente de Sudáfrica",
+    "Emperador chino",
+    "Filósofo griego"
+  ],
+  "respc": "Líder pacifista de la independencia de India",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 719,
+  "pregunta": "¿En qué año cayó el Muro de Berlín?",
+  "resp": [
+    "1985",
+    "1987",
+    "1989",
+    "1991"
+  ],
+  "respc": "1989",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 720,
+  "pregunta": "¿Qué país fue el epicentro del Renacimiento?",
+  "resp": [
+    "Alemania",
+    "Inglaterra",
+    "Italia",
+    "España"
+  ],
+  "respc": "Italia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Chismes del Tiempo"
+},
+{
+  "_id": 721,
+  "pregunta": "¿Qué capa de la Tierra está compuesta principalmente por hierro y níquel?",
+  "resp": [
+    "Corteza",
+    "Manto",
+    "Núcleo",
+    "Hidrosfera"
+  ],
+  "respc": "Núcleo",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 722,
+  "pregunta": "¿Qué corriente marina influye en el clima seco del norte de Chile y Perú?",
+  "resp": [
+    "Corriente del Golfo",
+    "Corriente de Humboldt",
+    "Corriente del Niño",
+    "Corriente Ártica"
+  ],
+  "respc": "Corriente de Humboldt",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 723,
+  "pregunta": "¿Qué país tiene más husos horarios en el mundo?",
+  "resp": [
+    "Rusia",
+    "Estados Unidos",
+    "China",
+    "Canadá"
+  ],
+  "respc": "Rusia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 724,
+  "pregunta": "¿Cuál es la capital más alta del mundo?",
+  "resp": [
+    "Quito",
+    "La Paz",
+    "Katmandú",
+    "Bogotá"
+  ],
+  "respc": "La Paz",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 725,
+  "pregunta": "¿Qué río atraviesa Egipto?",
+  "resp": [
+    "Tigris",
+    "Nilo",
+    "Éufrates",
+    "Congo"
+  ],
+  "respc": "Nilo",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 726,
+  "pregunta": "¿Qué país no tiene salida al mar?",
+  "resp": [
+    "Paraguay",
+    "Venezuela",
+    "Uruguay",
+    "Colombia"
+  ],
+  "respc": "Paraguay",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 727,
+  "pregunta": "¿Qué línea imaginaria divide los hemisferios norte y sur?",
+  "resp": [
+    "Trópico de Capricornio",
+    "Ecuador",
+    "Meridiano de Greenwich",
+    "Paralelo 45"
+  ],
+  "respc": "Ecuador",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 728,
+  "pregunta": "¿Cuál es la capital de Australia?",
+  "resp": [
+    "Sídney",
+    "Canberra",
+    "Melbourne",
+    "Perth"
+  ],
+  "respc": "Canberra",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 729,
+  "pregunta": "¿Qué continente tiene la mayor densidad de población?",
+  "resp": [
+    "Europa",
+    "Asia",
+    "África",
+    "América"
+  ],
+  "respc": "Asia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 730,
+  "pregunta": "¿Qué océano separa América de Europa y África?",
+  "resp": [
+    "Pacífico",
+    "Índico",
+    "Atlántico",
+    "Ártico"
+  ],
+  "respc": "Atlántico",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 731,
+  "pregunta": "¿Qué tipo de proyección cartográfica conserva las formas, pero distorsiona las áreas?",
+  "resp": [
+    "Mercator",
+    "Peters",
+    "Robinson",
+    "Azimutal"
+  ],
+  "respc": "Mercator",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 732,
+  "pregunta": "¿Qué país posee la selva amazónica más extensa?",
+  "resp": [
+    "Perú",
+    "Bolivia",
+    "Brasil",
+    "Colombia"
+  ],
+  "respc": "Brasil",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 733,
+  "pregunta": "¿Cuál es la ciudad más poblada del mundo actualmente?",
+  "resp": [
+    "Shanghái",
+    "Tokio",
+    "Nueva Delhi",
+    "Ciudad de México"
+  ],
+  "respc": "Tokio",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 734,
+  "pregunta": "¿Qué fenómeno produce la alternancia del día y la noche?",
+  "resp": [
+    "La rotación de la Tierra",
+    "La traslación de la Tierra",
+    "La inclinación del eje terrestre",
+    "La precesión de los equinoccios"
+  ],
+  "respc": "La rotación de la Tierra",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 735,
+  "pregunta": "¿Qué país africano fue colonizado por Bélgica?",
+  "resp": [
+    "Angola",
+    "República Democrática del Congo",
+    "Sudáfrica",
+    "Marruecos"
+  ],
+  "respc": "República Democrática del Congo",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "GeoExplora"
+},
+{
+  "_id": 736,
+  "pregunta": "¿Quién escribió La Divina Comedia?",
+  "resp": [
+    "Dante Alighieri",
+    "Shakespeare",
+    "Cervantes",
+    "Goethe"
+  ],
+  "respc": "Dante Alighieri",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 737,
+  "pregunta": "¿Qué compositor es conocido por su obra La flauta mágica?",
+  "resp": [
+    "Bach",
+    "Beethoven",
+    "Mozart",
+    "Vivaldi"
+  ],
+  "respc": "Mozart",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 738,
+  "pregunta": "¿Cuál es el movimiento artístico de Picasso?",
+  "resp": [
+    "Impresionismo",
+    "Cubismo",
+    "Surrealismo",
+    "Barroco"
+  ],
+  "respc": "Cubismo",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 739,
+  "pregunta": "¿Qué novela marcó el inicio del realismo mágico?",
+  "resp": [
+    "Pedro Páramo",
+    "Rayuela",
+    "Cien años de soledad",
+    "La casa de los espíritus"
+  ],
+  "respc": "Cien años de soledad",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 740,
+  "pregunta": "¿Quién pintó La noche estrellada?",
+  "resp": [
+    "Monet",
+    "Van Gogh",
+    "Dalí",
+    "Renoir"
+  ],
+  "respc": "Van Gogh",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 741,
+  "pregunta": "¿Qué idioma tiene más hablantes nativos en el mundo?",
+  "resp": [
+    "Inglés",
+    "Español",
+    "Mandarín",
+    "Hindi"
+  ],
+  "respc": "Mandarín",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 742,
+  "pregunta": "¿Qué escritor mexicano ganó el Premio Nobel de Literatura?",
+  "resp": [
+    "Juan Rulfo",
+    "Octavio Paz",
+    "Carlos Fuentes",
+    "Elena Poniatowska"
+  ],
+  "respc": "Octavio Paz",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 743,
+  "pregunta": "¿Qué filósofo dijo “Pienso, luego existo”?",
+  "resp": [
+    "Sócrates",
+    "Descartes",
+    "Nietzsche",
+    "Kant"
+  ],
+  "respc": "Descartes",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 744,
+  "pregunta": "¿Qué país es famoso por el teatro Noh y el kimono?",
+  "resp": [
+    "Corea del Sur",
+    "Japón",
+    "China",
+    "Vietnam"
+  ],
+  "respc": "Japón",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 745,
+  "pregunta": "¿Qué obra es de Gabriel García Márquez?",
+  "resp": [
+    "El amor en los tiempos del cólera",
+    "Rayuela",
+    "La ciudad y los perros",
+    "Aura"
+  ],
+  "respc": "El amor en los tiempos del cólera",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 746,
+  "pregunta": "¿Qué estilo arquitectónico es característico de las catedrales medievales europeas?",
+  "resp": [
+    "Barroco",
+    "Románico",
+    "Gótico",
+    "Clásico"
+  ],
+  "respc": "Gótico",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 747,
+  "pregunta": "¿Qué película mexicana dirigida por Alejandro G. Iñárritu ganó el Óscar a Mejor Director?",
+  "resp": [
+    "Amores Perros",
+    "Birdman",
+    "Roma",
+    "Babel"
+  ],
+  "respc": "Birdman",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 748,
+  "pregunta": "¿Qué símbolo representa al budismo?",
+  "resp": [
+    "La cruz",
+    "La rueda del dharma",
+    "El yin-yang",
+    "El ojo de Horus"
+  ],
+  "respc": "La rueda del dharma",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 749,
+  "pregunta": "¿Qué festival celebra el Día de Muertos en México?",
+  "resp": [
+    "Guelaguetza",
+    "Noche de los Rábanos",
+    "Festival de las Almas",
+    "Tradición del 1 y 2 de noviembre"
+  ],
+  "respc": "Tradición del 1 y 2 de noviembre",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+},
+{
+  "_id": 750,
+  "pregunta": "¿Quién es el autor de El Principito?",
+  "resp": [
+    "Antoine de Saint-Exupéry",
+    "Victor Hugo",
+    "Franz Kafka",
+    "Ernest Hemingway"
+  ],
+  "respc": "Antoine de Saint-Exupéry",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "Español",
+  "tema": "Dati Nauta"
+}]

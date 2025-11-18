@@ -62,6 +62,7 @@ struct MENUVIEW: View {
         }
     }
 }
+
 #Preview {
     MENUVIEW()
 }

@@ -1,0 +1,5850 @@
+[{
+  "_id": 151,
+  "pregunta": "What is 7 + 8?",
+  "resp": [
+    "14",
+    "15",
+    "16",
+    "17"
+  ],
+  "respc": "15",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 152,
+  "pregunta": "What is the result of multiplying 5 × 3?",
+  "resp": [
+    "8",
+    "10",
+    "15",
+    "20"
+  ],
+  "respc": "15",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 153,
+  "pregunta": "What is a triangle?",
+  "resp": [
+    "A figure with 4 sides",
+    "A figure with 3 sides",
+    "A line",
+    "A circle"
+  ],
+  "respc": "A figure with 3 sides",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 154,
+  "pregunta": "Which planet is known as the \"Red Planet\"?",
+  "resp": [
+    "Jupiter",
+    "Mars",
+    "Saturn",
+    "Mercury"
+  ],
+  "respc": "Mars",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 155,
+  "pregunta": "What instrument is used to measure temperature?",
+  "resp": [
+    "Ruler",
+    "Thermometer",
+    "Stopwatch",
+    "Scale"
+  ],
+  "respc": "Thermometer",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 156,
+  "pregunta": "Which type of animal lays eggs?",
+  "resp": [
+    "Dog",
+    "Cat",
+    "Chicken",
+    "Lion"
+  ],
+  "respc": "Chicken",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 157,
+  "pregunta": "What happens when water boils?",
+  "resp": [
+    "It freezes",
+    "It evaporates",
+    "It gets dirty",
+    "It changes color"
+  ],
+  "respc": "It evaporates",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 158,
+  "pregunta": "Which of these numbers is odd?",
+  "resp": [
+    "8",
+    "10",
+    "11",
+    "12"
+  ],
+  "respc": "11",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 159,
+  "pregunta": "Which planet has rings?",
+  "resp": [
+    "Venus",
+    "Mars",
+    "Saturn",
+    "Neptune"
+  ],
+  "respc": "Saturn",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 160,
+  "pregunta": "What is the basic unit of matter?",
+  "resp": [
+    "Cell",
+    "Molecule",
+    "Atom",
+    "Element"
+  ],
+  "respc": "Atom",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 161,
+  "pregunta": "Which force keeps us on the ground?",
+  "resp": [
+    "Electricity",
+    "Gravity",
+    "Magnetism",
+    "Pressure"
+  ],
+  "respc": "Gravity",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 162,
+  "pregunta": "What number is double 12?",
+  "resp": [
+    "20",
+    "22",
+    "24",
+    "26"
+  ],
+  "respc": "24",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 163,
+  "pregunta": "Which planet is the largest in the solar system?",
+  "resp": [
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Uranus"
+  ],
+  "respc": "Jupiter",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 164,
+  "pregunta": "What instrument do we use to see small things?",
+  "resp": [
+    "Telescope",
+    "Microscope",
+    "Binoculars",
+    "Ruler"
+  ],
+  "respc": "Microscope",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 165,
+  "pregunta": "In what state do we see water in ice?",
+  "resp": [
+    "Liquid",
+    "Solid",
+    "Gas",
+    "None"
+  ],
+  "respc": "Solid",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 166,
+  "pregunta": "What is a noun?",
+  "resp": [
+    "An action",
+    "A name of a person, place, or thing",
+    "An emotion",
+    "A description"
+  ],
+  "respc": "A name of a person, place, or thing",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 167,
+  "pregunta": "What is a verb?",
+  "resp": [
+    "A word that expresses an action",
+    "A thing",
+    "A color",
+    "A food"
+  ],
+  "respc": "A word that expresses an action",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 168,
+  "pregunta": "What is photosynthesis?",
+  "resp": [
+    "The process of sleeping",
+    "The process by which plants make their food",
+    "When it rains",
+    "When a tree grows"
+  ],
+  "respc": "The process by which plants make their food",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 169,
+  "pregunta": "What is an ecosystem?",
+  "resp": [
+    "A single plant",
+    "A group of living beings and their environment",
+    "A volcano",
+    "A desert"
+  ],
+  "respc": "A group of living beings and their environment",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 170,
+  "pregunta": "What is a sentence?",
+  "resp": [
+    "A group of words with meaning",
+    "A letter",
+    "A syllable",
+    "A word"
+  ],
+  "respc": "A group of words with meaning",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 171,
+  "pregunta": "What is energy?",
+  "resp": [
+    "Something that gives us movement and strength",
+    "A food",
+    "A rock",
+    "A plant"
+  ],
+  "respc": "Something that gives us movement and strength",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 172,
+  "pregunta": "What is a computer?",
+  "resp": [
+    "A device for writing",
+    "A machine that processes information",
+    "A toy",
+    "A television"
+  ],
+  "respc": "A machine that processes information",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 173,
+  "pregunta": "What is recycling?",
+  "resp": [
+    "Throwing away garbage",
+    "Reusing materials",
+    "Buying more things",
+    "Painting"
+  ],
+  "respc": "Reusing materials",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 174,
+  "pregunta": "What is a planet?",
+  "resp": [
+    "A star",
+    "A body that orbits the Sun",
+    "A comet",
+    "A satellite"
+  ],
+  "respc": "A body that orbits the Sun",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 175,
+  "pregunta": "What is a scientist?",
+  "resp": [
+    "A person who studies and experiments",
+    "A singer",
+    "A carpenter",
+    "A farmer"
+  ],
+  "respc": "A person who studies and experiments",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 176,
+  "pregunta": "What is a cell?",
+  "resp": [
+    "The basic unit of living beings",
+    "A part of the atom",
+    "A mineral",
+    "An insect"
+  ],
+  "respc": "The basic unit of living beings",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 177,
+  "pregunta": "What is an adjective?",
+  "resp": [
+    "A word that describes something",
+    "A word that commands",
+    "A number",
+    "A pronoun"
+  ],
+  "respc": "A word that describes something",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 178,
+  "pregunta": "What is the human body?",
+  "resp": [
+    "A set of bones, muscles, and organs",
+    "A machine",
+    "A plant",
+    "A drawing"
+  ],
+  "respc": "A set of bones, muscles, and organs",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 179,
+  "pregunta": "What is drinking water?",
+  "resp": [
+    "Clean water for drinking",
+    "Dirty water",
+    "Sea water",
+    "Rainwater"
+  ],
+  "respc": "Clean water for drinking",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 180,
+  "pregunta": "What is the Moon?",
+  "resp": [
+    "A planet",
+    "A natural satellite of Earth",
+    "A star",
+    "A comet"
+  ],
+  "respc": "A natural satellite of Earth",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 181,
+  "pregunta": "Who was the first president of Mexico?",
+  "resp": [
+    "Porfirio Díaz",
+    "Benito Juárez",
+    "Guadalupe Victoria",
+    "Miguel Hidalgo"
+  ],
+  "respc": "Guadalupe Victoria",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 182,
+  "pregunta": "Which country built the Pyramids of Giza?",
+  "resp": [
+    "Greece",
+    "Egypt",
+    "Rome",
+    "China"
+  ],
+  "respc": "Egypt",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 183,
+  "pregunta": "Who painted “The Starry Night”?",
+  "resp": [
+    "Leonardo da Vinci",
+    "Vincent van Gogh",
+    "Michelangelo",
+    "Picasso"
+  ],
+  "respc": "Vincent van Gogh",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 184,
+  "pregunta": "What did Christopher Columbus discover?",
+  "resp": [
+    "America",
+    "Asia",
+    "Africa",
+    "Oceania"
+  ],
+  "respc": "America",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 185,
+  "pregunta": "In what year was Mexico’s Independence?",
+  "resp": [
+    "1810",
+    "1910",
+    "1821",
+    "1808"
+  ],
+  "respc": "1810",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 186,
+  "pregunta": "Who invented the telephone?",
+  "resp": [
+    "Thomas Edison",
+    "Alexander Graham Bell",
+    "Nikola Tesla",
+    "Einstein"
+  ],
+  "respc": "Alexander Graham Bell",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 187,
+  "pregunta": "Which empire built the Colosseum?",
+  "resp": [
+    "Egyptian",
+    "Roman",
+    "Chinese",
+    "Aztec"
+  ],
+  "respc": "Roman",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 188,
+  "pregunta": "What war ended in 1945?",
+  "resp": [
+    "French Revolution",
+    "World War I",
+    "World War II",
+    "Cold War"
+  ],
+  "respc": "World War II",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 189,
+  "pregunta": "Who was Frida Kahlo?",
+  "resp": [
+    "Mexican painter",
+    "Writer",
+    "Singer",
+    "Scientist"
+  ],
+  "respc": "Mexican painter",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 190,
+  "pregunta": "Which country used samurais in its history?",
+  "resp": [
+    "China",
+    "Japan",
+    "India",
+    "Korea"
+  ],
+  "respc": "Japan",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 191,
+  "pregunta": "Which civilization built Machu Picchu?",
+  "resp": [
+    "Aztec",
+    "Maya",
+    "Inca",
+    "Egyptian"
+  ],
+  "respc": "Inca",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 192,
+  "pregunta": "Who was Simón Bolívar?",
+  "resp": [
+    "Liberator of South America",
+    "Emperor",
+    "Painter",
+    "Writer"
+  ],
+  "respc": "Liberator of South America",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 193,
+  "pregunta": "What did Gutenberg invent?",
+  "resp": [
+    "The printing press",
+    "The microscope",
+    "The telescope",
+    "The telephone"
+  ],
+  "respc": "The printing press",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 194,
+  "pregunta": "Who was Marie Curie?",
+  "resp": [
+    "Scientist who studied radioactivity",
+    "Writer",
+    "Doctor",
+    "Inventor of the telephone"
+  ],
+  "respc": "Scientist who studied radioactivity",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 195,
+  "pregunta": "Which country used pharaohs?",
+  "resp": [
+    "Egypt",
+    "Greece",
+    "Mexico",
+    "Rome"
+  ],
+  "respc": "Egypt",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 196,
+  "pregunta": "Which is the largest ocean in the world?",
+  "resp": [
+    "Atlantic",
+    "Pacific",
+    "Indian",
+    "Arctic"
+  ],
+  "respc": "Pacific",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 197,
+  "pregunta": "Which continent has the most countries?",
+  "resp": [
+    "America",
+    "Asia",
+    "Africa",
+    "Europe"
+  ],
+  "respc": "Africa",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 198,
+  "pregunta": "Where is the Amazon rainforest located?",
+  "resp": [
+    "Mexico",
+    "Brazil",
+    "Egypt",
+    "United States"
+  ],
+  "respc": "Brazil",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 199,
+  "pregunta": "Which is the largest country in the world?",
+  "resp": [
+    "China",
+    "Russia",
+    "Canada",
+    "Brazil"
+  ],
+  "respc": "Russia",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 200,
+  "pregunta": "Which country has the shape of a boot?",
+  "resp": [
+    "Italy",
+    "France",
+    "Spain",
+    "Greece"
+  ],
+  "respc": "Italy",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 201,
+  "pregunta": "Where is the Sahara desert located?",
+  "resp": [
+    "America",
+    "Africa",
+    "Asia",
+    "Oceania"
+  ],
+  "respc": "Africa",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 202,
+  "pregunta": "Which is the most famous volcano in Mexico?",
+  "resp": [
+    "Popocatépetl",
+    "Etna",
+    "Vesuvio",
+    "Kilimanjaro"
+  ],
+  "respc": "Popocatépetl",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 203,
+  "pregunta": "Which country has Mount Everest?",
+  "resp": [
+    "India and Nepal",
+    "China and Japan",
+    "Mexico and Guatemala",
+    "Chile and Peru"
+  ],
+  "respc": "India and Nepal",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 204,
+  "pregunta": "Which is the longest river in the world?",
+  "resp": [
+    "Amazon",
+    "Nile",
+    "Mississippi",
+    "Yangtze"
+  ],
+  "respc": "Amazon",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 205,
+  "pregunta": "Which country has the Eiffel Tower?",
+  "resp": [
+    "France",
+    "Italy",
+    "Spain",
+    "England"
+  ],
+  "respc": "France",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 206,
+  "pregunta": "Which Mexican states have beaches?",
+  "resp": [
+    "Oaxaca and Veracruz",
+    "Hidalgo and Tlaxcala",
+    "Puebla and Querétaro",
+    "Aguascalientes and Zacatecas"
+  ],
+  "respc": "Oaxaca and Veracruz",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 207,
+  "pregunta": "Which country is long and narrow?",
+  "resp": [
+    "Chile",
+    "Peru",
+    "Argentina",
+    "Uruguay"
+  ],
+  "respc": "Chile",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 208,
+  "pregunta": "Where is the Yucatán Peninsula?",
+  "resp": [
+    "In the southeast of Mexico",
+    "In the north",
+    "In the center",
+    "In the west"
+  ],
+  "respc": "In the southeast of Mexico",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 209,
+  "pregunta": "Which continent is the furthest south on the planet?",
+  "resp": [
+    "Africa",
+    "Antarctica",
+    "Oceania",
+    "South America"
+  ],
+  "respc": "Antarctica",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 210,
+  "pregunta": "Which country has the shape of an inverted triangle?",
+  "resp": [
+    "Mexico",
+    "Canada",
+    "Cuba",
+    "United States"
+  ],
+  "respc": "Mexico",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 211,
+  "pregunta": "When is Mexico’s Independence Day celebrated?",
+  "resp": [
+    "May 5",
+    "September 16",
+    "November 20",
+    "November 2"
+  ],
+  "respc": "September 16",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 212,
+  "pregunta": "Which flower is used during Day of the Dead?",
+  "resp": [
+    "Cempasúchil (Marigold)",
+    "Rose",
+    "Sunflower",
+    "Lily"
+  ],
+  "respc": "Cempasúchil (Marigold)",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 213,
+  "pregunta": "Which instrument does a mariachi band use?",
+  "resp": [
+    "Guitar",
+    "Cello",
+    "Flute",
+    "Drums"
+  ],
+  "respc": "Guitar",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 214,
+  "pregunta": "What Mexican food is made from corn and wrapped in leaves?",
+  "resp": [
+    "Tamal",
+    "Taco",
+    "Enchilada",
+    "Quesadilla"
+  ],
+  "respc": "Tamal",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 215,
+  "pregunta": "Which sport is the most popular in Mexico?",
+  "resp": [
+    "Soccer",
+    "Baseball",
+    "Basketball",
+    "Track and Field"
+  ],
+  "respc": "Soccer",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 216,
+  "pregunta": "What colors does the Mexican flag have?",
+  "resp": [
+    "Green, White, and Red",
+    "Blue, White, and Red",
+    "Yellow and Black",
+    "White and Blue"
+  ],
+  "respc": "Green, White, and Red",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 217,
+  "pregunta": "What Mexican drink is made from corn and cocoa?",
+  "resp": [
+    "Atole",
+    "Coffee",
+    "Hibiscus tea",
+    "Horchata"
+  ],
+  "respc": "Atole",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 218,
+  "pregunta": "When is Children’s Day celebrated in Mexico?",
+  "resp": [
+    "April 30",
+    "October 12",
+    "May 10",
+    "January 6"
+  ],
+  "respc": "April 30",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 219,
+  "pregunta": "What Mexican candy contains chili and tamarind?",
+  "resp": [
+    "Pulparindo",
+    "Chocolate",
+    "Paleta Payaso",
+    "Mazapán"
+  ],
+  "respc": "Pulparindo",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 220,
+  "pregunta": "Which historical figure shouted “¡Viva México!”?",
+  "resp": [
+    "Miguel Hidalgo",
+    "Emiliano Zapata",
+    "Porfirio Díaz",
+    "Francisco I. Madero"
+  ],
+  "respc": "Miguel Hidalgo",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 221,
+  "pregunta": "What do we celebrate on December 12?",
+  "resp": [
+    "Day of the Virgin of Guadalupe",
+    "Day of the Dead",
+    "Independence Day",
+    "Labor Day"
+  ],
+  "respc": "Day of the Virgin of Guadalupe",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 222,
+  "pregunta": "What animal is on the national emblem of Mexico?",
+  "resp": [
+    "Eagle",
+    "Jaguar",
+    "Wolf",
+    "Snake only"
+  ],
+  "respc": "Eagle",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 223,
+  "pregunta": "What dish is eaten in Mexico during September?",
+  "resp": [
+    "Chiles en Nogada",
+    "Pozole",
+    "Crispy tacos",
+    "Enchiladas"
+  ],
+  "respc": "Chiles en Nogada",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 224,
+  "pregunta": "What traditional dance is famous in Jalisco?",
+  "resp": [
+    "Jarabe Tapatío",
+    "Salsa",
+    "Tango",
+    "Reggaeton"
+  ],
+  "respc": "Jarabe Tapatío",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 225,
+  "pregunta": "What do we celebrate on January 6?",
+  "resp": [
+    "Three Kings’ Day",
+    "Children’s Day",
+    "Labor Day",
+    "Independence Day"
+  ],
+  "respc": "Three Kings’ Day",
+  "edad": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 376,
+  "pregunta": "What is photosynthesis?",
+  "resp": [
+    "A digestion process",
+    "A process by which plants produce their food",
+    "A type of animal respiration",
+    "A chemical reaction of fire"
+  ],
+  "respc": "A process by which plants produce their food",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 377,
+  "pregunta": "What is the chemical formula of water?",
+  "resp": [
+    "CO₂",
+    "H₂O",
+    "O₂",
+    "HO₂"
+  ],
+  "respc": "H₂O",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 378,
+  "pregunta": "Which branch of science studies living beings?",
+  "resp": [
+    "Chemistry",
+    "Physics",
+    "Biology",
+    "Mathematics"
+  ],
+  "respc": "Biology",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 379,
+  "pregunta": "Which of the following is a gas?",
+  "resp": [
+    "Ice",
+    "Water vapor",
+    "Iron",
+    "Sand"
+  ],
+  "respc": "Water vapor",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 380,
+  "pregunta": "What force causes objects to fall to the ground?",
+  "resp": [
+    "Friction",
+    "Energy",
+    "Gravity",
+    "Electricity"
+  ],
+  "respc": "Gravity",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 381,
+  "pregunta": "What is 3²?",
+  "resp": [
+    "3",
+    "6",
+    "9",
+    "12"
+  ],
+  "respc": "9",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 382,
+  "pregunta": "What is the smallest prime number?",
+  "resp": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "respc": "2",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 383,
+  "pregunta": "What does a thermometer measure?",
+  "resp": [
+    "Weight",
+    "Temperature",
+    "Speed",
+    "Length"
+  ],
+  "respc": "Temperature",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 384,
+  "pregunta": "Which part of the atom has a negative charge?",
+  "resp": [
+    "Proton",
+    "Neutron",
+    "Electron",
+    "Nucleus"
+  ],
+  "respc": "Electron",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 385,
+  "pregunta": "What is the unit of measure for energy?",
+  "resp": [
+    "Meter",
+    "Joule",
+    "Gram",
+    "Volt"
+  ],
+  "respc": "Joule",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 386,
+  "pregunta": "Which is the largest planet in the solar system?",
+  "resp": [
+    "Saturn",
+    "Jupiter",
+    "Neptune",
+    "Mars"
+  ],
+  "respc": "Jupiter",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 387,
+  "pregunta": "What instrument is used to measure mass?",
+  "resp": [
+    "Ruler",
+    "Scale",
+    "Stopwatch",
+    "Microscope"
+  ],
+  "respc": "Scale",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 388,
+  "pregunta": "What is the state of water at temperatures below 0°C?",
+  "resp": [
+    "Liquid",
+    "Solid",
+    "Gas",
+    "Plasma"
+  ],
+  "respc": "Solid",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 389,
+  "pregunta": "What type of energy does a battery produce?",
+  "resp": [
+    "Wind energy",
+    "Solar energy",
+    "Chemical energy",
+    "Mechanical energy"
+  ],
+  "respc": "Chemical energy",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 390,
+  "pregunta": "Which scientist formulated the law of universal gravitation?",
+  "resp": [
+    "Einstein",
+    "Newton",
+    "Galileo",
+    "Copernicus"
+  ],
+  "respc": "Newton",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 391,
+  "pregunta": "What is an ecosystem?",
+  "resp": [
+    "A group of identical animals",
+    "The set of living beings and their environment",
+    "A type of plant",
+    "An ocean zone"
+  ],
+  "respc": "The set of living beings and their environment",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 392,
+  "pregunta": "What does “democracy” mean?",
+  "resp": [
+    "Government by the few",
+    "Government by the people",
+    "Military government",
+    "Divine government"
+  ],
+  "respc": "Government by the people",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 393,
+  "pregunta": "What is a verb?",
+  "resp": [
+    "An action",
+    "An object",
+    "An adjective",
+    "An emotion"
+  ],
+  "respc": "An action",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 394,
+  "pregunta": "What is an atom?",
+  "resp": [
+    "A very small living being",
+    "The smallest particle of matter",
+    "A type of molecule",
+    "An electron"
+  ],
+  "respc": "The smallest particle of matter",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 395,
+  "pregunta": "What is a map?",
+  "resp": [
+    "A decorative drawing",
+    "A representation of a place",
+    "A list of countries",
+    "A graph of numbers"
+  ],
+  "respc": "A representation of a place",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 396,
+  "pregunta": "What does the word “history” mean?",
+  "resp": [
+    "An invented story",
+    "The study of the past",
+    "A fantasy narration",
+    "An ancient painting"
+  ],
+  "respc": "The study of the past",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 397,
+  "pregunta": "What is matter?",
+  "resp": [
+    "Everything that takes up space and has mass",
+    "Only liquids",
+    "Numbers",
+    "Dreams"
+  ],
+  "respc": "Everything that takes up space and has mass",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 398,
+  "pregunta": "What is an adjective?",
+  "resp": [
+    "A word that describes a noun",
+    "A word that replaces names",
+    "A word that indicates action",
+    "A word used to connect phrases"
+  ],
+  "respc": "A word that describes a noun",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 399,
+  "pregunta": "What does recycling mean?",
+  "resp": [
+    "Use it only once",
+    "Reusing materials",
+    "Throwing away trash",
+    "Burning waste"
+  ],
+  "respc": "Reusing materials",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 400,
+  "pregunta": "What is the solar system?",
+  "resp": [
+    "A group of planets that orbit the Sun",
+    "A collection of stars",
+    "A type of galaxy",
+    "A group of satellites"
+  ],
+  "respc": "A group of planets that orbit the Sun",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 401,
+  "pregunta": "What is geography?",
+  "resp": [
+    "The study of the climate",
+    "The study of the Earth",
+    "The study of art",
+    "The study of the human body"
+  ],
+  "respc": "The study of the Earth",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 402,
+  "pregunta": "What does biodiversity mean?",
+  "resp": [
+    "A low variety of animals",
+    "A great variety of living beings",
+    "Only domestic animals",
+    "Aquatic plants"
+  ],
+  "respc": "A great variety of living beings",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 403,
+  "pregunta": "What is an autotrophic organism?",
+  "resp": [
+    "One that eats other living beings",
+    "One that produces its own food",
+    "One that does not move",
+    "One that lives under water"
+  ],
+  "respc": "One that produces its own food",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 404,
+  "pregunta": "What is a cell?",
+  "resp": [
+    "A type of bacterium",
+    "The basic unit of life",
+    "A plant tissue",
+    "A virus"
+  ],
+  "respc": "The basic unit of life",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 405,
+  "pregunta": "What is a hypothesis?",
+  "resp": [
+    "An assumption that can be tested",
+    "A scientific law",
+    "A finished experiment",
+    "An exact observation"
+  ],
+  "respc": "An assumption that can be tested",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 406,
+  "pregunta": "On which continent did the Egyptian civilization arise?",
+  "resp": [
+    "Asia",
+    "Europe",
+    "Africa",
+    "America"
+  ],
+  "respc": "Africa",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 407,
+  "pregunta": "Who was Christopher Columbus?",
+  "resp": [
+    "A Roman conqueror",
+    "The discoverer of America",
+    "An Aztec emperor",
+    "A European painter"
+  ],
+  "respc": "The discoverer of America",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 408,
+  "pregunta": "What invention revolutionized reading in the 15th century?",
+  "resp": [
+    "The compass",
+    "The printing press",
+    "The telescope",
+    "The microscope"
+  ],
+  "respc": "The printing press",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 409,
+  "pregunta": "In which country was democracy born?",
+  "resp": [
+    "Rome",
+    "Egypt",
+    "Greece",
+    "China"
+  ],
+  "respc": "Greece",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 410,
+  "pregunta": "Which civilization built the pyramids?",
+  "resp": [
+    "Greek",
+    "Egyptian",
+    "Roman",
+    "Chinese"
+  ],
+  "respc": "Egyptian",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 411,
+  "pregunta": "In what year did World War II begin?",
+  "resp": [
+    "1914",
+    "1939",
+    "1945",
+    "1960"
+  ],
+  "respc": "1939",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 412,
+  "pregunta": "Which country first used the atomic bomb?",
+  "resp": [
+    "Germany",
+    "United States",
+    "Russia",
+    "Japan"
+  ],
+  "respc": "United States",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 413,
+  "pregunta": "Who painted the Mona Lisa?",
+  "resp": [
+    "Michelangelo",
+    "Leonardo da Vinci",
+    "Raphael",
+    "Botticelli"
+  ],
+  "respc": "Leonardo da Vinci",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 414,
+  "pregunta": "Which empire built the Colosseum?",
+  "resp": [
+    "Roman",
+    "Greek",
+    "Persian",
+    "Egyptian"
+  ],
+  "respc": "Roman",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 415,
+  "pregunta": "Who was Napoleon Bonaparte?",
+  "resp": [
+    "An English scientist",
+    "A French emperor",
+    "A Spanish explorer",
+    "A Greek philosopher"
+  ],
+  "respc": "A French emperor",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 416,
+  "pregunta": "What event marked the beginning of the Modern Age?",
+  "resp": [
+    "The fall of Rome",
+    "The discovery of America",
+    "The Industrial Revolution",
+    "The First World War"
+  ],
+  "respc": "The discovery of America",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 417,
+  "pregunta": "Which country was the birthplace of the Industrial Revolution?",
+  "resp": [
+    "France",
+    "England",
+    "Germany",
+    "United States"
+  ],
+  "respc": "England",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 418,
+  "pregunta": "Which civilization invented cuneiform writing?",
+  "resp": [
+    "Egyptian",
+    "Sumerian",
+    "Roman",
+    "Chinese"
+  ],
+  "respc": "Sumerian",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 419,
+  "pregunta": "Who was the first human to reach space?",
+  "resp": [
+    "Neil Armstrong",
+    "Yuri Gagarin",
+    "Buzz Aldrin",
+    "Alan Shepard"
+  ],
+  "respc": "Yuri Gagarin",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 420,
+  "pregunta": "Which country started the French Revolution?",
+  "resp": [
+    "Spain",
+    "France",
+    "Italy",
+    "Russia"
+  ],
+  "respc": "France",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 421,
+  "pregunta": "Which is the largest country in the world?",
+  "resp": [
+    "Canada",
+    "Russia",
+    "China",
+    "United States"
+  ],
+  "respc": "Russia",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 422,
+  "pregunta": "Which is the largest ocean on the planet?",
+  "resp": [
+    "Atlantic",
+    "Indian",
+    "Pacific",
+    "Arctic"
+  ],
+  "respc": "Pacific",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 423,
+  "pregunta": "On which continent is Mexico located?",
+  "resp": [
+    "America",
+    "Europe",
+    "Asia",
+    "Africa"
+  ],
+  "respc": "America",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 424,
+  "pregunta": "Which is the longest river in the world?",
+  "resp": [
+    "Amazon",
+    "Nile",
+    "Mississippi",
+    "Yangtze"
+  ],
+  "respc": "Nile",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 425,
+  "pregunta": "What is the name of the highest point on Earth?",
+  "resp": [
+    "White Mountain",
+    "Mount Everest",
+    "Eagle Peak",
+    "Mount Fuji"
+  ],
+  "respc": "Mount Everest",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 426,
+  "pregunta": "In which continent is the Sahara Desert?",
+  "resp": [
+    "Asia",
+    "America",
+    "Africa",
+    "Oceania"
+  ],
+  "respc": "Africa",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 427,
+  "pregunta": "What is the capital of France?",
+  "resp": [
+    "Berlin",
+    "Paris",
+    "Rome",
+    "Lisbon"
+  ],
+  "respc": "Paris",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 428,
+  "pregunta": "Which ocean bathes Mexico's coast to the east?",
+  "resp": [
+    "Atlantic",
+    "Pacific",
+    "Indian",
+    "Arctic"
+  ],
+  "respc": "Atlantic",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 429,
+  "pregunta": "Which is the coldest continent?",
+  "resp": [
+    "Asia",
+    "Oceania",
+    "Antarctica",
+    "Europe"
+  ],
+  "respc": "Antarctica",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 430,
+  "pregunta": "Which imaginary line divides the Earth into the northern and southern hemispheres?",
+  "resp": [
+    "Tropic of Capricorn",
+    "Equator",
+    "Prime Meridian",
+    "Polar Circle"
+  ],
+  "respc": "Equator",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 431,
+  "pregunta": "Which country has the largest population in the world?",
+  "resp": [
+    "India",
+    "China",
+    "United States",
+    "Indonesia"
+  ],
+  "respc": "China",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 432,
+  "pregunta": "What type of map shows countries and their borders?",
+  "resp": [
+    "Physical",
+    "Political",
+    "Climatic",
+    "Economic"
+  ],
+  "respc": "Political",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 433,
+  "pregunta": "Which of the following is a country in South America?",
+  "resp": [
+    "Portugal",
+    "Argentina",
+    "Egypt",
+    "Japan"
+  ],
+  "respc": "Argentina",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 434,
+  "pregunta": "Which ocean separates America from Europe?",
+  "resp": [
+    "Indian",
+    "Pacific",
+    "Atlantic",
+    "Arctic"
+  ],
+  "respc": "Atlantic",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 435,
+  "pregunta": "Which country has the shape of a boot on the map?",
+  "resp": [
+    "Greece",
+    "Italy",
+    "Spain",
+    "France"
+  ],
+  "respc": "Italy",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 436,
+  "pregunta": "What is the most spoken language in the world?",
+  "resp": [
+    "English",
+    "Spanish",
+    "Mandarin Chinese",
+    "Arabic"
+  ],
+  "respc": "Mandarin Chinese",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 437,
+  "pregunta": "Which instrument has white and black keys?",
+  "resp": [
+    "Guitar",
+    "Piano",
+    "Violin",
+    "Flute"
+  ],
+  "respc": "Piano",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 438,
+  "pregunta": "Which country is famous for sushi?",
+  "resp": [
+    "China",
+    "Korea",
+    "Japan",
+    "Vietnam"
+  ],
+  "respc": "Japan",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 439,
+  "pregunta": "Which Mexican celebration honors the dead?",
+  "resp": [
+    "Christmas",
+    "Day of the Dead",
+    "Independence Day",
+    "Holy Week"
+  ],
+  "respc": "Day of the Dead",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 440,
+  "pregunta": "Which sport is played with a ball and a high net?",
+  "resp": [
+    "Soccer",
+    "Basketball",
+    "Volleyball",
+    "Tennis"
+  ],
+  "respc": "Volleyball",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 441,
+  "pregunta": "Which author created “Harry Potter”?",
+  "resp": [
+    "Suzanne Collins",
+    "J. K. Rowling",
+    "Rick Riordan",
+    "Stephen King"
+  ],
+  "respc": "J. K. Rowling",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 442,
+  "pregunta": "Which country is famous for the Eiffel Tower?",
+  "resp": [
+    "England",
+    "France",
+    "Italy",
+    "Germany"
+  ],
+  "respc": "France",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 443,
+  "pregunta": "Which famous painting was made by Leonardo da Vinci?",
+  "resp": [
+    "Starry Night",
+    "Mona Lisa",
+    "The Scream",
+    "Las Meninas"
+  ],
+  "respc": "Mona Lisa",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 444,
+  "pregunta": "What color is formed by mixing red and yellow?",
+  "resp": [
+    "Orange",
+    "Green",
+    "Purple",
+    "Pink"
+  ],
+  "respc": "Orange",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 445,
+  "pregunta": "Which dance is typical in Argentina?",
+  "resp": [
+    "Flamenco",
+    "Tango",
+    "Salsa",
+    "Cumbia"
+  ],
+  "respc": "Tango",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 446,
+  "pregunta": "Which country celebrates the Rio Carnival?",
+  "resp": [
+    "Colombia",
+    "Brazil",
+    "Chile",
+    "Peru"
+  ],
+  "respc": "Brazil",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 447,
+  "pregunta": "Which instrument has strings and is played with a bow?",
+  "resp": [
+    "Piano",
+    "Violin",
+    "Drums",
+    "Clarinet"
+  ],
+  "respc": "Violin",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 448,
+  "pregunta": "Which Disney movie features a lion named Simba?",
+  "resp": [
+    "Aladdin",
+    "The Lion King",
+    "Mulan",
+    "Tarzan"
+  ],
+  "respc": "The Lion King",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 449,
+  "pregunta": "What is a mural?",
+  "resp": [
+    "A sculpture",
+    "A painting on a wall",
+    "A poem",
+    "A song"
+  ],
+  "respc": "A painting on a wall",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 450,
+  "pregunta": "Which ancient culture built Chichen Itza?",
+  "resp": [
+    "Aztec",
+    "Maya",
+    "Inca",
+    "Toltec"
+  ],
+  "respc": "Maya",
+  "edad": [
+    12,
+    13,
+    14,
+    15
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 601,
+  "pregunta": "Which scientist proposed the theory of relativity?",
+  "resp": [
+    "Isaac Newton",
+    "Albert Einstein",
+    "Galileo Galilei",
+    "Stephen Hawking"
+  ],
+  "respc": "Albert Einstein",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 602,
+  "pregunta": "What does Ohm's law measure?",
+  "resp": [
+    "Force",
+    "Electric current",
+    "Electrical resistance",
+    "Temperature"
+  ],
+  "respc": "Electrical resistance",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 603,
+  "pregunta": "What is the formula for the area of a triangle?",
+  "resp": [
+    "Base × height",
+    "(Base × height) / 2",
+    "Side × side",
+    "(Side × side) / 2"
+  ],
+  "respc": "(Base × height) / 2",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 604,
+  "pregunta": "What type of bond is formed when atoms share electrons?",
+  "resp": [
+    "Ionic",
+    "Covalent",
+    "Metallic",
+    "Magnetic"
+  ],
+  "respc": "Covalent",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 605,
+  "pregunta": "What type of energy does a solar panel produce?",
+  "resp": [
+    "Chemical energy",
+    "Mechanical energy",
+    "Electrical energy",
+    "Thermal energy"
+  ],
+  "respc": "Electrical energy",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 606,
+  "pregunta": "What is the speed of light in a vacuum?",
+  "resp": [
+    "3,000 km/s",
+    "300,000 km/s",
+    "30,000 km/s",
+    "3 km/s"
+  ],
+  "respc": "300,000 km/s",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 607,
+  "pregunta": "Which branch of biology studies genes and inheritance?",
+  "resp": [
+    "Anatomy",
+    "Genetics",
+    "Ecology",
+    "Zoology"
+  ],
+  "respc": "Genetics",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 608,
+  "pregunta": "Which chemical element has the symbol \"Fe\"?",
+  "resp": [
+    "Fluorine",
+    "Phosphorus",
+    "Iron",
+    "Francium"
+  ],
+  "respc": "Iron",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 609,
+  "pregunta": "What does it mean if a substance is acidic?",
+  "resp": [
+    "It has a pH greater than 7",
+    "It has a pH equal to 7",
+    "It has a pH less than 7",
+    "It has no pH"
+  ],
+  "respc": "It has a pH less than 7",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 610,
+  "pregunta": "What is the formula for hydrogen peroxide?",
+  "resp": [
+    "H₂O",
+    "H₂O₂",
+    "CO₂",
+    "HO₂"
+  ],
+  "respc": "H₂O₂",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 611,
+  "pregunta": "What type of motion describes a circular path?",
+  "resp": [
+    "Rectilinear",
+    "Parabolic",
+    "Circular",
+    "Harmonic"
+  ],
+  "respc": "Circular",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 612,
+  "pregunta": "What is the unit of pressure measurement?",
+  "resp": [
+    "Pascal",
+    "Newton",
+    "Joule",
+    "Watt"
+  ],
+  "respc": "Pascal",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 613,
+  "pregunta": "Which subatomic particle has a positive charge?",
+  "resp": [
+    "Electron",
+    "Proton",
+    "Neutron",
+    "Photon"
+  ],
+  "respc": "Proton",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 614,
+  "pregunta": "What does trigonometry study?",
+  "resp": [
+    "Three-dimensional figures",
+    "The relationships between the sides and angles of a triangle",
+    "The speed of objects",
+    "Prime numbers"
+  ],
+  "respc": "The relationships between the sides and angles of a triangle",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 615,
+  "pregunta": "What is the name of the phase change from liquid to gas?",
+  "resp": [
+    "Sublimation",
+    "Condensation",
+    "Evaporation",
+    "Solidification"
+  ],
+  "respc": "Evaporation",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 616,
+  "pregunta": "What is a eukaryotic cell?",
+  "resp": [
+    "A cell without a defined nucleus",
+    "A cell with a defined nucleus",
+    "A bacterium",
+    "A virus"
+  ],
+  "respc": "A cell with a defined nucleus",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 617,
+  "pregunta": "What is globalization?",
+  "resp": [
+    "An economic and cultural process that connects the world",
+    "The independence of countries",
+    "Political isolation",
+    "An ecological system"
+  ],
+  "respc": "An economic and cultural process that connects the world",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 618,
+  "pregunta": "What is ethics?",
+  "resp": [
+    "The study of language",
+    "The study of good and evil",
+    "The art of writing",
+    "The science of the human body"
+  ],
+  "respc": "The study of good and evil",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 619,
+  "pregunta": "What does “DNA” mean?",
+  "resp": [
+    "Deoxyribonucleic acid",
+    "Ribonucleic acid",
+    "Amino acid nuclear",
+    "Nucleus antigen"
+  ],
+  "respc": "Deoxyribonucleic acid",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 620,
+  "pregunta": "What is a paradigm?",
+  "resp": [
+    "A theory that never changes",
+    "A model or example that serves as a reference",
+    "A scientific error",
+    "A failed experiment"
+  ],
+  "respc": "A model or example that serves as a reference",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 621,
+  "pregunta": "What is a metaphor?",
+  "resp": [
+    "A direct comparison",
+    "A comparison without using “like” or “seems”",
+    "A synonym",
+    "An exaggeration"
+  ],
+  "respc": "A comparison without using “like” or “seems”",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 622,
+  "pregunta": "What is an ecosystem?",
+  "resp": [
+    "A group of mountains",
+    "The interaction between living beings and their environment",
+    "A food chain",
+    "A type of climate"
+  ],
+  "respc": "The interaction between living beings and their environment",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 623,
+  "pregunta": "What is kinetic energy?",
+  "resp": [
+    "Stored energy",
+    "Energy of movement",
+    "Chemical energy",
+    "Thermal energy"
+  ],
+  "respc": "Energy of movement",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 624,
+  "pregunta": "What is the Renaissance?",
+  "resp": [
+    "A religious war",
+    "A cultural and artistic movement in Europe",
+    "A political revolution",
+    "A Roman architectural style"
+  ],
+  "respc": "A cultural and artistic movement in Europe",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 625,
+  "pregunta": "What is democracy?",
+  "resp": [
+    "Government by one person",
+    "Government by the people",
+    "Military government",
+    "Hereditary government"
+  ],
+  "respc": "Government by the people",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 626,
+  "pregunta": "What is a hypothesis?",
+  "resp": [
+    "An assumption that can be tested",
+    "A scientific result",
+    "A proven fact",
+    "A universal law"
+  ],
+  "respc": "An assumption that can be tested",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 627,
+  "pregunta": "What is a nation?",
+  "resp": [
+    "A group of people with common customs and territory",
+    "An international company",
+    "An isolated ethnic group",
+    "A small province"
+  ],
+  "respc": "A group of people with common customs and territory",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 628,
+  "pregunta": "What is global warming?",
+  "resp": [
+    "The cooling of the planet",
+    "The increase in temperature caused by polluting gases",
+    "The change of seasons",
+    "A natural phenomenon of the Sun"
+  ],
+  "respc": "The increase in temperature caused by polluting gases",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 629,
+  "pregunta": "What is an essay?",
+  "resp": [
+    "An argumentative text on a topic",
+    "A short story",
+    "A formal letter",
+    "A news article"
+  ],
+  "respc": "An argumentative text on a topic",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 630,
+  "pregunta": "What is philosophy?",
+  "resp": [
+    "The study of animals",
+    "The study of truth and wisdom",
+    "The science of climate",
+    "The art of writing"
+  ],
+  "respc": "The study of truth and wisdom",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 631,
+  "pregunta": "In which year did the Western Roman Empire fall?",
+  "resp": [
+    "395 A.D.",
+    "410 A.D.",
+    "476 A.D.",
+    "500 A.D."
+  ],
+  "respc": "476 A.D.",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 632,
+  "pregunta": "Who was the first Roman emperor?",
+  "resp": [
+    "Julius Caesar",
+    "Augustus",
+    "Nero",
+    "Constantine"
+  ],
+  "respc": "Augustus",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 633,
+  "pregunta": "Which civilization built Machu Picchu?",
+  "resp": [
+    "Aztec",
+    "Inca",
+    "Maya",
+    "Toltec"
+  ],
+  "respc": "Inca",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 634,
+  "pregunta": "What event marked the beginning of the Modern Age?",
+  "resp": [
+    "The fall of Rome",
+    "The discovery of America",
+    "The French Revolution",
+    "The Industrial Revolution"
+  ],
+  "respc": "The discovery of America",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 635,
+  "pregunta": "What document did King John of England sign in 1215?",
+  "resp": [
+    "The English Constitution",
+    "The Magna Carta",
+    "The Treaty of Versailles",
+    "The Declaration of Human Rights"
+  ],
+  "respc": "The Magna Carta",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 636,
+  "pregunta": "In which century did the French Revolution occur?",
+  "resp": [
+    "17th",
+    "18th",
+    "19th",
+    "20th"
+  ],
+  "respc": "18th",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 637,
+  "pregunta": "Which country started the Industrial Revolution?",
+  "resp": [
+    "France",
+    "England",
+    "Germany",
+    "United States"
+  ],
+  "respc": "England",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 638,
+  "pregunta": "Which treaty ended World War I?",
+  "resp": [
+    "Treaty of Paris",
+    "Treaty of Versailles",
+    "Treaty of Rome",
+    "Treaty of Geneva"
+  ],
+  "respc": "Treaty of Versailles",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 639,
+  "pregunta": "Who was Karl Marx?",
+  "resp": [
+    "A German philosopher and economist",
+    "A British inventor",
+    "A French politician",
+    "A Russian military"
+  ],
+  "respc": "A German philosopher and economist",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 640,
+  "pregunta": "Which country was divided by the Berlin Wall?",
+  "resp": [
+    "Poland",
+    "Germany",
+    "Czechoslovakia",
+    "Hungary"
+  ],
+  "respc": "Germany",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 641,
+  "pregunta": "Who led the independence of the South American colonies?",
+  "resp": [
+    "Simón Bolívar",
+    "José Martí",
+    "San Martín",
+    "Porfirio Díaz"
+  ],
+  "respc": "Simón Bolívar",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 642,
+  "pregunta": "In what year did man land on the moon?",
+  "resp": [
+    "1959",
+    "1969",
+    "1979",
+    "1989"
+  ],
+  "respc": "1969",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 643,
+  "pregunta": "Which civilization invented writing?",
+  "resp": [
+    "Egyptian",
+    "Sumerian",
+    "Chinese",
+    "Roman"
+  ],
+  "respc": "Sumerian",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 644,
+  "pregunta": "Which country was the first to industrialize in the Americas?",
+  "resp": [
+    "United States",
+    "Mexico",
+    "Canada",
+    "Brazil"
+  ],
+  "respc": "United States",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 645,
+  "pregunta": "Which movement sought racial equality in the United States during the 1960s?",
+  "resp": [
+    "Feminism",
+    "Civil Rights Movement",
+    "Anarchism",
+    "Environmentalism"
+  ],
+  "respc": "Civil Rights Movement",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 646,
+  "pregunta": "Which line divides the Earth into the Eastern and Western Hemispheres?",
+  "resp": [
+    "Equator",
+    "Prime Meridian",
+    "Tropic of Cancer",
+    "Arctic Circle"
+  ],
+  "respc": "Prime Meridian",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 647,
+  "pregunta": "Which country has the largest population in the world?",
+  "resp": [
+    "China",
+    "India",
+    "United States",
+    "Russia"
+  ],
+  "respc": "India",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 648,
+  "pregunta": "Which is the largest country in America?",
+  "resp": [
+    "Canada",
+    "United States",
+    "Brazil",
+    "Mexico"
+  ],
+  "respc": "Canada",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 649,
+  "pregunta": "Which is the longest river in South America?",
+  "resp": [
+    "Orinoco",
+    "Paraná",
+    "Amazon",
+    "Magdalena"
+  ],
+  "respc": "Amazon",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 650,
+  "pregunta": "Which continent has the most deserts?",
+  "resp": [
+    "Africa",
+    "Oceania",
+    "Asia",
+    "America"
+  ],
+  "respc": "Asia",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 651,
+  "pregunta": "What is an archipelago?",
+  "resp": [
+    "A group of islands",
+    "A mountain range",
+    "A river system",
+    "A desert zone"
+  ],
+  "respc": "A group of islands",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 652,
+  "pregunta": "What is the capital of Canada?",
+  "resp": [
+    "Toronto",
+    "Montreal",
+    "Ottawa",
+    "Vancouver"
+  ],
+  "respc": "Ottawa",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 653,
+  "pregunta": "Which country borders Mexico to the north?",
+  "resp": [
+    "Guatemala",
+    "Belize",
+    "United States",
+    "Canada"
+  ],
+  "respc": "United States",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 654,
+  "pregunta": "What type of map shows the relief of the terrain?",
+  "resp": [
+    "Political",
+    "Physical",
+    "Economic",
+    "Urban"
+  ],
+  "respc": "Physical",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 655,
+  "pregunta": "Which sea separates Europe from Africa?",
+  "resp": [
+    "Red Sea",
+    "Caribbean Sea",
+    "Mediterranean Sea",
+    "Black Sea"
+  ],
+  "respc": "Mediterranean Sea",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 656,
+  "pregunta": "In which continent is Mount Kilimanjaro located?",
+  "resp": [
+    "Asia",
+    "Africa",
+    "Europe",
+    "Oceania"
+  ],
+  "respc": "Africa",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 657,
+  "pregunta": "Which country is located furthest south in the American continent?",
+  "resp": [
+    "Chile",
+    "Argentina",
+    "Peru",
+    "Uruguay"
+  ],
+  "respc": "Chile",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 658,
+  "pregunta": "Which natural phenomenon is measured by the Richter scale?",
+  "resp": [
+    "Hurricanes",
+    "Tsunamis",
+    "Earthquakes",
+    "Tornadoes"
+  ],
+  "respc": "Earthquakes",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 659,
+  "pregunta": "Which country has the shape of a \"boot\"?",
+  "resp": [
+    "Spain",
+    "Italy",
+    "France",
+    "Greece"
+  ],
+  "respc": "Italy",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 660,
+  "pregunta": "Which ocean surrounds Antarctica?",
+  "resp": [
+    "Atlantic",
+    "Indian",
+    "Pacific",
+    "Southern Ocean"
+  ],
+  "respc": "Southern Ocean",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 661,
+  "pregunta": "Who wrote \"One Hundred Years of Solitude\"?",
+  "resp": [
+    "Pablo Neruda",
+    "Mario Vargas Llosa",
+    "Gabriel García Márquez",
+    "Julio Cortázar"
+  ],
+  "respc": "Gabriel García Márquez",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 662,
+  "pregunta": "What is the cultural capital of France?",
+  "resp": [
+    "Lyon",
+    "Paris",
+    "Marseille",
+    "Toulouse"
+  ],
+  "respc": "Paris",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 663,
+  "pregunta": "Which artist painted the ceiling of the Sistine Chapel?",
+  "resp": [
+    "Raphael",
+    "Michelangelo",
+    "Leonardo da Vinci",
+    "Donatello"
+  ],
+  "respc": "Michelangelo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 664,
+  "pregunta": "Which artistic movement represents dreams or images of the subconscious?",
+  "resp": [
+    "Impressionism",
+    "Cubism",
+    "Surrealism",
+    "Romanticism"
+  ],
+  "respc": "Surrealism",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 665,
+  "pregunta": "Which country is known for reggae music?",
+  "resp": [
+    "Cuba",
+    "Jamaica",
+    "Brazil",
+    "United States"
+  ],
+  "respc": "Jamaica",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 666,
+  "pregunta": "Which instrument is characteristic of mariachi music?",
+  "resp": [
+    "Flute",
+    "Violin",
+    "Guitar",
+    "Trumpet"
+  ],
+  "respc": "Trumpet",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 667,
+  "pregunta": "Which author wrote \"Don Quixote de la Mancha\"?",
+  "resp": [
+    "Lope de Vega",
+    "Calderón de la Barca",
+    "Miguel de Cervantes",
+    "Gustavo Adolfo Bécquer"
+  ],
+  "respc": "Miguel de Cervantes",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 668,
+  "pregunta": "Which Mexican film won the Oscar for Best Foreign Film in 2019?",
+  "resp": [
+    "Amores Perros",
+    "Roma",
+    "Biutiful",
+    "Babel"
+  ],
+  "respc": "Roma",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 669,
+  "pregunta": "What does \"folklore\" mean?",
+  "resp": [
+    "The science of art",
+    "The collection of traditions and customs of a people",
+    "Musical poetry",
+    "Classical dance"
+  ],
+  "respc": "The collection of traditions and customs of a people",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 670,
+  "pregunta": "Which country is known for pizza and pasta?",
+  "resp": [
+    "Spain",
+    "France",
+    "Italy",
+    "Greece"
+  ],
+  "respc": "Italy",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 671,
+  "pregunta": "Which Mexican dance is performed with machetes?",
+  "resp": [
+    "Danza del Venado",
+    "Jarabe Tapatío",
+    "Danza de los Viejitos",
+    "Danza de los Parachicos"
+  ],
+  "respc": "Danza de los Parachicos",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 672,
+  "pregunta": "Who composed the Ninth Symphony?",
+  "resp": [
+    "Mozart",
+    "Beethoven",
+    "Bach",
+    "Tchaikovsky"
+  ],
+  "respc": "Beethoven",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 673,
+  "pregunta": "Which ancient culture built the Parthenon?",
+  "resp": [
+    "Egyptian",
+    "Greek",
+    "Roman",
+    "Persian"
+  ],
+  "respc": "Greek",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 674,
+  "pregunta": "Which Mexican writer is the author of \"The Labyrinth of Solitude\"?",
+  "resp": [
+    "Juan Rulfo",
+    "Octavio Paz",
+    "Carlos Fuentes",
+    "José Emilio Pacheco"
+  ],
+  "respc": "Octavio Paz",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 675,
+  "pregunta": "Which Mexican painter is known for her surrealist style and self-portraits?",
+  "resp": [
+    "Remedios Varo",
+    "Frida Kahlo",
+    "Leonora Carrington",
+    "Tina Modotti"
+  ],
+  "respc": "Frida Kahlo",
+  "edad": [
+    16,
+    17,
+    18
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 826,
+  "pregunta": "What is the universal gravitational constant?",
+  "resp": [
+    "6.67 × 10⁻¹¹ N·m²/kg²",
+    "3.00 × 10⁸ m/s",
+    "9.8 m/s²",
+    "1.6 × 10⁻¹⁹ C"
+  ],
+  "respc": "6.67 × 10⁻¹¹ N·m²/kg²",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 827,
+  "pregunta": "What does thermodynamics study?",
+  "resp": [
+    "The movement of bodies",
+    "Heat and its transformations into energy",
+    "Light and its properties",
+    "The structure of the atom"
+  ],
+  "respc": "Heat and its transformations into energy",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 828,
+  "pregunta": "What unit measures the intensity of electric current?",
+  "resp": [
+    "Volt",
+    "Ohm",
+    "Watt",
+    "Ampere"
+  ],
+  "respc": "Ampere",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 829,
+  "pregunta": "What does it mean for a reaction to be exothermic?",
+  "resp": [
+    "It absorbs heat",
+    "It releases heat",
+    "It occurs without oxygen",
+    "It produces light"
+  ],
+  "respc": "It releases heat",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 830,
+  "pregunta": "What is Avogadro’s number?",
+  "resp": [
+    "3.14",
+    "6.022 × 10²³",
+    "9.81",
+    "1.67 × 10⁻²⁷"
+  ],
+  "respc": "6.022 × 10²³",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 831,
+  "pregunta": "Which of the following is a noble gas?",
+  "resp": [
+    "Nitrogen",
+    "Neon",
+    "Oxygen",
+    "Hydrogen"
+  ],
+  "respc": "Neon",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 832,
+  "pregunta": "What type of bond is formed between a metal and a non-metal?",
+  "resp": [
+    "Ionic",
+    "Covalent",
+    "Metallic",
+    "Nuclear"
+  ],
+  "respc": "Ionic",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 833,
+  "pregunta": "Which formula represents Ohm's law?",
+  "resp": [
+    "F = m·a",
+    "V = I·R",
+    "E = m·c²",
+    "P = F/A"
+  ],
+  "respc": "V = I·R",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 834,
+  "pregunta": "Which particle has a negative charge in the atom?",
+  "resp": [
+    "Proton",
+    "Neutron",
+    "Electron",
+    "Positron"
+  ],
+  "respc": "Electron",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 835,
+  "pregunta": "What is a derivative in calculus?",
+  "resp": [
+    "The area under a curve",
+    "The instantaneous change of a function",
+    "The average of values",
+    "The square root of a variable"
+  ],
+  "respc": "The instantaneous change of a function",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 836,
+  "pregunta": "What does “pH” represent?",
+  "resp": [
+    "Hydrogen potential",
+    "Hydraulic weight",
+    "Hydroxide point",
+    "Hydrostatic pressure"
+  ],
+  "respc": "Hydrogen potential",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 837,
+  "pregunta": "What type of wave is light?",
+  "resp": [
+    "Mechanical",
+    "Longitudinal",
+    "Electromagnetic",
+    "Sound"
+  ],
+  "respc": "Electromagnetic",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 838,
+  "pregunta": "What magnitude is measured in joules?",
+  "resp": [
+    "Energy",
+    "Power",
+    "Intensity",
+    "Mass"
+  ],
+  "respc": "Energy",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 839,
+  "pregunta": "What chemical process do plants use to obtain energy?",
+  "resp": [
+    "Respiration",
+    "Photosynthesis",
+    "Fermentation",
+    "Combustion"
+  ],
+  "respc": "Photosynthesis",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 840,
+  "pregunta": "Which branch of mathematics studies probabilities?",
+  "resp": [
+    "Algebra",
+    "Geometry",
+    "Statistics",
+    "Trigonometry"
+  ],
+  "respc": "Statistics",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Exact Mind"
+},
+{
+  "_id": 841,
+  "pregunta": "What is epistemology?",
+  "resp": [
+    "The study of knowledge",
+    "The study of organisms",
+    "The study of society",
+    "The study of numbers"
+  ],
+  "respc": "The study of knowledge",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 842,
+  "pregunta": "What is a hypothesis?",
+  "resp": [
+    "A proven fact",
+    "An assumption that can be tested",
+    "A scientific law",
+    "A mathematical principle"
+  ],
+  "respc": "An assumption that can be tested",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 843,
+  "pregunta": "What does “ethics” mean?",
+  "resp": [
+    "The study of human behavior",
+    "The study of language",
+    "Text analysis",
+    "Religious codes"
+  ],
+  "respc": "The study of human behavior",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 844,
+  "pregunta": "What is a dependent variable?",
+  "resp": [
+    "The one that is manipulated",
+    "The one that remains constant",
+    "The one that depends on another",
+    "The one that does not change"
+  ],
+  "respc": "The one that depends on another",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 845,
+  "pregunta": "What is a paradigm?",
+  "resp": [
+    "A model or example for reference",
+    "A methodological error",
+    "A physical process",
+    "A unit of measurement"
+  ],
+  "respc": "A model or example for reference",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 846,
+  "pregunta": "What does “interdisciplinary” mean?",
+  "resp": [
+    "It combines multiple disciplines or areas of knowledge",
+    "It is limited to one science",
+    "It studies history",
+    "It is related to medicine"
+  ],
+  "respc": "It combines multiple disciplines or areas of knowledge",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 847,
+  "pregunta": "What is the scientific method?",
+  "resp": [
+    "A set of steps to generate verifiable knowledge",
+    "A theory about biology",
+    "A series of personal opinions",
+    "A teaching method"
+  ],
+  "respc": "A set of steps to generate verifiable knowledge",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 848,
+  "pregunta": "What is an axiom?",
+  "resp": [
+    "A hypothesis without evidence",
+    "A truth accepted without the need for proof",
+    "A scientific theory",
+    "A refuted postulate"
+  ],
+  "respc": "A truth accepted without the need for proof",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 849,
+  "pregunta": "What is an algorithm?",
+  "resp": [
+    "A set of logical steps to solve a problem",
+    "A type of variable",
+    "An equation with no solution",
+    "A calculation error"
+  ],
+  "respc": "A set of logical steps to solve a problem",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 850,
+  "pregunta": "What does “globalization” mean?",
+  "resp": [
+    "Economic and cultural interconnectedness of the world",
+    "Political isolation",
+    "Regional competition",
+    "Military expansion"
+  ],
+  "respc": "Economic and cultural interconnectedness of the world",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 851,
+  "pregunta": "What is a metaphor?",
+  "resp": [
+    "An implicit comparison between two things",
+    "A literal expression",
+    "A contradiction of ideas",
+    "A listing of facts"
+  ],
+  "respc": "An implicit comparison between two things",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 852,
+  "pregunta": "What is semantics?",
+  "resp": [
+    "The study of the meaning of words",
+    "The study of writing",
+    "The study of phonetics",
+    "The study of syntax"
+  ],
+  "respc": "The study of the meaning of words",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 853,
+  "pregunta": "What does “empirical” mean?",
+  "resp": [
+    "Based on experience",
+    "Based on theory",
+    "Based on religion",
+    "Based on chance"
+  ],
+  "respc": "Based on experience",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 854,
+  "pregunta": "What is a thesis?",
+  "resp": [
+    "An unsupported conclusion",
+    "An argued proposal based on research",
+    "A narrative text",
+    "An unfounded opinion"
+  ],
+  "respc": "An argued proposal based on research",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 855,
+  "pregunta": "What is an inference?",
+  "resp": [
+    "A conclusion drawn from an observation or data",
+    "A proven fact",
+    "A false assumption",
+    "A repetition of ideas"
+  ],
+  "respc": "A conclusion drawn from an observation or data",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Latrines"
+},
+{
+  "_id": 856,
+  "pregunta": "What event marked the beginning of the Contemporary Age?",
+  "resp": [
+    "The French Revolution",
+    "The Renaissance",
+    "The discovery of America",
+    "The fall of the Roman Empire"
+  ],
+  "respc": "The French Revolution",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 857,
+  "pregunta": "Which country led the colonial expansion in the 19th century along with France?",
+  "resp": [
+    "Germany",
+    "United Kingdom",
+    "Spain",
+    "Portugal"
+  ],
+  "respc": "United Kingdom",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 858,
+  "pregunta": "Which treaty ended World War I?",
+  "resp": [
+    "Treaty of Versailles",
+    "Treaty of Paris",
+    "Treaty of Rome",
+    "Treaty of Vienna"
+  ],
+  "respc": "Treaty of Versailles",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 859,
+  "pregunta": "Which ideology promoted the abolition of private property and social equality?",
+  "resp": [
+    "Capitalism",
+    "Communism",
+    "Feudalism",
+    "Liberalism"
+  ],
+  "respc": "Communism",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 860,
+  "pregunta": "Who was the main leader of the Russian Revolution of 1917?",
+  "resp": [
+    "Lenin",
+    "Stalin",
+    "Trotsky",
+    "Gorbachev"
+  ],
+  "respc": "Lenin",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 861,
+  "pregunta": "What conflict opposed the United States and the Soviet Union without direct combat?",
+  "resp": [
+    "Gulf War",
+    "Cold War",
+    "World War II",
+    "Vietnam War"
+  ],
+  "respc": "Cold War",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 862,
+  "pregunta": "What event occurred on September 11, 2001?",
+  "resp": [
+    "Fall of the Berlin Wall",
+    "Attacks on the Twin Towers",
+    "Gulf War",
+    "Oil Crisis"
+  ],
+  "respc": "Attacks on the Twin Towers",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 863,
+  "pregunta": "Which country was governed by Napoleon Bonaparte?",
+  "resp": [
+    "Spain",
+    "France",
+    "Italy",
+    "Germany"
+  ],
+  "respc": "France",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 864,
+  "pregunta": "What was the Renaissance?",
+  "resp": [
+    "An artistic and cultural movement that revived interest in classical antiquity",
+    "A 20th-century scientific revolution",
+    "A European political reform",
+    "A period of religious wars"
+  ],
+  "respc": "An artistic and cultural movement that revived interest in classical antiquity",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 865,
+  "pregunta": "Which country was the first to recognize the independence of Mexico?",
+  "resp": [
+    "Spain",
+    "France",
+    "United States",
+    "United Kingdom"
+  ],
+  "respc": "United States",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 866,
+  "pregunta": "What was the Enlightenment?",
+  "resp": [
+    "An intellectual movement that promoted reason and science",
+    "A European war period",
+    "A religious movement",
+    "An agricultural reform"
+  ],
+  "respc": "An intellectual movement that promoted reason and science",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 867,
+  "pregunta": "Which civilization invented gunpowder?",
+  "resp": [
+    "Egyptian",
+    "Chinese",
+    "Greek",
+    "Persian"
+  ],
+  "respc": "Chinese",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 868,
+  "pregunta": "Who was Mahatma Gandhi?",
+  "resp": [
+    "A pacifist leader of India’s independence",
+    "A president from South Africa",
+    "A Chinese emperor",
+    "A Greek philosopher"
+  ],
+  "respc": "A pacifist leader of India’s independence",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 869,
+  "pregunta": "In what year did the Berlin Wall fall?",
+  "resp": [
+    "1985",
+    "1987",
+    "1989",
+    "1991"
+  ],
+  "respc": "1989",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 870,
+  "pregunta": "Which country was the epicenter of the Renaissance?",
+  "resp": [
+    "Germany",
+    "United Kingdom",
+    "Italy",
+    "Spain"
+  ],
+  "respc": "Italy",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Gossip of Time"
+},
+{
+  "_id": 871,
+  "pregunta": "Which layer of the Earth is primarily composed of iron and nickel?",
+  "resp": [
+    "Crust",
+    "Mantle",
+    "Core",
+    "Hydrosphere"
+  ],
+  "respc": "Core",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 872,
+  "pregunta": "Which ocean current influences the dry climate of northern Chile and Peru?",
+  "resp": [
+    "Gulf Stream",
+    "Humboldt Current",
+    "El Niño",
+    "Arctic Current"
+  ],
+  "respc": "Humboldt Current",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 873,
+  "pregunta": "Which country has the most time zones in the world?",
+  "resp": [
+    "Russia",
+    "United States",
+    "China",
+    "Canada"
+  ],
+  "respc": "Russia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 874,
+  "pregunta": "What is the highest capital city in the world?",
+  "resp": [
+    "Quito",
+    "La Paz",
+    "Kathmandu",
+    "Bogotá"
+  ],
+  "respc": "La Paz",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 875,
+  "pregunta": "Which river crosses Egypt?",
+  "resp": [
+    "Tigris",
+    "Nile",
+    "Euphrates",
+    "Congo"
+  ],
+  "respc": "Nile",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 876,
+  "pregunta": "Which country has no access to the sea?",
+  "resp": [
+    "Paraguay",
+    "Venezuela",
+    "Uruguay",
+    "Colombia"
+  ],
+  "respc": "Paraguay",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 877,
+  "pregunta": "Which imaginary line divides the Earth into the northern and southern hemispheres?",
+  "resp": [
+    "Tropic of Capricorn",
+    "Equator",
+    "Greenwich Meridian",
+    "Parallel 45"
+  ],
+  "respc": "Equator",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 878,
+  "pregunta": "What is the capital of Australia?",
+  "resp": [
+    "Sydney",
+    "Canberra",
+    "Melbourne",
+    "Perth"
+  ],
+  "respc": "Canberra",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 879,
+  "pregunta": "Which region has the highest population density?",
+  "resp": [
+    "Europe",
+    "Asia",
+    "Africa",
+    "America"
+  ],
+  "respc": "Asia",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 880,
+  "pregunta": "Which ocean separates America from Europe and Africa?",
+  "resp": [
+    "Pacific",
+    "Indian",
+    "Atlantic",
+    "Arctic"
+  ],
+  "respc": "Atlantic",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 881,
+  "pregunta": "Which type of map preserves shapes but distorts areas?",
+  "resp": [
+    "Mercator",
+    "Peters",
+    "Robinson",
+    "Azimuthal"
+  ],
+  "respc": "Azimuthal",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 882,
+  "pregunta": "Which country has the largest part of the Amazon rainforest?",
+  "resp": [
+    "Peru",
+    "Bolivia",
+    "Brazil",
+    "Colombia"
+  ],
+  "respc": "Brazil",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 883,
+  "pregunta": "Which is the most populous city in the world today?",
+  "resp": [
+    "Shanghai",
+    "Tokyo",
+    "New Delhi",
+    "Mexico City"
+  ],
+  "respc": "Tokyo",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 884,
+  "pregunta": "Which natural phenomenon causes day and night?",
+  "resp": [
+    "The rotation of the Earth",
+    "The orbit of the Earth",
+    "The tilt of the Earth’s axis",
+    "The precession of the equinoxes"
+  ],
+  "respc": "The rotation of the Earth",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 885,
+  "pregunta": "Which African country was colonized by Belgium?",
+  "resp": [
+    "Angola",
+    "Democratic Republic of the Congo",
+    "South Africa",
+    "Morocco"
+  ],
+  "respc": "Democratic Republic of the Congo",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "GeoExplore"
+},
+{
+  "_id": 886,
+  "pregunta": "Who wrote \"The Divine Comedy\"?",
+  "resp": [
+    "Dante Alighieri",
+    "Shakespeare",
+    "Cervantes",
+    "Goethe"
+  ],
+  "respc": "Dante Alighieri",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 887,
+  "pregunta": "Which composer is known for his work \"The Magic Flute\"?",
+  "resp": [
+    "Bach",
+    "Beethoven",
+    "Mozart",
+    "Vivaldi"
+  ],
+  "respc": "Mozart",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 888,
+  "pregunta": "What artistic movement is Picasso known for?",
+  "resp": [
+    "Impressionism",
+    "Cubism",
+    "Surrealism",
+    "Baroque"
+  ],
+  "respc": "Cubism",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 889,
+  "pregunta": "What novel marked the beginning of magical realism?",
+  "resp": [
+    "Pedro Páramo",
+    "Hopscotch",
+    "One Hundred Years of Solitude",
+    "The House of the Spirits"
+  ],
+  "respc": "One Hundred Years of Solitude",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 890,
+  "pregunta": "Who painted \"Starry Night\"?",
+  "resp": [
+    "Monet",
+    "Van Gogh",
+    "Dalí",
+    "Renoir"
+  ],
+  "respc": "Van Gogh",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 891,
+  "pregunta": "Which language has the most native speakers in the world?",
+  "resp": [
+    "English",
+    "Spanish",
+    "Mandarin Chinese",
+    "Hindi"
+  ],
+  "respc": "Mandarin Chinese",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 892,
+  "pregunta": "Which Mexican author won the Nobel Prize in Literature?",
+  "resp": [
+    "Juan Rulfo",
+    "Octavio Paz",
+    "Carlos Fuentes",
+    "Elena Poniatowska"
+  ],
+  "respc": "Octavio Paz",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 893,
+  "pregunta": "Who said 'I think, therefore I am'?",
+  "resp": [
+    "Socrates",
+    "Descartes",
+    "Nietzsche",
+    "Kant"
+  ],
+  "respc": "Descartes",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 894,
+  "pregunta": "Which country is known for Noh theater and the kimono?",
+  "resp": [
+    "South Korea",
+    "Japan",
+    "China",
+    "Vietnam"
+  ],
+  "respc": "Japan",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 895,
+  "pregunta": "Which work is by Gabriel García Márquez?",
+  "resp": [
+    "Love in the Time of Cholera",
+    "Hopscotch",
+    "The City and the Dogs",
+    "Aura"
+  ],
+  "respc": "Love in the Time of Cholera",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 896,
+  "pregunta": "What architectural style is characteristic of medieval European cathedrals?",
+  "resp": [
+    "Baroque",
+    "Romanesque",
+    "Gothic",
+    "Classical"
+  ],
+  "respc": "Gothic",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 897,
+  "pregunta": "What Mexican film directed by Alejandro G. Iñárritu won the Oscar for Best Director?",
+  "resp": [
+    "Amores Perros",
+    "Birdman",
+    "Roma",
+    "Babel"
+  ],
+  "respc": "Birdman",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 898,
+  "pregunta": "What symbol represents Buddhism?",
+  "resp": [
+    "The cross",
+    "The dharma wheel",
+    "The yin-yang",
+    "The eye of Horus"
+  ],
+  "respc": "The dharma wheel",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 899,
+  "pregunta": "What festival celebrates the Day of the Dead in Mexico?",
+  "resp": [
+    "Guelaguetza",
+    "Night of the Radishes",
+    "Festival of Souls",
+    "Tradition of November 1st and 2nd"
+  ],
+  "respc": "Tradition of November 1st and 2nd",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+},
+{
+  "_id": 900,
+  "pregunta": "Who is the author of \"The Little Prince\"?",
+  "resp": [
+    "Antoine de Saint-Exupéry",
+    "Victor Hugo",
+    "Franz Kafka",
+    "Ernest Hemingway"
+  ],
+  "respc": "Antoine de Saint-Exupéry",
+  "edad": [
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "idioma": "English",
+  "tema": "Data Nauta"
+}]

@@ -1,0 +1,361 @@
+
+// DATONAUTAVIEW.swift
+// Braincrack
+//
+// Created by Edna Sanchez on 09/11/25.
+//
+// DATONAUTAVIEW.swift
+// Braincrack
+//
+// Created by Edna Sanchez on 09/11/25.
+//
+
+import SwiftUI
+import Foundation
+import SDWebImageSwiftUI
+import AVFoundation
+import FirebaseFirestore
+import FirebaseAuth
+
+// MARK: - 1. Modelo de Pregunta
+struct Pregunta1: Codable, Identifiable {
+    let id: Int
+    let pregunta: String
+    let resp: [String]
+    let respc: String
+    let edad: [Int]
+    let idioma: String
+    let tema: String
+
+    enum CodingKeys: String, CodingKey {
+        case id = "_id"
+        case pregunta, resp, respc, edad, idioma, tema
+    }
+}
+
+// MARK: - 2. Servicio de Carga Local
+final class LocalQuestionsService1 {
+    
+    func cargarPreguntasDesdeJSON(idioma: String) -> [Pregunta1] {
+        var fileName: String
+        
+        // Definir el nombre del archivo basado en el idioma
+        switch idioma.lowercased() {
+        case "español":
+            fileName = "preguntas-espanol"
+        case "english":
+            fileName = "preguntas-ingles"
+        case "deutsch":
+            fileName = "preguntas-aleman"
+        default:
+            fileName = "preguntas-espanol" // Predeterminado a español
+        }
+        
+        guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
+            print("❌ ERROR: No se encontró \(fileName).json")
+            return []
+        }
+        
+        do {
+            let data = try Data(contentsOf: url)
+            let preguntas = try JSONDecoder().decode([Pregunta1].self, from: data)
+            print("✅ Preguntas cargadas: \(preguntas.count) para el idioma \(idioma)")
+            return preguntas
+        } catch {
+            print("❌ ERROR al decodificar JSON:", error)
+            return []
+        }
+    }
+}
+
+// MARK: - 3. Fondos según tema
+enum FondoTema1 {
+    case DATONAUTA
+    case DEFAULT
+    
+    static func fondo(para tema: String) -> FondoTema1 {
+        switch tema {
+        case "Data Nauta", "Daten Nauta", "Dati Nauta":
+            return .DATONAUTA
+        default:
+            return .DEFAULT
+        }
+    }
+}
+
+// MARK: - 4. ViewModel
+final class DataNautaViewModel: ObservableObject {
+    
+    @Published var preguntas: [Pregunta1] = []
+    @Published var preguntaActual: Pregunta1?
+    @Published var scoreActual: Int = 0
+    @Published var mejorScore: Int = 0
+    @Published var gameOver: Bool = false
+    @Published var ultimaFueCorrecta: Bool? = nil
+    @Published var isLoading: Bool = true
+    @Published var errorMessage: String?
+    
+    private let questionsService = LocalQuestionsService()
+    private let edadUsuario = 9  // Ajusta la edad del usuario aquí
+    private var preguntasDisponibles: [Pregunta1] = []
+    
+    private var idiomaUsuario: String {
+        let code = Locale.current.language.languageCode?.identifier.lowercased() ?? "es"
+        switch code {
+        case "en": return "English"
+        case "es": return "Español"
+        case "de": return "Deutsch"
+        default:   return "Español"
+        }
+    }
+    
+    init() {
+        cargarMejorScore()
+        cargarPreguntasLocales()
+    }
+    
+    func cargarPreguntasLocales() {
+        isLoading = true
+        errorMessage = nil
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+            guard let self = self else { return }
+            
+            // Cargar preguntas desde JSON - CORREGIDO: usa self.idiomaUsuario
+            let todas = self.questionsService.cargarPreguntasDesdeJSON()
+            
+            // Filtrar por idioma y edad
+            let filtradas = todas.filter { pregunta in
+                let idiomaPregunta = pregunta.idioma.lowercased()
+                
+                let idiomaMatch =
+                    (idiomaPregunta.contains("español") || idiomaPregunta.contains("es")) && self.idiomaUsuario == "Español" ||
+                    (idiomaPregunta.contains("english") || idiomaPregunta.contains("en")) && self.idiomaUsuario == "English" ||
+                    (idiomaPregunta.contains("deutsch") || idiomaPregunta.contains("de")) && self.idiomaUsuario == "Deutsch"
+                
+                let temaMatch = pregunta.tema == "Data Nauta" ||
+                               pregunta.tema == "Daten Nauta" ||
+                               pregunta.tema == "Dati Nauta"
+                
+                return idiomaMatch && pregunta.edad.contains(self.edadUsuario) && temaMatch
+            }
+            
+            if filtradas.isEmpty {
+                self.errorMessage = "No hay preguntas disponibles para \(self.idiomaUsuario) y edad \(self.edadUsuario)"
+                self.isLoading = false
+                return
+            }
+            
+            self.preguntas = filtradas as! [Pregunta1]
+            self.preguntasDisponibles = filtradas.shuffled() as! [Pregunta1]
+            self.scoreActual = 0
+            self.ultimaFueCorrecta = nil
+            self.isLoading = false
+            self.gameOver = false
+            self.siguientePregunta()
+        }
+    }
+    
+    func reiniciarPartida() {
+        preguntasDisponibles = preguntas.shuffled()
+        scoreActual = 0
+        gameOver = false
+        ultimaFueCorrecta = nil
+        siguientePregunta()
+    }
+    
+    func responder(opcion: String) {
+        guard let actual = preguntaActual else { return }
+        
+        if opcion == actual.respc {
+            ultimaFueCorrecta = true
+            scoreActual += 10
+            siguientePregunta()
+        } else {
+            ultimaFueCorrecta = false
+            if scoreActual > mejorScore {
+                mejorScore = scoreActual
+                guardarMejorScore()
+            }
+            gameOver = true
+        }
+    }
+    
+    private func siguientePregunta() {
+        guard !preguntasDisponibles.isEmpty else {
+            // El jugador terminó todas las preguntas
+            if scoreActual > mejorScore {
+                mejorScore = scoreActual
+                guardarMejorScore()
+            }
+            gameOver = true
+            return
+        }
+        
+        preguntaActual = preguntasDisponibles.removeFirst()
+    }
+    
+    // MARK: - UserDefaults para guardar mejor score
+    private func guardarMejorScore() {
+        UserDefaults.standard.set(mejorScore, forKey: "mejorScoreDataNauta")
+    }
+    
+    private func cargarMejorScore() {
+        mejorScore = UserDefaults.standard.integer(forKey: "mejorScoreDataNauta")
+    }
+}
+
+// MARK: - 5. Vista Principal
+struct DATONAUTAVIEW: View {
+    
+    @StateObject private var vm = DataNautaViewModel()
+    
+    var body: some View {
+        ZStack {
+            fondoDinamico()
+            
+            VStack {
+                if vm.isLoading {
+                    ProgressView("Cargando preguntas...")
+                        .tint(.white)
+                        .foregroundColor(.white)
+                } else if let error = vm.errorMessage {
+                    VStack(spacing: 20) {
+                        Text("Error")
+                            .font(.title)
+                            .foregroundColor(.red)
+                        Text(error)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                        Button("Reintentar") {
+                            vm.cargarPreguntasLocales()
+                        }
+                        .padding()
+                        .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                        .foregroundColor(.white)
+                        .cornerRadius(12)
+                    }
+                    .padding()
+                } else if vm.gameOver {
+                    vistaGameOver
+                } else {
+                    vistaJuego
+                }
+            }
+        }
+        .ignoresSafeArea()
+    }
+    
+    // MARK: Fondo dinámico según tema
+    @ViewBuilder
+    private func fondoDinamico() -> some View {
+        let tema = vm.preguntaActual?.tema ?? ""
+        let fondoCase = FondoTema1.fondo(para: tema)
+        
+        switch fondoCase {
+        case .DATONAUTA:
+            // Asegúrate de que GIFS.GIFDATINAUTA() retorna una URL válida
+            if let url = GIFS.GIFDATINAUTA() {
+                AnimatedImage(url: url)
+                    .resizable()
+                    .ignoresSafeArea()
+            } else {
+                Color.blue.ignoresSafeArea()
+            }
+        case .DEFAULT:
+            Color.white.ignoresSafeArea()
+        }
+    }
+
+    private var vistaJuego: some View {
+        VStack(spacing: 15) {
+            // Pregunta
+            if let pregunta = vm.preguntaActual {
+                Text(pregunta.pregunta)
+                    .font(.system(size: 24, weight: .bold))
+                    .frame(maxWidth: 350)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .background(Color.white.opacity(0.9))
+                    .cornerRadius(15)
+                    .padding(.top, 50)
+            }
+            
+            Spacer()
+            
+            // Puntaje
+            Text("Puntaje: \(vm.scoreActual)")
+                .font(.title2)
+                .fontWeight(.bold)
+                .foregroundColor(.white)
+                .padding()
+                .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                .cornerRadius(10)
+            
+            // Opciones de respuesta
+            VStack(spacing: 15) {
+                if let pregunta = vm.preguntaActual {
+                    ForEach(pregunta.resp, id: \.self) { opcion in
+                        Button(action: { vm.responder(opcion: opcion) }) {
+                            Text(opcion)
+                                .font(.headline)
+                                .foregroundColor(.white)
+                                .frame(maxWidth: 350)
+                                .frame(height: 70)
+                                .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                .cornerRadius(18)
+                                .shadow(radius: 4)
+                        }
+                        .padding(.horizontal)
+                    }
+                }
+            }
+            .padding(.bottom, 50)
+        }
+    }
+    
+    private var vistaGameOver: some View {
+        VStack(spacing: 24) {
+            Text("¡Fin del juego!")
+                .font(.custom("GlacialIndifference-Bold", size: 40))
+                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                .bold()
+            
+            VStack(spacing: 10) {
+                Text("Tu puntaje")
+                    .font(.title3)
+                    .foregroundColor(.gray)
+                
+                Text("\(vm.scoreActual)")
+                    .font(.system(size: 60, weight: .bold))
+                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                
+                Text("Mejor récord: \(vm.mejorScore)")
+                    .font(.title2)
+                    .foregroundColor(.gray)
+            }
+            .padding()
+            
+            Button(action: {
+                vm.reiniciarPartida()
+            }) {
+                Text("Volver a jugar")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .frame(width: 200, height: 50)
+                    .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .cornerRadius(12)
+            }
+        }
+        .padding()
+        .background(Color.white.opacity(0.95))
+        .cornerRadius(20)
+        .padding()
+    }
+}
+
+
+#Preview {
+    DATONAUTAVIEW()
+}
