@@ -10,7 +10,6 @@
 // Created by Edna Sanchez on 09/11/25.
 //
 
-
 import SwiftUI
 import Foundation
 import SDWebImageSwiftUI // Necesario para mostrar GIFs
@@ -78,13 +77,13 @@ final class LocalQuestionsService1 {
         
         switch idioma.lowercased() {
         case "español":
-            fileName = "preguntas-espanol"
+            fileName = "preguntas-español"
         case "english":
             fileName = "preguntas-ingles"
         case "deutsch":
             fileName = "preguntas-aleman"
         default:
-            fileName = "preguntas-espanol"
+            fileName = "preguntas-español"
         }
         
         guard let url = Bundle.main.url(forResource: fileName, withExtension: "json") else {
@@ -166,9 +165,9 @@ final class DataNautaViewModel: ObservableObject {
                 let idiomaPregunta = pregunta.idioma.lowercased()
                 
                 let idiomaMatch =
-                    (idiomaPregunta.contains("español") || idiomaPregunta.contains("es")) && self.idiomaUsuario == "Español" ||
-                    (idiomaPregunta.contains("english") || idiomaPregunta.contains("en")) && self.idiomaUsuario == "English" ||
-                    (idiomaPregunta.contains("deutsch") || idiomaPregunta.contains("de")) && self.idiomaUsuario == "Deutsch"
+                    (idiomaPregunta.contains("Español") || idiomaPregunta.contains("es")) && self.idiomaUsuario == "Español" ||
+                    (idiomaPregunta.contains("English") || idiomaPregunta.contains("en")) && self.idiomaUsuario == "English" ||
+                    (idiomaPregunta.contains("Deutsch") || idiomaPregunta.contains("de")) && self.idiomaUsuario == "Deutsch"
                 
                 let temaMatch = pregunta.tema == "Data Nauta" ||
                                 pregunta.tema == "Daten Nauta" ||
@@ -322,29 +321,24 @@ struct DATONAUTAVIEW: View {
     }
 
     private var vistaJuego: some View {
-        VStack(spacing: 15) {
+        VStack() {
             // Pregunta
             if let pregunta = vm.preguntaActual {
                 Text(pregunta.pregunta)
                     .font(.system(size: 24, weight: .bold))
-                    .frame(maxWidth: 350)
+                    .frame(maxWidth: 350,maxHeight: 200)
                     .multilineTextAlignment(.center)
                     .padding()
-                    .background(Color.white.opacity(0.9))
-                    .cornerRadius(15)
-                    .padding(.top, 50)
+                    .padding(.top,80)
             }
-            
-            Spacer()
             
             // Puntaje
             Text("Puntaje: \(vm.scoreActual)")
                 .font(.title2)
                 .fontWeight(.bold)
-                .foregroundColor(.white)
+                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 .padding()
-                .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
-                .cornerRadius(10)
+                
             
             // Opciones de respuesta
             VStack(spacing: 15) {
@@ -370,27 +364,28 @@ struct DATONAUTAVIEW: View {
     
     private var vistaGameOver: some View {
         VStack(spacing: 24) {
-            Text("¡Fin del juego!")
+            Text(LocalizedStringKey("Fin del Juego"))
                 .font(.custom("GlacialIndifference-Bold", size: 40))
-                .foregroundColor(.white) // Se cambia a blanco para contrastar con el GIF de fondo
+                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 .bold()
+                .padding(.top,100)
             
             VStack(spacing: 10) {
-                Text("Tu puntaje")
+                Text(LocalizedStringKey("Tu puntaje"))
                     .font(.title3)
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 
                 Text("\(vm.scoreActual)")
                     .font(.system(size: 60, weight: .bold))
-                    .foregroundColor(.yellow)
+                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 
-                Text("Mejor récord: \(vm.mejorScore)")
+                Text(LocalizedStringKey("Récord"))
                     .font(.title2)
-                    .foregroundColor(.white.opacity(0.8))
+                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                Text(" \(vm.mejorScore)")
             }
-            .padding()
-            .background(Color.black.opacity(0.4)) // Fondo semi-transparente para leer mejor
-            .cornerRadius(10)
+            .padding(.top,200)
+         
             
             // Botón "Volver a jugar"
             Button(action: {
@@ -401,25 +396,24 @@ struct DATONAUTAVIEW: View {
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .frame(width: 200, height: 50)
-                    .background(Color.green)
+                    .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                     .cornerRadius(12)
             }
             
             // Botón "Menú" (NUEVO)
             Button(action: {
-                dismiss() // Usa el Environment para cerrar la vista
+                dismiss()
             }) {
                 Text("Menú")
                     .font(.title3)
                     .fontWeight(.bold)
                     .foregroundColor(.white)
                     .frame(width: 200, height: 50)
-                    .background(Color.gray)
+                    .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                     .cornerRadius(12)
             }
         }
         .padding()
-        // No se necesita background ni cornerRadius aquí ya que el GIF es el fondo
         .padding()
     }
 }
