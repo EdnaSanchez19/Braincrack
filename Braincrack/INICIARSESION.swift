@@ -15,7 +15,7 @@ struct INICIARSESION: View {
     @AppStorage("isLoggedIn") var isLoggedIn = false
     @State var errorMessage: String? = nil
     @State var irAGameMode = false
-
+    @State var email: String = ""
     @State var apellido: String = " "
     @State var navegarRegresar = false
 

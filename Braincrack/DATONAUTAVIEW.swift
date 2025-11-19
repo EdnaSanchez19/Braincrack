@@ -4,35 +4,26 @@
 //
 // Created by Edna Sanchez on 09/11/25.
 //
-// DATONAUTAVIEW.swift
-// Braincrack
-//
-// Created by Edna Sanchez on 09/11/25.
-//
+
 
 import SwiftUI
 import Foundation
-import SDWebImageSwiftUI // Necesario para mostrar GIFs
 import AVFoundation
 import FirebaseFirestore
 import FirebaseAuth
+import SDWebImageSwiftUI
 
 // MARK: - 0. Gestor de Sonidos
 final class Sonidos {
-    
-    // Necesario para manejar la reproducción de audio
     private var player: AVAudioPlayer?
 
-    // Función genérica para cargar y reproducir audio desde un archivo
     private func play(filename: String) {
-        // Busca el archivo en el bundle principal de la app
         guard let url = Bundle.main.url(forResource: filename, withExtension: "mp3") else {
             print("❌ ERROR: No se encontró el archivo de sonido: \(filename).mp3")
             return
         }
 
         do {
-            // Inicializa y prepara la reproducción
             player = try AVAudioPlayer(contentsOf: url)
             player?.prepareToPlay()
             player?.play()
@@ -41,20 +32,17 @@ final class Sonidos {
         }
     }
     
-    // Métodos públicos para los sonidos solicitados
     func playDing() {
-        // Asegúrate de que el nombre del archivo coincida con el nombre subido (ding.mp3)
         play(filename: "ding")
     }
     
     func playError() {
-        // Asegúrate de que el nombre del archivo coincida con el nombre subido (error.mp3)
         play(filename: "error")
     }
 }
 
 // MARK: - 1. Modelo de Pregunta
-struct Pregunta1: Codable, Identifiable {
+struct PreguntaDN: Codable, Identifiable {
     let id: Int
     let pregunta: String
     let resp: [String]
@@ -62,7 +50,7 @@ struct Pregunta1: Codable, Identifiable {
     let edad: [Int]
     let idioma: String
     let tema: String
-
+    
     enum CodingKeys: String, CodingKey {
         case id = "_id"
         case pregunta, resp, respc, edad, idioma, tema
@@ -70,9 +58,8 @@ struct Pregunta1: Codable, Identifiable {
 }
 
 // MARK: - 2. Servicio de Carga Local
-final class LocalQuestionsService1 {
-    
-    func cargarPreguntasDesdeJSON(idioma: String) -> [Pregunta1] {
+final class DataNautaQuestionsService {
+    func cargarPreguntasDesdeJSON(idioma: String) -> [PreguntaDN] {
         var fileName: String
         
         switch idioma.lowercased() {
@@ -93,7 +80,7 @@ final class LocalQuestionsService1 {
         
         do {
             let data = try Data(contentsOf: url)
-            let preguntas = try JSONDecoder().decode([Pregunta1].self, from: data)
+            let preguntas = try JSONDecoder().decode([PreguntaDN].self, from: data)
             print("✅ Preguntas cargadas: \(preguntas.count) para el idioma \(idioma)")
             return preguntas
         } catch {
@@ -103,55 +90,147 @@ final class LocalQuestionsService1 {
     }
 }
 
-// MARK: - 3. Fondos según tema
-enum FondoTema1 {
-    case DATONAUTA
-    case GAMEOVER // Nuevo caso para el fondo de fin de juego
+// MARK: - 3. Fondos para Data Nauta
+enum FondoDataNauta {
+    case DATANAUTA_NORMAL
+    case GAME_OVER
     case DEFAULT
     
-    static func fondo(para tema: String) -> FondoTema1 {
+    static func fondo(para tema: String, gameOver: Bool) -> FondoDataNauta {
+        if gameOver {
+            return .GAME_OVER
+        }
+        
         switch tema {
         case "Data Nauta", "Daten Nauta", "Dati Nauta":
-            return .DATONAUTA
+            return .DATANAUTA_NORMAL
         default:
             return .DEFAULT
         }
     }
 }
 
-// MARK: - 4. ViewModel (Corregido con lógica de Sonido)
+// MARK: - 4. ViewModel
 final class DataNautaViewModel: ObservableObject {
     
-    @Published var preguntas: [Pregunta1] = []
-    @Published var preguntaActual: Pregunta1?
+    @Published var preguntas: [PreguntaDN] = []
+    @Published var preguntaActual: PreguntaDN?
     @Published var scoreActual: Int = 0
     @Published var mejorScore: Int = 0
     @Published var gameOver: Bool = false
     @Published var ultimaFueCorrecta: Bool? = nil
     @Published var isLoading: Bool = true
     @Published var errorMessage: String?
+    @Published var edadUsuario: Int?
     
-    private let questionsService = LocalQuestionsService1()
-    private let soundManager = Sonidos() // Gestor de sonidos
-    private let edadUsuario = 9
-    private var preguntasDisponibles: [Pregunta1] = []
+    @AppStorage("selectedLanguage") private var selectedLanguageCode: String = "es"
+    
+    private let questionsService = DataNautaQuestionsService()
+    private let soundManager = Sonidos()
+    private var preguntasDisponibles: [PreguntaDN] = []
     
     private var idiomaUsuario: String {
-        let code = Locale.current.language.languageCode?.identifier.lowercased() ?? "es"
-        switch code {
+        switch selectedLanguageCode.lowercased() {
         case "en": return "English"
         case "es": return "Español"
         case "de": return "Deutsch"
-        default:   return "Español"
+        default: return "Español"
         }
     }
     
     init() {
-        cargarMejorScore()
-        cargarPreguntasLocales()
+        cargarDatosUsuario()
     }
     
-    func cargarPreguntasLocales() {
+    // MARK: - Firebase
+    func cargarDatosUsuario() {
+        self.isLoading = true
+        self.errorMessage = nil
+        
+        guard let userId = Auth.auth().currentUser?.uid else {
+            print("❌ Usuario no autenticado. Usando valores por defecto.")
+            self.edadUsuario = 9
+            self.mejorScore = 0
+            self.cargarPreguntasDataNauta()
+            return
+        }
+        
+        print("✅ Usuario autenticado (\(userId))")
+        
+        let docRef = Firestore.firestore().collection("users").document(userId)
+        
+        docRef.getDocument { [weak self] (document, error) in
+            guard let self = self else { return }
+            
+            if let error = error {
+                print("❌ ERROR DE FIREBASE: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    self.errorMessage = "Error de conexión a la base de datos."
+                    self.isLoading = false
+                }
+                return
+            }
+            
+            guard let document = document, document.exists, let data = document.data() else {
+                print("❌ Documento de usuario no encontrado.")
+                DispatchQueue.main.async {
+                    self.edadUsuario = 9
+                    self.mejorScore = 0
+                    self.cargarPreguntasDataNauta()
+                }
+                return
+            }
+            
+            // Cargar Edad
+            if let age = data["age"] as? Int {
+                self.edadUsuario = age
+            } else if let ageDouble = data["age"] as? Double {
+                self.edadUsuario = Int(ageDouble)
+            } else {
+                self.edadUsuario = 9
+            }
+            
+            // Cargar Score de Data Nauta
+            if let score = data["score_data"] as? Int {
+                self.mejorScore = score
+            } else if let scoreDouble = data["score_data"] as? Double {
+                self.mejorScore = Int(scoreDouble)
+            } else {
+                self.mejorScore = 0
+            }
+            
+            print("👤 Edad: \(self.edadUsuario ?? 9), Mejor Score Data Nauta: \(self.mejorScore)")
+            
+            DispatchQueue.main.async {
+                self.cargarPreguntasDataNauta()
+            }
+        }
+    }
+    
+    private func actualizarMejorScore() {
+        guard let userId = Auth.auth().currentUser?.uid else {
+            print("❌ ERROR: Usuario no autenticado para guardar.")
+            return
+        }
+        
+        let docRef = Firestore.firestore().collection("users").document(userId)
+        
+        docRef.setData(["score_data": self.mejorScore], merge: true) { error in
+            if let error = error {
+                print("❌ ERROR al guardar score: \(error.localizedDescription)")
+            } else {
+                print("✅ Score de Data Nauta guardado: \(self.mejorScore)")
+            }
+        }
+    }
+    
+    // MARK: - Cargar Preguntas
+    func cargarPreguntasDataNauta() {
+        guard let edad = self.edadUsuario else {
+            self.isLoading = false
+            return
+        }
+        
         isLoading = true
         errorMessage = nil
         
@@ -160,24 +239,26 @@ final class DataNautaViewModel: ObservableObject {
             
             let todas = self.questionsService.cargarPreguntasDesdeJSON(idioma: self.idiomaUsuario)
             
-            // Filtrar por idioma y edad
+            // Filtro: Solo Data Nauta y sus variantes
             let filtradas = todas.filter { pregunta in
                 let idiomaPregunta = pregunta.idioma.lowercased()
                 
                 let idiomaMatch =
-                    (idiomaPregunta.contains("Español") || idiomaPregunta.contains("es")) && self.idiomaUsuario == "Español" ||
-                    (idiomaPregunta.contains("English") || idiomaPregunta.contains("en")) && self.idiomaUsuario == "English" ||
-                    (idiomaPregunta.contains("Deutsch") || idiomaPregunta.contains("de")) && self.idiomaUsuario == "Deutsch"
+                    (idiomaPregunta.contains("español") || idiomaPregunta.contains("es")) && self.idiomaUsuario == "Español" ||
+                    (idiomaPregunta.contains("english") || idiomaPregunta.contains("en")) && self.idiomaUsuario == "English" ||
+                    (idiomaPregunta.contains("deutsch") || idiomaPregunta.contains("de")) && self.idiomaUsuario == "Deutsch"
+                
+                let edadMatch = pregunta.edad.contains(edad)
                 
                 let temaMatch = pregunta.tema == "Data Nauta" ||
-                                pregunta.tema == "Daten Nauta" ||
-                                pregunta.tema == "Dati Nauta"
+                               pregunta.tema == "Daten Nauta" ||
+                               pregunta.tema == "Dati Nauta"
                 
-                return idiomaMatch && pregunta.edad.contains(self.edadUsuario) && temaMatch
+                return idiomaMatch && edadMatch && temaMatch
             }
             
             if filtradas.isEmpty {
-                self.errorMessage = "No hay preguntas disponibles para \(self.idiomaUsuario) y edad \(self.edadUsuario)"
+                self.errorMessage = "No hay preguntas de Data Nauta disponibles para idioma \(self.idiomaUsuario) y edad \(edad)"
                 self.isLoading = false
                 return
             }
@@ -192,6 +273,7 @@ final class DataNautaViewModel: ObservableObject {
         }
     }
     
+    // MARK: - Lógica del Juego
     func reiniciarPartida() {
         preguntasDisponibles = preguntas.shuffled()
         scoreActual = 0
@@ -200,63 +282,55 @@ final class DataNautaViewModel: ObservableObject {
         siguientePregunta()
     }
     
-    // Lógica de respuesta con manejo de sonido
     func responder(opcion: String) {
         guard let actual = preguntaActual else { return }
         
         if opcion == actual.respc {
             ultimaFueCorrecta = true
             scoreActual += 10
-            soundManager.playDing() // 🔔 Sonido ding (Correcta)
+            soundManager.playDing()
             siguientePregunta()
         } else {
             ultimaFueCorrecta = false
-            soundManager.playError() // ❌ Sonido error (Incorrecta)
-            if scoreActual > mejorScore {
-                mejorScore = scoreActual
-                guardarMejorScore()
-            }
-            gameOver = true
+            soundManager.playError()
+            terminarJuego()
+        }
+    }
+    
+    private func terminarJuego() {
+        gameOver = true
+        if scoreActual > mejorScore {
+            mejorScore = scoreActual
+            actualizarMejorScore()
         }
     }
     
     private func siguientePregunta() {
         guard !preguntasDisponibles.isEmpty else {
-            if scoreActual > mejorScore {
-                mejorScore = scoreActual
-                guardarMejorScore()
-            }
-            gameOver = true
+            terminarJuego()
             return
         }
         
         preguntaActual = preguntasDisponibles.removeFirst()
     }
-    
-    private func guardarMejorScore() {
-        UserDefaults.standard.set(mejorScore, forKey: "mejorScoreDataNauta")
-    }
-    
-    private func cargarMejorScore() {
-        mejorScore = UserDefaults.standard.integer(forKey: "mejorScoreDataNauta")
-    }
 }
 
-// MARK: - 5. Vista Principal (Modificada para Game Over y Botón Menú)
+// MARK: - 5. Vista Principal
 struct DATONAUTAVIEW: View {
     
     @StateObject private var vm = DataNautaViewModel()
-    @Environment(\.dismiss) var dismiss // Para cerrar la vista y volver al menú anterior
-
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ZStack {
             fondoDinamico()
             
             VStack {
                 if vm.isLoading {
-                    ProgressView("Cargando preguntas...")
+                    ProgressView("Cargando preguntas de Data Nauta...")
                         .tint(.white)
                         .foregroundColor(.white)
+                    
                 } else if let error = vm.errorMessage {
                     VStack(spacing: 20) {
                         Text("Error")
@@ -266,16 +340,17 @@ struct DATONAUTAVIEW: View {
                             .multilineTextAlignment(.center)
                             .padding()
                         Button("Reintentar") {
-                            vm.cargarPreguntasLocales()
+                            vm.cargarDatosUsuario()
                         }
                         .padding()
                         .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                         .foregroundColor(.white)
                         .cornerRadius(12)
                     }
-                    .padding()
+                    
                 } else if vm.gameOver {
                     vistaGameOver
+                    
                 } else {
                     vistaJuego
                 }
@@ -284,52 +359,55 @@ struct DATONAUTAVIEW: View {
         .ignoresSafeArea()
     }
     
-    // MARK: Fondo dinámico según estado
+    // MARK: Fondo dinámico
     @ViewBuilder
     private func fondoDinamico() -> some View {
-        if vm.gameOver {
-            // Fondo para Game Over (GIFSEACABOELTIEMPO)
-            if let url = GIFS.GIFSEACABOELTIEMPO() {
-                AnimatedImage(url: url)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .ignoresSafeArea()
-            } else {
-                Color.black.ignoresSafeArea() // Fondo de fallback
-            }
-        } else {
-            // Fondo de juego normal (DATONAUTA o DEFAULT)
-            let tema = vm.preguntaActual?.tema ?? ""
-            let fondoCase = FondoTema1.fondo(para: tema)
+        let tema = vm.preguntaActual?.tema ?? ""
+        let fondoCase = FondoDataNauta.fondo(para: tema, gameOver: vm.gameOver)
+        
+        ZStack {
+            Color.white.ignoresSafeArea()
             
             switch fondoCase {
-            case .DATONAUTA:
+            case .DATANAUTA_NORMAL:
                 if let url = GIFS.GIFDATINAUTA() {
                     AnimatedImage(url: url)
                         .resizable()
+                        .customLoopCount(0)
                         .aspectRatio(contentMode: .fill)
                         .ignoresSafeArea()
                 } else {
                     Color.blue.ignoresSafeArea()
                 }
+                
+            case .GAME_OVER:
+                if let url = GIFS.GIFSEACABOELTIEMPO() {
+                    AnimatedImage(url: url)
+                        .resizable()
+                        .customLoopCount(0)
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
+                } else {
+                    Color.black.ignoresSafeArea()
+                }
+                
             case .DEFAULT:
                 Color.white.ignoresSafeArea()
-            case .GAMEOVER: // Este caso no se usa aquí gracias al if/else inicial
-                Color.black.ignoresSafeArea()
             }
         }
     }
-
+    
     private var vistaJuego: some View {
-        VStack() {
+        VStack {
             // Pregunta
             if let pregunta = vm.preguntaActual {
                 Text(pregunta.pregunta)
-                    .font(.system(size: 24, weight: .bold))
-                    .frame(maxWidth: 350,maxHeight: 200)
+                    .font(.custom("GlacialIndifference-Bold", size: 23))
+                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .frame(maxWidth: 350, maxHeight: 200)
                     .multilineTextAlignment(.center)
-                    .padding()
-                    .padding(.top,80)
+                    .padding(.trailing,10)
+                    .padding(.top, 50)
             }
             
             // Puntaje
@@ -338,7 +416,6 @@ struct DATONAUTAVIEW: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 .padding()
-                
             
             // Opciones de respuesta
             VStack(spacing: 15) {
@@ -368,11 +445,11 @@ struct DATONAUTAVIEW: View {
                 .font(.custom("GlacialIndifference-Bold", size: 40))
                 .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 .bold()
-                .padding(.top,100)
+                .padding(.top, 100)
             
             VStack(spacing: 10) {
                 Text(LocalizedStringKey("Tu puntaje"))
-                    .font(.title3)
+                    .font(.custom("GlacialIndifference-Bold", size: 20))
                     .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 
                 Text("\(vm.scoreActual)")
@@ -380,40 +457,39 @@ struct DATONAUTAVIEW: View {
                     .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 
                 Text(LocalizedStringKey("Récord"))
-                    .font(.title2)
+                    .font(.custom("GlacialIndifference-Bold", size: 20))
                     .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
-                Text(" \(vm.mejorScore)")
+                
+                Text("\(vm.mejorScore)")
+                    .font(.title)
+                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
             }
-            .padding(.top,200)
-         
+            .padding(.top, 200)
             
             // Botón "Volver a jugar"
             Button(action: {
                 vm.reiniciarPartida()
             }) {
-                Text("Volver a jugar")
-                    .font(.title3)
-                    .fontWeight(.bold)
+                Text(LocalizedStringKey("Volver a jugar"))
+                    .font(.custom("GlacialIndifference-Bold", size: 20))
                     .foregroundColor(.white)
                     .frame(width: 200, height: 50)
                     .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                     .cornerRadius(12)
             }
             
-            // Botón "Menú" (NUEVO)
+            // Botón "Menú"
             Button(action: {
                 dismiss()
             }) {
-                Text("Menú")
-                    .font(.title3)
-                    .fontWeight(.bold)
+                Text(LocalizedStringKey("Menú"))
+                    .font(.custom("GlacialIndifference-Bold", size: 20))
                     .foregroundColor(.white)
                     .frame(width: 200, height: 50)
                     .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                     .cornerRadius(12)
             }
         }
-        .padding()
         .padding()
     }
 }

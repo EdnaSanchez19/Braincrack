@@ -12,6 +12,7 @@ import Foundation
 import AVFoundation
 import FirebaseFirestore
 import FirebaseAuth
+import SDWebImageSwiftUI
 
 // MARK: - 1. Estructura de la Pregunta
 struct PreguntaMS: Codable, Identifiable {
@@ -383,32 +384,47 @@ struct MUERTESUBITAVIEW: View {
             Group {
                 switch fondoCase {
                 case .DATONAUTA:
-                    Color.purple.opacity(0.3)
+                    AnimatedImage(url: GIFS.GIFDATINAUTA())
+                        .resizable()
+                        .customLoopCount(0)
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
                 case .CHISMESITOHISTORICO:
-                    Color.yellow.opacity(0.3)
+                    AnimatedImage(url: GIFS.GIFCHISME())
+                        .resizable()
+                        .customLoopCount(0)
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
                 case .EXACTAMANIACAA:
-                    Color.blue.opacity(0.3)
+                    AnimatedImage(url: GIFS.GIFMENTEEXACTA())
+                        .resizable()
+                        .customLoopCount(0)
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
                 case .LOMBRILETRAS:
-                    Color.green.opacity(0.3)
+                    AnimatedImage(url: GIFS.GIFLETRINAS())
+                        .resizable()
+                        .customLoopCount(0)
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
                 case .GEOGEBRA:
-                    Color.orange.opacity(0.3)
+                    AnimatedImage(url: GIFS.GIFGEOEXPLORA())
+                        .resizable()
+                        .customLoopCount(0)
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
                 case .SE_ACABO_EL_TIEMPO:
-                    Color.red.opacity(0.5)
+                    AnimatedImage(url: GIFS.GIFSEACABOELTIEMPO())
+                        .resizable()
+                        .customLoopCount(0)
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
                 case .DEFAULT:
                     Color.gray.opacity(0.1)
                 }
             }
             .ignoresSafeArea()
             
-            // Texto de advertencia (Solo en modo Previsualización sin la librería de GIF)
-            if vm.isLoading == false {
-                 Text("⚠️ Fondo de GIF NO cargado\n(Falta AnimatedImage)")
-                    .font(.caption)
-                    .foregroundColor(.black.opacity(0.6))
-                    .padding()
-                    .background(.white.opacity(0.8))
-                    .cornerRadius(8)
-            }
         }
     }
     
@@ -416,10 +432,11 @@ struct MUERTESUBITAVIEW: View {
         VStack(spacing: 15) {
             if let pregunta = vm.preguntaActual {
                 Text(pregunta.pregunta)
-                    .font(.headline)
-                    .frame(maxWidth: 300, maxHeight: 150)
+                    .font(.custom("GlacialIndifference-Bold", size: 25))
+                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .frame(maxWidth: 300, maxHeight: 200)
                     .multilineTextAlignment(.center)
-                    .padding(.top,100)
+                    .padding(.top,115)
             }
             
             Text("Puntaje actual: \(vm.scoreActual)")
@@ -455,20 +472,25 @@ struct MUERTESUBITAVIEW: View {
                 .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
                 .bold()
                 .padding(.top,100)
+                .padding(.trailing,10)
             
             VStack(spacing: 10) {
                 Text(LocalizedStringKey("Tu puntaje"))
                     .font(.title3)
                     .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .padding(.trailing,10)
                 
                 Text("\(vm.scoreActual)")
                     .font(.system(size: 60, weight: .bold))
                     .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .padding(.trailing,10)
                 
                 Text(LocalizedStringKey("Récord"))
                     .font(.title2)
                     .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .padding(.trailing,10)
                 Text(" \(vm.mejorScore)")
+                    .padding(.trailing,10)
             }
             .padding(.top,200)
         
@@ -479,7 +501,7 @@ struct MUERTESUBITAVIEW: View {
             .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
             .foregroundStyle(Color.white)
             .cornerRadius(12)
-                
+            .padding(.trailing,10)
             Button(LocalizedStringResource("Menu")) {
                 dismiss()
             }
@@ -487,6 +509,7 @@ struct MUERTESUBITAVIEW: View {
             .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
             .foregroundStyle(Color.white)
             .cornerRadius(12)
+            .padding(.trailing,10)
         }
     }
 }

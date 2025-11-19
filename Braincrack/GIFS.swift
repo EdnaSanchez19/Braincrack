@@ -49,7 +49,7 @@ struct GIFS: View {
     }
     
     static func GIFLETRINAS() -> URL? {
-        return obtenerGif(nombre: "LOMBRILETRAS")
+        return obtenerGif(nombre: "LETRINAS")
     }
     
     static func GIFMENTEEXACTA() -> URL? {

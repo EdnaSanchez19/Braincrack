@@ -14,6 +14,7 @@ struct REGISTRARSE: View {
     @State var password: String = ""
     @State var nombre: String = ""
     @State var apellido: String = ""
+    @State var email: String = ""
     @State var edad: Int? = nil
     @State var fechaNacimiento: Date = Date()
     

@@ -5,6 +5,7 @@
 //  Created by Edna Sanchez  on 06/10/25.
 //
 
+
 import SwiftUI
 import FirebaseCore
 import FirebaseFirestore
@@ -12,10 +13,8 @@ import FirebaseAuth
 
 extension INICIARSESION {
     var iniciarsesionview: some View {
-        // Tu UI de ZStack y VStack va aquí... (código omitido por brevedad)
         NavigationStack {
             ZStack {
-                // ... Todo el código de tu diseño de ZStack ...
                 Image("REGISTRARSE")
                     .resizable()
                     .ignoresSafeArea()
@@ -59,6 +58,8 @@ extension INICIARSESION {
                     .frame(width: 350)
                     .cornerRadius(20)
                     .padding(.trailing, 35)
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
 
                     // ---------- CONTRASEÑA ----------
                     ZStack {
@@ -87,6 +88,8 @@ extension INICIARSESION {
                     .frame(width: 350)
                     .cornerRadius(20)
                     .padding(.trailing, 35)
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
 
                     // ---------- ERROR ----------
                     if let errorMessage = errorMessage {
@@ -122,8 +125,6 @@ extension INICIARSESION {
                 }
             }
             .navigationDestination(isPresented: $irAGameMode) {
-                // Aquí es donde instanciarías tu vista principal del juego.
-                // Asegúrate de que GAMEMODEVIEW pueda acceder a los datos de autenticación.
                 GAMEMODEVIEW()
             }
         }
@@ -136,57 +137,78 @@ extension INICIARSESION {
         password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
     
-    // Función login MODIFICADA
+    // FUNCIÓN LOGIN SIMPLIFICADA Y CORREGIDA
     func login() {
         errorMessage = nil
         let db = Firestore.firestore()
         
+        let cleanUsername = username.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cleanPassword = password.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        // PASO 1: Buscar el usuario en Firestore por username
         db.collection("users")
-            .whereField("username", isEqualTo: username)
-            .whereField("password", isEqualTo: password)
+            .whereField("username", isEqualTo: cleanUsername)
             .limit(to: 1)
             .getDocuments { snapshot, error in
                 
                 if let error = error {
-                    print("Error al buscar usuario: \(error.localizedDescription)")
-                    errorMessage = "Ocurrió un error al iniciar sesión."
+                    print("❌ Error al buscar usuario: \(error.localizedDescription)")
+                    DispatchQueue.main.async {
+                        errorMessage = "Ocurrió un error al iniciar sesión."
+                    }
                     return
                 }
                 
                 guard let document = snapshot?.documents.first else {
-                    errorMessage = "Usuario o contraseña incorrectos."
+                    print("❌ Usuario no encontrado")
+                    DispatchQueue.main.async {
+                        errorMessage = "Usuario o contraseña incorrectos."
+                    }
                     return
                 }
                 
-                let userId = document.documentID
+                let storedPassword = document.data()["password"] as? String ?? ""
+                let userEmail = document.data()["email"] as? String ?? ""
                 
-                // 1. INICIO DE SESIÓN EN FIREBASE: Usamos signInAnonymously como truco,
-                //    pero le asignamos el ID del documento de Firestore como su UID.
-                //    Esto es CRÍTICO para que el ViewModel pueda acceder a Auth.auth().currentUser?.uid
-                Auth.auth().signInAnonymously { authResult, authError in
+                // Verificar contraseña
+                guard storedPassword == cleanPassword else {
+                    print("❌ Contraseña incorrecta")
+                    DispatchQueue.main.async {
+                        errorMessage = "Usuario o contraseña incorrectos."
+                    }
+                    return
+                }
+                
+                guard !userEmail.isEmpty else {
+                    print("❌ Email no encontrado")
+                    DispatchQueue.main.async {
+                        errorMessage = "Error de configuración de usuario."
+                    }
+                    return
+                }
+                
+                // PASO 2: Autenticar con Firebase Auth
+                Auth.auth().signIn(withEmail: userEmail, password: cleanPassword) { authResult, authError in
                     if let authError = authError {
-                        print("Error al simular autenticación anónima: \(authError.localizedDescription)")
-                        self.errorMessage = "Error de autenticación. Inténtalo de nuevo."
+                        print("❌ Error de autenticación: \(authError.localizedDescription)")
+                        DispatchQueue.main.async {
+                            errorMessage = "Error al iniciar sesión. Verifica tus credenciales."
+                        }
                         return
                     }
                     
-                    // 2. Si la simulación de sesión anónima es exitosa,
-                    //    podrías considerar guardar el ID del documento en un lugar accesible
-                    //    o, idealmente, si usaras Email/Password, el UID de Firebase
-                    //    sería automáticamente el ID del usuario.
-                    //
-                    // Dado que Auth.auth().currentUser ya está configurado,
-                    // el SuddenDeathViewModel ahora podrá acceder al UID.
-                    
-                    // Si el inicio de sesión es exitoso (Firestore + Auth simulado)
-                    print("✅ Usuario logueado con Document ID: \(userId)")
-                    self.isLoggedIn = true
-                    self.irAGameMode = true // Activa la navegación
+                    // ✅ Login exitoso
+                    DispatchQueue.main.async {
+                        print("✅ Login exitoso")
+                        print("✅ UID: \(Auth.auth().currentUser?.uid ?? "N/A")")
+                        isLoggedIn = true
+                        irAGameMode = true
+                    }
                 }
             }
     }
 }
+
 #Preview {
     INICIARSESION()
 }
-
