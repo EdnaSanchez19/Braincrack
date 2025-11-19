@@ -9,6 +9,7 @@ import SwiftUI
 import FirebaseCore
 
 @main
+
 struct BraincrackApp: App {
     @AppStorage("isLoggedIn") var isLoggedIn = false
     @AppStorage("selectedLanguage") private var selectedLanguage = "es"

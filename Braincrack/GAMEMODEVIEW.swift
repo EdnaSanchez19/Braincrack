@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GAMEMODEVIEW: View {
-    @AppStorage("isLoggedIn") private var isLoggedIn = false
+    @AppStorage("isLoggedIn") private var isLoggedIn = true
     @State var irAInicio = false
 
     var body: some View {
