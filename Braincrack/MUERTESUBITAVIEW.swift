@@ -14,7 +14,83 @@ import FirebaseFirestore
 import FirebaseAuth
 import SDWebImageSwiftUI
 
-// MARK: - 1. Estructura de la Pregunta
+final class sonidos5 {
+    private var player: AVAudioPlayer?
+
+    private func play(filename: String) {
+        guard let url = Bundle.main.url(forResource: filename, withExtension: "mp3") else {
+            print("❌ ERROR: No se encontró el archivo de sonido: \(filename).mp3")
+            return
+        }
+
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.prepareToPlay()
+            player?.play()
+        } catch let error {
+            print("❌ ERROR al reproducir el sonido \(filename):", error.localizedDescription)
+        }
+    }
+    
+    func playDing() {
+        play(filename: "ding")
+    }
+    
+    func playError() {
+        play(filename: "error")
+    }
+}
+
+// Música de fondo
+final class MusicaMuerte: ObservableObject {
+    private var player: AVAudioPlayer?
+    @Published var isPlaying: Bool = false
+    @Published var volume: Float = 0.5
+    
+    func iniciarMusica() {
+        guard let url = Bundle.main.url(forResource: "muerte", withExtension: "mp3") else {
+            print("❌ ERROR: No se encontró el archivo dati.mp3")
+            return
+        }
+        
+        do {
+            // Configurar sesión de audio
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.numberOfLoops = -1 // Loop infinito
+            player?.volume = volume
+            player?.prepareToPlay()
+            player?.play()
+            isPlaying = true
+            print("✅ Música iniciada correctamente")
+        } catch let error {
+            print("❌ ERROR al reproducir música de fondo:", error.localizedDescription)
+        }
+    }
+    
+    func pausar() {
+        player?.pause()
+        isPlaying = false
+    }
+    
+    func reanudar() {
+        player?.play()
+        isPlaying = true
+    }
+    
+    func detener() {
+        player?.stop()
+        isPlaying = false
+    }
+    
+    func cambiarVolumen(_ nuevoVolumen: Float) {
+        volume = nuevoVolumen
+        player?.volume = nuevoVolumen
+    }
+}
+//variables
 struct PreguntaMS: Codable, Identifiable {
     let id: Int
     let pregunta: String
@@ -55,7 +131,7 @@ enum FondoTemaMS {
     case DATONAUTA
     case CHISMESITOHISTORICO
     case EXACTAMANIACAA
-    case LOMBRILETRAS
+    case LETRINAS
     case GEOGEBRA
     case SE_ACABO_EL_TIEMPO
     case DEFAULT
@@ -73,7 +149,7 @@ enum FondoTemaMS {
         case "Mente Exacta", "Exakter Verstand", "Exact Mind":
             return .EXACTAMANIACAA
         case "Letrinas", "Latrinen", "Latrines":
-            return .LOMBRILETRAS
+            return .LETRINAS
         case "GeoExplora", "GeoErkunden", "GeoExplore":
             return .GEOGEBRA
         default:
@@ -202,10 +278,10 @@ final class SuddenDeathViewModel: ObservableObject {
         }
     }
 
-    // MARK: - Lógica de Carga de Preguntas (El filtro usa 'edadUsuario')
+ 
     func cargarPreguntasLocales() {
         // Usa la edad cargada de Firebase (o la edad por defecto 9)
-        guard let edad = self.edadUsuario else {
+        guard let edadActual = self.edadUsuario else {
             self.isLoading = false
             return
         }
@@ -218,20 +294,23 @@ final class SuddenDeathViewModel: ObservableObject {
             
             let todas = self.questionsService.cargarPreguntasDesdeJSON()
             
+            // edad
+            let edadesPermitidas = Array(6...edadActual)
+            
             let filtradas = todas.filter {
-                // 1. Filtro por idioma:
+                // idioma
                 let idiomaMatch =
                 ($0.idioma == self.idiomaUsuario) ||
                 ($0.idioma.lowercased().contains(self.selectedLanguageCode.lowercased()))
                 
-                // 2. Filtro por edad: Usa la edad cargada/por defecto.
-                let edadMatch = $0.edad.contains(edad)
+                // edad
+                let edadMatch = $0.edad.contains(where: { edadesPermitidas.contains($0) })
                 
                 return idiomaMatch && edadMatch
             }
             
             if filtradas.isEmpty {
-                self.errorMessage = "No hay preguntas disponibles para el idioma \(self.idiomaUsuario) y edad \(edad)"
+                self.errorMessage = "No hay preguntas disponibles para el idioma \(self.idiomaUsuario) y edad \(edadActual)"
                 self.isLoading = false
                 return
             }
@@ -253,7 +332,7 @@ final class SuddenDeathViewModel: ObservableObject {
         gameOver = true
         if scoreActual > mejorScore {
             mejorScore = scoreActual
-            actualizarMejorScore() // 👈 LLAMADA CLAVE para guardar el récord
+            actualizarMejorScore()
         }
     }
     
@@ -337,37 +416,137 @@ final class SuddenDeathViewModel: ObservableObject {
 
 // MARK: - 5. Vista Principal (MUERTESUBITAVIEW)
 struct MUERTESUBITAVIEW: View {
-    
     @StateObject private var vm = SuddenDeathViewModel()
+    @StateObject private var musica = MusicaMuerte()
     @Environment(\.dismiss) var dismiss
-
+    @State private var mostrarControles = false
+    
     var body: some View {
-        
         ZStack {
-            fondoDinamico()
+            // Siempre mostrar un fondo base
+            Color.geo.ignoresSafeArea()
             
-            VStack {
-                if vm.isLoading {
-                    ProgressView("Cargando datos y preguntas...")
+            if vm.isLoading {
+               
+                ProgressView("Cargando...")
+                    .foregroundStyle(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .font(.custom("GlacialIndifference-Bold", size: 50))
                     
-                } else if let error = vm.errorMessage {
+                    
+            } else {
+                //
+                ZStack {
+                    fondoDinamico()
+                    
                     VStack {
-                        Text("Error").font(.title).foregroundColor(.red)
-                        Text(error).multilineTextAlignment(.center)
-                        Button("Reintentar") {
-                            vm.cargarDatosUsuario()
+                        if let error = vm.errorMessage {
+                            VStack(spacing: 20) {
+                                Text("Error")
+                                    .font(.title)
+                                    .foregroundColor(.red)
+                                Text(error)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                Button("Reintentar") {
+                                    vm.cargarDatosUsuario()
+                                }
+                                .padding()
+                                .cornerRadius(12)
+                            }
+                            
+                        } else if vm.gameOver {
+                            vistaGameOver
+                            
+                        } else {
+                            vistaJuego
                         }
                     }
                     
-                } else if vm.gameOver {
-                    vistaGameOver
-                    
-                } else {
-                    vistaJuego
+                    // Controles de música
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            
+                            if mostrarControles {
+                                VStack(spacing: 15) {
+                                    // Botón Play/Pause
+                                    Button(action: {
+                                        if musica.isPlaying {
+                                            musica.pausar()
+                                        } else {
+                                            musica.reanudar()
+                                        }
+                                    }) {
+                                        Image(systemName: musica.isPlaying ? "pause.fill" : "play.fill")
+                                            .font(.system(size: 30))
+                                            .foregroundColor(.white)
+                                            .frame(width: 60, height: 60)
+                                            .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                            .clipShape(Circle())
+                                    }
+                                    
+                                    // Control de volumen
+                                    VStack(spacing: 5) {
+                                        Text("Volumen")
+                                            .font(.custom("GlacialIndifference-Bold", size: 14))
+                                            .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                        
+                                        HStack {
+                                            Image(systemName: "speaker.fill")
+                                                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                            
+                                            Slider(value: $musica.volume, in: 0...1, step: 0.1)
+                                                .accentColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                                .onChange(of: musica.volume) { newValue in
+                                                    musica.cambiarVolumen(newValue)
+                                                }
+                                            
+                                            Image(systemName: "speaker.wave.3.fill")
+                                                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                        }
+                                        .frame(width: 200)
+                                    }
+                                }
+                                .padding()
+                                .background(Color.white.opacity(0.9))
+                                .cornerRadius(15)
+                                .padding(.bottom, 80)
+                                .padding(.trailing, 10)
+                                .transition(.move(edge: .trailing))
+                            }
+                            
+                            Button(action: {
+                                withAnimation {
+                                    mostrarControles.toggle()
+                                }
+                            }) {
+                                Image(systemName: "music.note")
+                                    .font(.system(size: 24))
+                                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                    .padding()
+                                    .background(Color.white.opacity(0.8))
+                                    .clipShape(Circle())
+                            }
+                            .padding(.bottom, 20)
+                            .padding(.trailing, 20)
+                        }
+                    }
                 }
             }
         }
         .ignoresSafeArea()
+        .onAppear {
+            musica.iniciarMusica()
+        }
+        .onDisappear {
+            musica.detener()
+        }
+        .onChange(of: vm.gameOver) { newValue in
+            if newValue {
+                musica.detener()
+            }
+        }
     }
     
     // MARK: Fondo dinámico (Usa colores/texto como fallback para GIF)
@@ -401,7 +580,7 @@ struct MUERTESUBITAVIEW: View {
                         .customLoopCount(0)
                         .aspectRatio(contentMode: .fill)
                         .ignoresSafeArea()
-                case .LOMBRILETRAS:
+                case .LETRINAS:
                     AnimatedImage(url: GIFS.GIFLETRINAS())
                         .resizable()
                         .customLoopCount(0)

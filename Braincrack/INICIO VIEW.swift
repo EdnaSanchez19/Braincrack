@@ -13,7 +13,7 @@ struct INICIO: View {
     @State private var navegarAGameMode = false
     @State private var showLanguagePicker = false
     @AppStorage("selectedLanguage") var selectedLanguage = "es"
-    @AppStorage("isLoggedIn") var isLoggedIn = false // Verificar si el usuario está logueado
+    @AppStorage("isLoggedIn") var isLoggedIn = false 
 
     var body: some View {
         NavigationStack {
@@ -26,11 +26,11 @@ struct INICIO: View {
 
                 VStack {
                     Button(action: {
-                        // Verificamos el estado de login
+                        
                         if isLoggedIn {
-                            navegarAGameMode = true // Si está logueado, ir a GAMEMODEVIEW
+                            navegarAGameMode = true // Si esta log ir a GAMEMODEVIEW
                         } else {
-                            navegarARegistro = true // Si no está logueado, ir a MENUVIEW
+                            navegarARegistro = true // Si no esta logueado ir a MENUVIEW
                         }
                     }) {
                         Rectangle()
@@ -45,10 +45,10 @@ struct INICIO: View {
                             .padding(.top, 200)
                     }
                     .navigationDestination(isPresented: $navegarAGameMode) {
-                        GAMEMODEVIEW() // Si está logueado, ir a GAMEMODEVIEW
+                        GAMEMODEVIEW().transition(.fade(duration: 5))
                     }
                     .navigationDestination(isPresented: $navegarARegistro) {
-                        MENUVIEW() // Si no está logueado, ir a MENUVIEW para registro/inicio de sesión
+                        MENUVIEW()
                     }
 
                     Button(action: {

@@ -13,7 +13,7 @@ import FirebaseFirestore
 import FirebaseAuth
 import SDWebImageSwiftUI
 
-// MARK: - 0. Gestor de Sonidos
+// sonido
 final class Sonidos {
     private var player: AVAudioPlayer?
 
@@ -41,7 +41,57 @@ final class Sonidos {
     }
 }
 
-// MARK: - 1. Modelo de Pregunta
+// Música de fondo
+final class MusicaDati: ObservableObject {
+    private var player: AVAudioPlayer?
+    @Published var isPlaying: Bool = false
+    @Published var volume: Float = 0.5
+    
+    func iniciarMusica() {
+        guard let url = Bundle.main.url(forResource: "dati", withExtension: "mp3") else {
+            print("❌ ERROR: No se encontró el archivo dati.mp3")
+            return
+        }
+        
+        do {
+            // Configurar sesión de audio
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.numberOfLoops = -1 // Loop infinito
+            player?.volume = volume
+            player?.prepareToPlay()
+            player?.play()
+            isPlaying = true
+            print("✅ Música iniciada correctamente")
+        } catch let error {
+            print("❌ ERROR al reproducir música de fondo:", error.localizedDescription)
+        }
+    }
+    
+    func pausar() {
+        player?.pause()
+        isPlaying = false
+    }
+    
+    func reanudar() {
+        player?.play()
+        isPlaying = true
+    }
+    
+    func detener() {
+        player?.stop()
+        isPlaying = false
+    }
+    
+    func cambiarVolumen(_ nuevoVolumen: Float) {
+        volume = nuevoVolumen
+        player?.volume = nuevoVolumen
+    }
+}
+
+// preguntas variables
 struct PreguntaDN: Codable, Identifiable {
     let id: Int
     let pregunta: String
@@ -57,7 +107,7 @@ struct PreguntaDN: Codable, Identifiable {
     }
 }
 
-// MARK: - 2. Servicio de Carga Local
+// cargar preguntas local
 final class DataNautaQuestionsService {
     func cargarPreguntasDesdeJSON(idioma: String) -> [PreguntaDN] {
         var fileName: String
@@ -90,7 +140,7 @@ final class DataNautaQuestionsService {
     }
 }
 
-// MARK: - 3. Fondos para Data Nauta
+// fondos
 enum FondoDataNauta {
     case DATANAUTA_NORMAL
     case GAME_OVER
@@ -110,7 +160,6 @@ enum FondoDataNauta {
     }
 }
 
-// MARK: - 4. ViewModel
 final class DataNautaViewModel: ObservableObject {
     
     @Published var preguntas: [PreguntaDN] = []
@@ -142,7 +191,7 @@ final class DataNautaViewModel: ObservableObject {
         cargarDatosUsuario()
     }
     
-    // MARK: - Firebase
+    // firebase
     func cargarDatosUsuario() {
         self.isLoading = true
         self.errorMessage = nil
@@ -224,56 +273,58 @@ final class DataNautaViewModel: ObservableObject {
         }
     }
     
-    // MARK: - Cargar Preguntas
+    // preguntas cargarlas y condicional
     func cargarPreguntasDataNauta() {
-        guard let edad = self.edadUsuario else {
-            self.isLoading = false
-            return
-        }
-        
-        isLoading = true
-        errorMessage = nil
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
-            guard let self = self else { return }
-            
-            let todas = self.questionsService.cargarPreguntasDesdeJSON(idioma: self.idiomaUsuario)
-            
-            // Filtro: Solo Data Nauta y sus variantes
-            let filtradas = todas.filter { pregunta in
-                let idiomaPregunta = pregunta.idioma.lowercased()
-                
-                let idiomaMatch =
-                    (idiomaPregunta.contains("español") || idiomaPregunta.contains("es")) && self.idiomaUsuario == "Español" ||
-                    (idiomaPregunta.contains("english") || idiomaPregunta.contains("en")) && self.idiomaUsuario == "English" ||
-                    (idiomaPregunta.contains("deutsch") || idiomaPregunta.contains("de")) && self.idiomaUsuario == "Deutsch"
-                
-                let edadMatch = pregunta.edad.contains(edad)
-                
-                let temaMatch = pregunta.tema == "Data Nauta" ||
-                               pregunta.tema == "Daten Nauta" ||
-                               pregunta.tema == "Dati Nauta"
-                
-                return idiomaMatch && edadMatch && temaMatch
-            }
-            
-            if filtradas.isEmpty {
-                self.errorMessage = "No hay preguntas de Data Nauta disponibles para idioma \(self.idiomaUsuario) y edad \(edad)"
+            guard let edadActual = self.edadUsuario else {
                 self.isLoading = false
                 return
             }
             
-            self.preguntas = filtradas
-            self.preguntasDisponibles = filtradas.shuffled()
-            self.scoreActual = 0
-            self.ultimaFueCorrecta = nil
-            self.isLoading = false
-            self.gameOver = false
-            self.siguientePregunta()
+            isLoading = true
+            errorMessage = nil
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) { [weak self] in
+                guard let self = self else { return }
+                
+                let todas = self.questionsService.cargarPreguntasDesdeJSON(idioma: self.idiomaUsuario)
+                
+                let edadesPermitidas = Array(6...edadActual)
+                
+                let filtradas = todas.filter { pregunta in
+                    let idiomaPregunta = pregunta.idioma.lowercased()
+                    
+                    let idiomaMatch =
+                        (idiomaPregunta.contains("español") || idiomaPregunta.contains("es")) && self.idiomaUsuario == "Español" ||
+                        (idiomaPregunta.contains("english") || idiomaPregunta.contains("en")) && self.idiomaUsuario == "English" ||
+                        (idiomaPregunta.contains("deutsch") || idiomaPregunta.contains("de")) && self.idiomaUsuario == "Deutsch"
+                    
+                    // rango ampliado de edades
+                    let edadMatch = pregunta.edad.contains(where: { edadesPermitidas.contains($0) })
+                    
+                    let temaMatch = pregunta.tema == "Data Nauta" ||
+                                   pregunta.tema == "Daten Nauta" ||
+                                   pregunta.tema == "Dati Nauta"
+                    
+                    return idiomaMatch && edadMatch && temaMatch
+                }
+                if filtradas.isEmpty {
+                    self.errorMessage = "No hay preguntas de Dati Nauta disponibles para idioma \(self.idiomaUsuario) y edad \(edadActual)"
+                    self.isLoading = false
+                    return
+                }
+                
+                self.preguntas = filtradas
+                self.preguntasDisponibles = filtradas.shuffled()
+                self.scoreActual = 0
+                self.ultimaFueCorrecta = nil
+                self.isLoading = false
+                self.gameOver = false
+                self.siguientePregunta()
+            }
         }
-    }
+        
     
-    // MARK: - Lógica del Juego
+    // logica
     func reiniciarPartida() {
         preguntasDisponibles = preguntas.shuffled()
         scoreActual = 0
@@ -315,48 +366,139 @@ final class DataNautaViewModel: ObservableObject {
     }
 }
 
-// MARK: - 5. Vista Principal
 struct DATONAUTAVIEW: View {
     
     @StateObject private var vm = DataNautaViewModel()
+    @StateObject private var musica = MusicaDati()
     @Environment(\.dismiss) var dismiss
+    @State private var mostrarControles = false
     
     var body: some View {
         ZStack {
-            fondoDinamico()
+            //fondo
+            Color.dati.ignoresSafeArea()
             
-            VStack {
-                if vm.isLoading {
-                    ProgressView("Cargando preguntas de Data Nauta...")
-                        .tint(.white)
-                        .foregroundColor(.white)
+            if vm.isLoading {
+               
+                ProgressView("Cargando...")
+                    .foregroundStyle(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .font(.custom("GlacialIndifference-Bold", size: 50))
                     
-                } else if let error = vm.errorMessage {
-                    VStack(spacing: 20) {
-                        Text("Error")
-                            .font(.title)
-                            .foregroundColor(.red)
-                        Text(error)
-                            .multilineTextAlignment(.center)
-                            .padding()
-                        Button("Reintentar") {
-                            vm.cargarDatosUsuario()
+                    
+            } else {
+                //
+                ZStack {
+                    fondoDinamico()
+                    
+                    VStack {
+                        if let error = vm.errorMessage {
+                            VStack(spacing: 20) {
+                                Text("Error")
+                                    .font(.title)
+                                    .foregroundColor(.red)
+                                Text(error)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                Button("Reintentar") {
+                                    vm.cargarDatosUsuario()
+                                }
+                                .padding()
+                                .cornerRadius(12)
+                            }
+                            
+                        } else if vm.gameOver {
+                            vistaGameOver
+                            
+                        } else {
+                            vistaJuego
                         }
-                        .padding()
-                        .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
                     }
                     
-                } else if vm.gameOver {
-                    vistaGameOver
-                    
-                } else {
-                    vistaJuego
+                    // Controles de música
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            
+                            if mostrarControles {
+                                VStack(spacing: 15) {
+                                    // Botón Play/Pause
+                                    Button(action: {
+                                        if musica.isPlaying {
+                                            musica.pausar()
+                                        } else {
+                                            musica.reanudar()
+                                        }
+                                    }) {
+                                        Image(systemName: musica.isPlaying ? "pause.fill" : "play.fill")
+                                            .font(.system(size: 30))
+                                            .foregroundColor(.white)
+                                            .frame(width: 60, height: 60)
+                                            .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                            .clipShape(Circle())
+                                    }
+                                    
+                                    // Control de volumen
+                                    VStack(spacing: 5) {
+                                        Text("Volumen")
+                                            .font(.custom("GlacialIndifference-Bold", size: 14))
+                                            .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                        
+                                        HStack {
+                                            Image(systemName: "speaker.fill")
+                                                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                            
+                                            Slider(value: $musica.volume, in: 0...1, step: 0.1)
+                                                .accentColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                                .onChange(of: musica.volume) { newValue in
+                                                    musica.cambiarVolumen(newValue)
+                                                }
+                                            
+                                            Image(systemName: "speaker.wave.3.fill")
+                                                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                        }
+                                        .frame(width: 200)
+                                    }
+                                }
+                                .padding()
+                                .background(Color.white.opacity(0.9))
+                                .cornerRadius(15)
+                                .padding(.bottom, 80)
+                                .padding(.trailing, 10)
+                                .transition(.move(edge: .trailing))
+                            }
+                            
+                            Button(action: {
+                                withAnimation {
+                                    mostrarControles.toggle()
+                                }
+                            }) {
+                                Image(systemName: "music.note")
+                                    .font(.system(size: 24))
+                                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                    .padding()
+                                    .background(Color.white.opacity(0.8))
+                                    .clipShape(Circle())
+                            }
+                            .padding(.bottom, 20)
+                            .padding(.trailing, 20)
+                        }
+                    }
                 }
             }
         }
         .ignoresSafeArea()
+        .onAppear {
+            musica.iniciarMusica()
+        }
+        .onDisappear {
+            musica.detener()
+        }
+        .onChange(of: vm.gameOver) { newValue in
+            if newValue {
+                musica.detener()
+            }
+        }
     }
     
     // MARK: Fondo dinámico
@@ -469,6 +611,7 @@ struct DATONAUTAVIEW: View {
             // Botón "Volver a jugar"
             Button(action: {
                 vm.reiniciarPartida()
+                musica.iniciarMusica()
             }) {
                 Text(LocalizedStringKey("Volver a jugar"))
                     .font(.custom("GlacialIndifference-Bold", size: 20))

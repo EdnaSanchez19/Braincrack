@@ -17,18 +17,18 @@ struct INICIOOPENING: View {
         NavigationView {
             ZStack {
                 if animacionterminada == true {
-                    INICIO() // Mostrar INICIO cuando termine
+                    INICIO() 
                 } else {
                     AnimatedImage(url: GIFS.GIFOPENING())
-                        .resizable() // Permite redimensionar
-                        .aspectRatio(contentMode: .fill) // Llena toda la pantalla
-                        .ignoresSafeArea() // Extiende por toda la pantalla
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .ignoresSafeArea()
                 }
             }
             .onAppear {
-                //main se ejecuta en el hilo principal (UI)
+                
                 // asyncAfter ejecutar después de un tiempo
-                DispatchQueue.main.asyncAfter(deadline: .now() + 4.5) { //Tiempo para que termine el gif
+                DispatchQueue.main.asyncAfter(deadline: .now() + 4.5) {
                     withAnimation(.easeInOut(duration: 1.5)) {
                         animacionterminada = true
                     }

@@ -192,6 +192,7 @@ extension REGISTRARSE {
         }
         .navigationDestination(isPresented: $irAGameMode) {
             GAMEMODEVIEW()
+                .navigationBarBackButtonHidden(true)
         }
     }
     
@@ -215,6 +216,12 @@ extension REGISTRARSE {
         
         guard let edad = edad else {
             errorMessage = "Por favor ingresa una edad válida."
+            return
+        }
+        
+        // Validar edad: debe ser 6 o mayor, y debe ser un número entero positivo
+        if edad < 6 {
+            errorMessage = "Edad no válida."
             return
         }
         

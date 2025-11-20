@@ -73,40 +73,30 @@ struct GIFS: View {
 
     
     // ANIMACIONES
-    static func GIFCARGANDO() -> URL? {
-        return obtenerGif(nombre: "loading")
-    }
     
     static func GIFOPENING() -> URL? {
         return obtenerGif(nombre: "OPENING2")
     }
-    
-    static func GIFPENSANDO() -> URL? {
-        return obtenerGif(nombre: "thinking")
+    static func GIFCARGACHISME() -> URL? {
+        return obtenerGif(nombre: "CARGACHISME")
     }
     
-    // MARK: - GIFs de Efectos
-    static func GIFPARTICULAS() -> URL? {
-        return obtenerGif(nombre: "particles")
+    static func GIFCARGADATINAUTA() -> URL? {
+        return obtenerGif(nombre: "CARGADATINAUTA")
     }
     
-    static func GIFEXPLOSION() -> URL? {
-        return obtenerGif(nombre: "explosion")
+    static func GIFCARGALETRINAS() -> URL? {
+        return obtenerGif(nombre: "CARGALETRINAS")
     }
     
-    static func GIFCHISPAS() -> URL? {
-        return obtenerGif(nombre: "sparks")
+    static func GIFCARGAMENTEEXACTA() -> URL? {
+        return obtenerGif(nombre: "CARGAMENTEEXACTA")
+    }
+    static func GIFCARGAGEOEXPLORA() -> URL? {
+        return obtenerGif(nombre: "CARGAGEOEXPLORA")
     }
     
-    // MARK: - GIFs de Botones
-    static func GIFBOTONPLAY() -> URL? {
-        return obtenerGif(nombre: "button_play")
-    }
-    
-    static func GIFBOTONPAUSE() -> URL? {
-        return obtenerGif(nombre: "button_pause")
-    }
-    
+   
     // MARK: - Body requerido para View
     var body: some View {
         Text("Manager de GIFs")

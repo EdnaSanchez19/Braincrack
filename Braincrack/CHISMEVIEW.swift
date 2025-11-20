@@ -13,7 +13,7 @@ import FirebaseFirestore
 import FirebaseAuth
 import SDWebImageSwiftUI
 
-// MARK: - 0. Gestor de Sonidos
+//audio
 final class Sonidos2 {
     private var player: AVAudioPlayer?
 
@@ -41,7 +41,57 @@ final class Sonidos2 {
     }
 }
 
-// MARK: - 1. Modelo de Pregunta
+// Música de fondo
+final class MusicaChisme: ObservableObject {
+    private var player: AVAudioPlayer?
+    @Published var isPlaying: Bool = false
+    @Published var volume: Float = 0.5
+    
+    func iniciarMusica() {
+        guard let url = Bundle.main.url(forResource: "chisme", withExtension: "mp3") else {
+            print("❌ ERROR: No se encontró el archivo chisme.mp3")
+            return
+        }
+        
+        do {
+            // Configurar sesión de audio
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url)
+            player?.numberOfLoops = -1 // Loop infinito
+            player?.volume = volume
+            player?.prepareToPlay()
+            player?.play()
+            isPlaying = true
+            print("✅ Música iniciada correctamente")
+        } catch let error {
+            print("❌ ERROR al reproducir música de fondo:", error.localizedDescription)
+        }
+    }
+    
+    func pausar() {
+        player?.pause()
+        isPlaying = false
+    }
+    
+    func reanudar() {
+        player?.play()
+        isPlaying = true
+    }
+    
+    func detener() {
+        player?.stop()
+        isPlaying = false
+    }
+    
+    func cambiarVolumen(_ nuevoVolumen: Float) {
+        volume = nuevoVolumen
+        player?.volume = nuevoVolumen
+    }
+}
+
+// preguntas
 struct PreguntaC: Codable, Identifiable {
     let id: Int
     let pregunta: String
@@ -57,7 +107,7 @@ struct PreguntaC: Codable, Identifiable {
     }
 }
 
-// MARK: - 2. Servicio de Carga Local
+// cargar preguntas
 final class ChismeQuestionsService {
     func cargarPreguntasDesdeJSON(idioma: String) -> [PreguntaC] {
         var fileName: String
@@ -90,7 +140,7 @@ final class ChismeQuestionsService {
     }
 }
 
-// MARK: - 3. Fondos para Data Nauta
+// fondos
 enum FondoChisme {
     case CHISME_NORMAL
     case GAME_OVER
@@ -110,7 +160,7 @@ enum FondoChisme {
     }
 }
 
-// MARK: - 4. ViewModel
+
 final class ChismeViewModel: ObservableObject {
     
     @Published var preguntas: [PreguntaC] = []
@@ -142,7 +192,7 @@ final class ChismeViewModel: ObservableObject {
         cargarDatosUsuario()
     }
     
-    // MARK: - Firebase
+    // firebase y asi
     func cargarDatosUsuario() {
         self.isLoading = true
         self.errorMessage = nil
@@ -219,14 +269,14 @@ final class ChismeViewModel: ObservableObject {
             if let error = error {
                 print("❌ ERROR al guardar score: \(error.localizedDescription)")
             } else {
-                print("✅ Score de GeoExplora guardado: \(self.mejorScore)")
+                print("✅ Score de Chisme guardado: \(self.mejorScore)")
             }
         }
     }
     
-//cargar pregutnas
+    //cargar pregutnas
     func cargarPreguntasChisme() {
-        guard let edad = self.edadUsuario else {
+        guard let edadActual = self.edadUsuario else {
             self.isLoading = false
             return
         }
@@ -239,6 +289,7 @@ final class ChismeViewModel: ObservableObject {
             
             let todas = self.questionsService.cargarPreguntasDesdeJSON(idioma: self.idiomaUsuario)
             
+            let edadesPermitidas = Array(6...edadActual)
             
             let filtradas = todas.filter { pregunta in
                 let idiomaPregunta = pregunta.idioma.lowercased()
@@ -248,7 +299,8 @@ final class ChismeViewModel: ObservableObject {
                     (idiomaPregunta.contains("english") || idiomaPregunta.contains("en")) && self.idiomaUsuario == "English" ||
                     (idiomaPregunta.contains("deutsch") || idiomaPregunta.contains("de")) && self.idiomaUsuario == "Deutsch"
                 
-                let edadMatch = pregunta.edad.contains(edad)
+                // rango ampliado de edades
+                let edadMatch = pregunta.edad.contains(where: { edadesPermitidas.contains($0) })
                 
                 let temaMatch = pregunta.tema == "Gossip of Time" ||
                                pregunta.tema == "Klatsch der Zeit" ||
@@ -258,7 +310,7 @@ final class ChismeViewModel: ObservableObject {
             }
             
             if filtradas.isEmpty {
-                self.errorMessage = "No hay preguntas de Chisme disponibles para idioma \(self.idiomaUsuario) y edad \(edad)"
+                self.errorMessage = "No hay preguntas de Chisme disponibles para idioma \(self.idiomaUsuario) y edad \(edadActual)"
                 self.isLoading = false
                 return
             }
@@ -319,47 +371,136 @@ final class ChismeViewModel: ObservableObject {
 struct CHISMEVIEW: View {
     
     @StateObject private var vm = ChismeViewModel()
+    @StateObject private var musica = MusicaChisme()
     @Environment(\.dismiss) var dismiss
+    @State private var mostrarControles = false
     
     var body: some View {
         ZStack {
-            fondoDinamico()
+            // Siempre mostrar un fondo base
+            Color.chisme.ignoresSafeArea()
             
-            VStack {
-                if vm.isLoading {
-                    ProgressView("Cargando preguntas de Chisme...")
-                        .tint(.white)
-                        .foregroundColor(.white)
+            if vm.isLoading {
+               
+                ProgressView("Cargando...")
+                    .foregroundStyle(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                    .font(.custom("GlacialIndifference-Bold", size: 50))
+    
+            } else {
+                ZStack {
+                    fondoDinamico()
                     
-                } else if let error = vm.errorMessage {
-                    VStack(spacing: 20) {
-                        Text("Error")
-                            .font(.title)
-                            .foregroundColor(.red)
-                        Text(error)
-                            .multilineTextAlignment(.center)
-                            .padding()
-                        Button("Reintentar") {
-                            vm.cargarDatosUsuario()
+                    VStack {
+                        if let error = vm.errorMessage {
+                            VStack(spacing: 20) {
+                                Text("Error")
+                                    .font(.title)
+                                    .foregroundColor(.red)
+                                Text(error)
+                                    .multilineTextAlignment(.center)
+                                    .padding()
+                                Button("Reintentar") {
+                                    vm.cargarDatosUsuario()
+                                }
+                                .padding()
+                                .cornerRadius(12)
+                            }
+                            
+                        } else if vm.gameOver {
+                            vistaGameOver
+                            
+                        } else {
+                            vistaJuego
                         }
-                        .padding()
-                        .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
-                        .foregroundColor(.white)
-                        .cornerRadius(12)
                     }
                     
-                } else if vm.gameOver {
-                    vistaGameOver
-                    
-                } else {
-                    vistaJuego
+                    // Controles de música
+                    VStack {
+                        Spacer()
+                        HStack {
+                            Spacer()
+                            
+                            if mostrarControles {
+                                VStack(spacing: 15) {
+                                    // Botón Play/Pause
+                                    Button(action: {
+                                        if musica.isPlaying {
+                                            musica.pausar()
+                                        } else {
+                                            musica.reanudar()
+                                        }
+                                    }) {
+                                        Image(systemName: musica.isPlaying ? "pause.fill" : "play.fill")
+                                            .font(.system(size: 30))
+                                            .foregroundColor(.white)
+                                            .frame(width: 60, height: 60)
+                                            .background(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                            .clipShape(Circle())
+                                    }
+                                    
+                                    // Control de volumen
+                                    VStack(spacing: 5) {
+                                        Text("Volumen")
+                                            .font(.custom("GlacialIndifference-Bold", size: 14))
+                                            .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                        
+                                        HStack {
+                                            Image(systemName: "speaker.fill")
+                                                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                            
+                                            Slider(value: $musica.volume, in: 0...1, step: 0.1)
+                                                .accentColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                                .onChange(of: musica.volume) { newValue in
+                                                    musica.cambiarVolumen(newValue)
+                                                }
+                                            
+                                            Image(systemName: "speaker.wave.3.fill")
+                                                .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                        }
+                                        .frame(width: 200)
+                                    }
+                                }
+                                .padding()
+                                .background(Color.white.opacity(0.9))
+                                .cornerRadius(15)
+                                .padding(.bottom, 80)
+                                .padding(.trailing, 10)
+                                .transition(.move(edge: .trailing))
+                            }
+                            
+                            Button(action: {
+                                withAnimation {
+                                    mostrarControles.toggle()
+                                }
+                            }) {
+                                Image(systemName: "music.note")
+                                    .font(.system(size: 24))
+                                    .foregroundColor(Color(red: 0.1922, green: 0.0, blue: 0.3843))
+                                    .padding()
+                                    .background(Color.white.opacity(0.8))
+                                    .clipShape(Circle())
+                            }
+                            .padding(.bottom, 20)
+                            .padding(.trailing, 20)
+                        }
+                    }
                 }
             }
         }
         .ignoresSafeArea()
+        .onAppear {
+            musica.iniciarMusica()
+        }
+        .onDisappear {
+            musica.detener()
+        }
+        .onChange(of: vm.gameOver) { newValue in
+            if newValue {
+                musica.detener()
+            }
+        }
     }
-    
-//fondos
+    //fondos
     @ViewBuilder
     private func fondoDinamico() -> some View {
         let tema = vm.preguntaActual?.tema ?? ""
@@ -469,6 +610,7 @@ struct CHISMEVIEW: View {
             // Boton "Volver a jugar"
             Button(action: {
                 vm.reiniciarPartida()
+                musica.iniciarMusica()
             }) {
                 Text(LocalizedStringKey("Volver a jugar"))
                     .font(.title3)
@@ -495,7 +637,6 @@ struct CHISMEVIEW: View {
         .padding()
     }
 }
-
 
 #Preview {
     CHISMEVIEW()

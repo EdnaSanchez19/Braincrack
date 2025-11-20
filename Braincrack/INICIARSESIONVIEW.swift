@@ -126,6 +126,7 @@ extension INICIARSESION {
             }
             .navigationDestination(isPresented: $irAGameMode) {
                 GAMEMODEVIEW()
+            .navigationBarBackButtonHidden(true)
             }
         }
     }
@@ -137,7 +138,7 @@ extension INICIARSESION {
         password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
     }
     
-    // FUNCIÓN LOGIN SIMPLIFICADA Y CORREGIDA
+    
     func login() {
         errorMessage = nil
         let db = Firestore.firestore()
@@ -145,7 +146,7 @@ extension INICIARSESION {
         let cleanUsername = username.trimmingCharacters(in: .whitespacesAndNewlines)
         let cleanPassword = password.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        // PASO 1: Buscar el usuario en Firestore por username
+        // busqueda de usernake
         db.collection("users")
             .whereField("username", isEqualTo: cleanUsername)
             .limit(to: 1)
@@ -187,7 +188,7 @@ extension INICIARSESION {
                     return
                 }
                 
-                // PASO 2: Autenticar con Firebase Auth
+                // autenticar Firebase Auth
                 Auth.auth().signIn(withEmail: userEmail, password: cleanPassword) { authResult, authError in
                     if let authError = authError {
                         print("❌ Error de autenticación: \(authError.localizedDescription)")
@@ -197,7 +198,7 @@ extension INICIARSESION {
                         return
                     }
                     
-                    // ✅ Login exitoso
+                    // login verificado
                     DispatchQueue.main.async {
                         print("✅ Login exitoso")
                         print("✅ UID: \(Auth.auth().currentUser?.uid ?? "N/A")")

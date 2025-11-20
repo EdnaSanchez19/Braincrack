@@ -18,7 +18,7 @@ struct GAMEMODEVIEW: View {
                     .resizable()
                     .ignoresSafeArea()
 
-                // BOTÓN CERRAR SESIÓN (arriba a la derecha)
+                // BOTÓN CERRAR SESIÓN 
                 VStack {
                     HStack {
                         Spacer()
@@ -36,8 +36,8 @@ struct GAMEMODEVIEW: View {
                                         .foregroundColor(Color(red: 0.757, green: 0.708, blue: 0.93))
                                 )
                         }
-                        .padding(.trailing, 20)
-                        .padding(.top, 40)
+                        .padding(.trailing, 240)
+                        .padding(.top, 500)
                     }
                     Spacer()
                 }
@@ -131,6 +131,7 @@ struct GAMEMODEVIEW: View {
                     }
                     .padding(.bottom, 200)
                     .padding(.trailing,200)
+                    .navigationBarBackButtonHidden(true)
 
                     NavigationLink(destination: TEMASVIEW()) {
                         Rectangle()
@@ -142,11 +143,11 @@ struct GAMEMODEVIEW: View {
                                     .font(.custom("GlacialIndifference-Bold", size: 18))
                                     .foregroundColor(Color(red: 0.757, green: 0.708, blue: 0.93))
                             )
-                    }
+                    } .navigationBarBackButtonHidden(true)
                     .padding(.leading,200)
                     .padding(.bottom, 50)
 
-                    NavigationLink(destination: MUERTESUBITAVIEW()) {
+                    NavigationLink(destination: LIBREVIEW()) {
                         Rectangle()
                             .frame(width: 120, height: 60)
                             .foregroundColor(Color(red: 0.187, green: 0.003, blue: 0.381))
@@ -159,6 +160,7 @@ struct GAMEMODEVIEW: View {
                     }
                     .padding(.top,200)
                     .padding(.trailing, 200)
+                    .navigationBarBackButtonHidden(true)
                 }
                 .padding(.top, 100)
             }
